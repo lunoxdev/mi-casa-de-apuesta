@@ -40,15 +40,11 @@ const {title, description, img, url, sitename, creator} = meta;
     <meta name="twitter:image" content={img} />
     <meta name="twitter:creator" content={creator}>
 	</head>
-	<body>
-    <div class="flex justify-center relative min-h-screen w-full bg-slate-950">
-      <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
-      </div>
-      <div class="max-w-screen-lg flex justify-center items-center p-4">
-        <!-- Header -->
-        <slot />
-      </div>
+	<body class="bg-slate-950">
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
     </div>
+      <!-- Header -->
+      <slot />
 	</body>
 </html>
 
@@ -66,7 +62,11 @@ const {title, description, img, url, sitename, creator} = meta;
       color: rgba(17, 17, 17, 0.9);
       display: flex;
       flex-direction: column;
+      justify-content: center;
       min-height: 100vh;
+      max-width: 1024px;
+      padding: 16px;
+      margin: auto;
       overscroll-behavior: none;
     }
   
