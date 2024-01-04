@@ -1,7 +1,9 @@
 ---
 import "@fontsource-variable/onest";
+// import GTMHeader from "../components/GTM/GTMHeader.astro";
+// import GTMBody from "../components/GTM/GTMBody.astro";
 
-import Header from "../components/Header.astro";
+// import Header from "../components/Header.astro";
 
 const meta = {
   title: "Mejores Casas De Apuestas 2024: Favoritas de los Apostadores",
@@ -18,6 +20,7 @@ const { title, description, img, url, sitename, creator } = meta;
 
 <html lang="es">
   <head>
+    <!-- <GTMHeader /> -->
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -45,45 +48,47 @@ const { title, description, img, url, sitename, creator } = meta;
     <meta name="twitter:creator" content={creator} />
   </head>
   <body class="bg-slate-950">
+    <!-- <GTMBody /> -->
     <div
       class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
     >
     </div>
     <!-- Header -->
-    <Header />
+    <!-- <Header /> -->
     <slot />
+    <style is:global>
+      :root {
+        color-scheme: light dark;
+      }
+
+      html {
+        font-family: "Onest Variable", sans-serif, system-ui;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: rgba(17, 17, 17, 0.9);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 1024px;
+        margin: auto;
+        overscroll-behavior: none;
+        justify-content: center;
+        padding: 16px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #f0f3ff;
+        }
+      }
+    </style>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    color-scheme: light dark;
-  }
-
-  html {
-    font-family: "Onest Variable", sans-serif, system-ui;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    color: rgba(17, 17, 17, 0.9);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 1024px;
-    margin: auto;
-    overscroll-behavior: none;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: #f0f3ff;
-    }
-  }
-</style>
