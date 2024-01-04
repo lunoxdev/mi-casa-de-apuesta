@@ -3,7 +3,7 @@ import "@fontsource-variable/onest";
 // import GTMHeader from "../components/GTM/GTMHeader.astro";
 // import GTMBody from "../components/GTM/GTMBody.astro";
 
-// import Header from "../components/Header.astro";
+import Header from "../components/Header.astro";
 
 const meta = {
   title: "Mejores Casas De Apuestas 2024: Favoritas de los Apostadores",
@@ -54,41 +54,40 @@ const { title, description, img, url, sitename, creator } = meta;
     >
     </div>
     <!-- Header -->
-    <!-- <Header /> -->
+    <Header />
     <slot />
-    <style is:global>
-      :root {
-        color-scheme: light dark;
-      }
-
-      html {
-        font-family: "Onest Variable", sans-serif, system-ui;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        color: rgba(17, 17, 17, 0.9);
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        max-width: 1024px;
-        margin: auto;
-        overscroll-behavior: none;
-        justify-content: center;
-        padding: 16px;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: #f0f3ff;
-        }
-      }
-    </style>
   </body>
 </html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    font-family: "Onest Variable", sans-serif, system-ui;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: rgba(17, 17, 17, 0.9);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1024px;
+    margin: auto;
+    overscroll-behavior: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #f0f3ff;
+    }
+  }
+</style>
