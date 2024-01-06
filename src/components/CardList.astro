@@ -1,14 +1,35 @@
 ---
 import Card from "./Card.astro";
+
+const reviews = [
+  {
+    name: "Stake",
+    img: "operators/withbg/stake.svg",
+    rating: "3.0",
+    promocode: "XXXXXX",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Betano",
+    img: "operators/withbg/betano.svg",
+    rating: "4.5",
+    promocode: "YYYYYY",
+    url: "https://moisesobando.com/",
+  },
+];
 ---
 
 <section id="lista" class="flex flex-col space-y-10 w-full p-4">
   <h2
-    class="text-center text-2xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+    class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
   >
-    Mejores Casas de Apuestas
+    MEJORES CASAS DE APUESTAS
   </h2>
-  <article>
-    <Card />
-  </article>
+  {
+    reviews.map((info) => (
+      <article>
+        <Card {...info} />
+      </article>
+    ))
+  }
 </section>

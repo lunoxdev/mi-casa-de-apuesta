@@ -4,18 +4,20 @@ import Android from "../components/icons/Android.astro";
 import IOS from "../components/icons/IOS.astro";
 import WebApp from "../components/icons/WebApp.astro";
 import Check from "../components/icons/Check.astro";
+
+const { ...info } = Astro.props;
 ---
 
 <div
-  class="flex flex-wrap sm:flex-nowrap gap-4 w-full p-4 shadow-gray-700 rounded-md shadow-sm"
+  class="flex flex-wrap sm:flex-nowrap gap-4 w-full p-4 shadow-gray-800 shadow-sm rounded-md bg-gradient-to-t from-black/50 to-slate-950"
 >
   <!-- Image & Operator Name & Rating-->
   <section class="grow-0 w-1/3 sm:w-44 overflow-hidden">
     <figure>
       <div class="relative overflow-hidden rounded-t-md">
         <img
-          src="/operators/stake.svg"
-          alt="Logo de 1XBET, una plataforma de apuestas en línea"
+          src={info.img}
+          alt={`Logo de ${info.name}, una plataforma de apuestas en línea`}
           width="150"
           height="150"
           class="rounded-t-md w-full transition-transform transform bg-cover bg-center bg-no-repeat hover:opacity-90 bg-blend-luminosity duration-1000 ease-in-out hover:scale-110"
@@ -25,15 +27,15 @@ import Check from "../components/icons/Check.astro";
         >
         </div>
       </div>
-      <figcaption class="text-center text-sm bg-black z-10 py-1">
-        STAKE
+      <figcaption class="uppercase text-center text-sm bg-black z-10 py-1">
+        {info.name}
       </figcaption>
     </figure>
     <!-- Rating & Devices -->
     <div class="flex flex-row justify-between mt-4 mb-2">
       <div class="flex gap-1 flex-row">
         <StarRating />
-        4.5
+        {info.rating}
       </div>
       <div class="flex flex-row">
         <Android />
@@ -52,7 +54,7 @@ import Check from "../components/icons/Check.astro";
       <button
         class="inline-flex px-16 h-12 animate-background-shine items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium transition-colors hover:border-slate-600 hover:border-sm"
       >
-        XXXXXX
+        {info.promocode}
       </button>
     </div>
 
