@@ -16,8 +16,9 @@
     <nav
       class="hidden md:flex flex-grow basis-0 w-full space-x-5 md:justify-center"
     >
-      <a class="hover:underline-offset-8 hover:underline font-light" href="#"
-        >Lista de Operadores</a
+      <a
+        class="hover:underline-offset-8 hover:underline font-light"
+        href="#lista">Lista de Operadores</a
       >
       <a class="hover:underline-offset-8 hover:underline font-light" href="#"
         >¿Cómo Apostar?</a
@@ -46,7 +47,7 @@
       id="mobile-menu"
       class="hidden bg-black backdrop-blur-3xl w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 min-h-screen place-content-center"
     >
-      <a class="my-2 hover:underline hover:underline-offset-8" href="#"
+      <a class="my-2 hover:underline hover:underline-offset-8" href="#lista"
         >Lista de Operadores</a
       >
       <a class="my-2 hover:underline hover:underline-offset-8" href="#"
@@ -69,21 +70,31 @@
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
     const menuIcon = document.getElementById("menu-icon");
+    const mobileMenuItems = document.querySelectorAll("#mobile-menu a");
 
     if (!menuToggle || !mobileMenu || !menuIcon) {
       return;
     }
 
+    // Toggle mobile menu visibility
     menuToggle.addEventListener("click", function () {
       mobileMenu.classList.toggle("hidden");
       mobileMenu.classList.toggle("flex");
       menuIcon.textContent = menuIcon.textContent === "☰" ? "✕" : "☰";
     });
+
+    // Close mobile menu when a menu item is clicked
+    mobileMenuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+        menuIcon.textContent = "☰";
+      });
+    });
   });
 </script>
 
 <!-- Blur when scroll -->
-
 <style>
   #header-nav {
     animation: blur linear both;
