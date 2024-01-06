@@ -1,0 +1,151 @@
+---
+import StarRating from "./icons/StarRating.astro";
+
+const reviews = [
+  {
+    name: "Betway",
+    img: "operators/nobg/betway-nobg.svg",
+    rating: "3.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Betsson",
+    img: "operators/nobg/betsson-nobg.svg",
+    rating: "4.5",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Bwin",
+    img: "operators/nobg/bwin-nobg.svg",
+    rating: "5.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Betcris",
+    img: "operators/nobg/betcris-nobg.svg",
+    rating: "4.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "SportsBet",
+    img: "operators/nobg/sportsbet-nobg.svg",
+    rating: "4.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Casumo",
+    img: "operators/nobg/casumo-nobg.svg",
+    rating: "3.5",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Codere",
+    img: "operators/nobg/codere-nobg.svg",
+    rating: "4.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Stake",
+    img: "operators/nobg/stake-nobg.svg",
+    rating: "4.5",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "William Hill",
+    img: "operators/nobg/william-hill-nobg.svg",
+    rating: "4.0",
+    url: "https://moisesobando.com/",
+  },
+  {
+    name: "Lilibet",
+    img: "operators/nobg/lilibet-nobg.svg",
+    rating: "4.5",
+    url: "https://moisesobando.com/",
+  },
+];
+---
+
+<section class="my-20 flex flex-col w-full space-y-10">
+  <h2
+    class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+  >
+    CASAS DE APUESTAS DESTACADAS
+  </h2>
+  <div class="flex flex-col relative h-96 w-full overflow-hidden">
+    <!-- First Carousel -->
+    <div class="flex w-full overflow-x-hidden [--gap:1rem] [--duration:15s]">
+      <div
+        class="flex w-max animate-marquee items-stretch gap-[--gap] [animation-direction:reverse] hover:[animation-play-state:paused]"
+      >
+        {
+          reviews.map((info) => (
+            <a
+              {...info}
+              href={info.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex h-48 w-48 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 px-8 py-16 group focus:outline-none focus:border-[#f0f3ff]"
+            >
+              <div class="flex flex-col items-center justify-center space-y-5 transition group-hover:scale-110">
+                <img
+                  src={info.img}
+                  alt={`Logo de: ${info.name}`}
+                  class="w-full h-auto"
+                />
+                <div class="flex gap-2 flex-row">
+                  <StarRating />
+                  {info.rating}
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Second Carousel -->
+    <div
+      class="absolute top-40 left-0 right-0 bottom-0 flex w-full overflow-x-hidden [--gap:1rem] [--duration:15s]"
+    >
+      <div
+        class="flex w-max animate-marquee items-stretch gap-[--gap] hover:[animation-play-state:paused]"
+      >
+        {
+          reviews.map((info) => (
+            <a
+              {...info}
+              href={info.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex h-48 w-48 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/50 to-slate-950 px-8 py-16  group focus:outline-none focus:border-[#f0f3ff]"
+            >
+              <div class="flex flex-col items-center justify-center space-y-5 transition group-hover:scale-110">
+                <img
+                  src={info.img}
+                  alt={`Logo de: ${info.name}`}
+                  class="w-full h-auto"
+                />
+                <div class="flex gap-2 flex-row">
+                  <StarRating />
+                  {info.rating}
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Left Gradient -->
+    <div
+      class="absolute inset-y-0 left-0 w-28 pointer-events-none from-[#020617] to-transparent bg-gradient-to-r"
+    >
+    </div>
+
+    <!-- Right Gradient -->
+    <div
+      class="absolute inset-y-0 right-0 w-28 pointer-events-none bg-gradient-to-l from-[#020617]"
+    >
+    </div>
+  </div>
+</section>
