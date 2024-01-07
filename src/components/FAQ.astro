@@ -1,0 +1,77 @@
+---
+import FAQSimple from "./FAQSimple.astro";
+
+const faqs = [
+  {
+    open: "open",
+    question: "¿Cómo funcionan las casas de apuestas en línea?",
+    answer:
+      "Las casas de apuestas en línea ofrecen una plataforma para que los usuarios puedan apostar en eventos deportivos o Casino. Los usuarios pueden seleccionar un evento deportivo y realizar una apuesta en línea. Si la apuesta es correcta, el usuario gana dinero.",
+  },
+  {
+    question: "¿Es seguro apostar en línea?",
+    answer:
+      "¡Absolutamente! Es seguro apostar en línea si eliges plataformas confiables con licencia. Recomendamos casas de apuestas reconocidas que garantizan la seguridad de tus datos y transacciones. Juega de manera responsable, establece límites y verifica las políticas de seguridad antes de comenzar.",
+  },
+  {
+    question:
+      "¿Cómo depositar y retirar dinero en una casa de apuestas online?",
+    answer:
+      "Los métodos para depositar y retirar fondos varían entre casas de apuestas, pero el procedimiento común implica iniciar sesión, elegir el método de pago, aplicar el Código de Promoción (si aplica), confirmar la transacción, aprovechar el bono de bienvenida y realizar apuestas. Es crucial revisar las políticas individuales de cada plataforma, ya que algunos detalles pueden diferir.",
+  },
+  {
+    question: "¿Qué son las apuestas en vivo y cómo funcionan?",
+    answer:
+      "Las apuestas en vivo son aquellas que haces mientras el evento está en marcha. Puedes ajustar tus apuestas según lo que sucede en tiempo real. Solo selecciona tus opciones durante el evento, elige tu apuesta y confirma. Así de simple y emocionante.",
+  },
+  {
+    question: "¿En qué deportes puedo apostar?",
+    answer:
+      "Las opciones de apuestas varían según la casa, pero sueles encontrar deportes populares como fútbol, baloncesto y tenis. Algunas casas también ofrecen deportes menos convencionales. Elige una casa que tenga la variedad que te guste y comienza a apostar en tus deportes favoritos.",
+  },
+  {
+    question: "¿Es necesario pagar impuestos sobre las ganancias?",
+    answer:
+      "Sí, es posible que debas pagar impuestos sobre las ganancias de apuestas. Las leyes varían según la jurisdicción, así que verifica los requisitos fiscales locales.",
+  },
+  {
+    question: "¿Es legal apostar en línea?",
+    answer:
+      "Sí, es legal apostar en línea en muchos lugares, aunque las leyes difieren. Verifica las regulaciones locales para asegurarte de cumplir con los requisitos legales en tu área.",
+  },
+  {
+    question: "¿Qué es el Bet Builder en Apuestas?",
+    answer:
+      "El Bet Builder en apuestas es una herramienta que te permite personalizar y crear tus propias apuestas combinando diferentes selecciones en un solo boleto. Puedes elegir eventos y mercados específicos para construir una apuesta a medida según tus preferencias.",
+  },
+  {
+    question: "¿Qué es y como hacer la Autoexclusión?",
+    answer:
+      "La autoexclusión es un mecanismo que te permite limitar o prohibir tu acceso a plataformas de apuestas durante un período establecido. Para hacerlo, generalmente puedes encontrar la opción de autoexclusión en la sección de configuración de tu cuenta en la plataforma de apuestas. Es una medida útil para gestionar de manera responsable tu actividad de juego y mantener un juego seguro.",
+  },
+  {
+    question: "¿Qué es Rollover?",
+    answer:
+      "El 'Rollover' es la cantidad de veces que debes apostar el monto de un bono antes de poder retirar las ganancias asociadas. Si, por ejemplo, el rollover es 3x y recibes un bono de $100, deberás realizar apuestas por un total de $300 antes de poder retirar las ganancias generadas con ese bono. Es crucial revisar los términos y condiciones de las promociones para entender el rollover y sus implicaciones en tus ganancias.",
+  },
+];
+---
+
+<section
+  id="faq"
+  class="flex flex-col max-w-screen-md mx-auto space-y-5 p-4 my-40 text-[#f0f3ff]"
+>
+  <h2
+    class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+  >
+    FAQ - RESPUESTAS A TUS PREGUNTAS MÁS COMUNES
+  </h2>
+
+  {
+    faqs.map((info) => (
+      <div class="border-b px-2 rounded-lg">
+        <FAQSimple {...info} />
+      </div>
+    ))
+  }
+</section>
