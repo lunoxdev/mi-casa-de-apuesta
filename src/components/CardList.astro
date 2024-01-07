@@ -1,12 +1,21 @@
 ---
 import Card from "./Card.astro";
 
-const reviews = [
+interface Review {
+  id: number;
+  name: string;
+  img: string;
+  rating: number;
+  promocode: string;
+  url: string;
+}
+
+const reviews: Review[] = [
   {
     id: 1,
     name: "Stake",
     img: "operators/withbg/stake.svg",
-    rating: "3.0",
+    rating: 3.0,
     promocode: "XXXXXX",
     url: "https://moisesobando.com/",
   },
@@ -14,7 +23,7 @@ const reviews = [
     id: 2,
     name: "Betano",
     img: "operators/withbg/betano.svg",
-    rating: "4.5",
+    rating: 4.5,
     promocode: "YYYYYY",
     url: "https://moisesobando.com/",
   },
