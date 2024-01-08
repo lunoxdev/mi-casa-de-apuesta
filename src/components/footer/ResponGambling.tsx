@@ -48,161 +48,143 @@ const ResponGambling = () => {
               </button>
               <article className="space-y-2 overflow-y-auto w-full my-5 mt-12 border-t flex flex-col justify-start items-start text-start border-gray-800">
                 <div>
-                  <h4 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
-                    Juego Responsable
+                  <h4 className="inline-flex text-xl sm:text-2xl text-balance mt-5 font-semibold">
+                    Juego Responsable: Apostando de Forma Segura
                   </h4>
                   <p className="tracking-tight text-sm font-light mb-5 text-pretty">
                     Última actualización: 10/01/2024
                   </p>
                 </div>
                 <p className="tracking-tight font-light text-pretty">
-                  Antes de comenzar, es importante que leas detenidamente estos
-                  Términos y Condiciones, ya que rigen tu acceso y uso de
-                  nuestro sitio web. Al utilizar nuestros servicios, aceptas
-                  cumplir con estos términos. Si no estás de acuerdo con alguna
-                  parte de estos Términos y Condiciones, te pedimos que no
-                  accedas a nuestro servicio.
+                  En nuestro compromiso con el juego responsable, nos
+                  preocupamos profundamente por la adicción que puede surgir del
+                  juego y los impactos negativos que podría ocasionar en
+                  diversas áreas de la vida de una persona.
+                </p>
+                <p className="tracking-tight font-light text-pretty">
+                  Asumimos con seriedad la responsabilidad de fomentar prácticas
+                  saludables entre nuestros usuarios. Nuestra misión es
+                  proporcionar información valiosa y enlaces a plataformas de
+                  juego, con el objetivo de que la experiencia sea divertida,
+                  segura y exenta de riesgos innecesarios.
+                </p>
+                <p className="tracking-tight font-light text-pretty">
+                  Apostar debe ser una experiencia divertida, nunca peligrosa.
                 </p>
                 <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold mb-2">
+                    Algunos de los elementos clave del juego responsable y que
+                    recomendamos incluyen:
+                  </h5>
+                  <div>
+                    <ul className="list-disc list-inside tracking-tight font-light text-pretty">
+                      <li>
+                        Establecer un presupuesto y límites de tiempo claros
+                        para el juego.
+                      </li>
+                      <li>
+                        Evitar la tentación o apostar más de lo que se puede
+                        permitir.
+                      </li>
+                      <li>
+                        Tomarse descansos regulares durante el juego para evitar
+                        la fatiga y la impulsividad
+                      </li>
+                      <li>
+                        Buscar ayuda si se siente que el juego está afectando
+                        negativamente la vida personal o financiera.
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="tracking-tight font-light text-pretty mt-3">
+                    Si en algún momento necesitas ayuda, las casas de apuestas
+                    ofrecen opciones de soporte o autoexclusión para garantizar
+                    una experiencia segura.
+                  </p>
+                </div>
+                <div className="space-y-2">
                   <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    1. Nuestro servicio
+                    Autoexclusión
                   </h5>
                   <p className="tracking-tight font-light text-pretty">
-                    Ofrecemos información sobre diversas casas de apuestas para
-                    ayudarte a tomar decisiones informadas. Los enlaces externos
-                    a estas casas de apuestas son proporcionados con el objetivo
-                    de facilitar tu acceso a sus servicios. Sin embargo, no
-                    tenemos control sobre sus operaciones.
+                    La autoexclusión se convierte en una herramienta esencial
+                    para fomentar un juego responsable. Cuando te das cuenta de
+                    que te estás desviando de los principios del juego
+                    responsable, enfrentas pérdidas notables o atraviesas
+                    momentos complicados, tanto económicos como emocionales, las
+                    casas de apuestas te ofrecen la posibilidad de suspender
+                    temporalmente tu cuenta.
                   </p>
                   <p className="tracking-tight font-light text-pretty">
-                    Al hacer uso de nuestros servicios de afiliados, reconoces y
-                    aceptas que la Compañía no se hace responsable por cualquier
-                    daño o pérdida causada o presuntamente causada por el uso de
-                    los servicios de las casas de apuestas enlazadas. Te
-                    recomendamos revisar los términos y condiciones específicos
-                    de cada casa de apuestas antes de participar en sus
-                    servicios.
+                    Esta opción te permite detener momentáneamente tu
+                    participación en los juegos, brindándote un respiro
+                    necesario para reevaluar tus decisiones y enfrentar
+                    cualquier desafío financiero o emocional que puedas estar
+                    experimentando.
                   </p>
                 </div>
-                <div>
-                  <p className="tracking-tight font-light text-pretty">
-                    <span className="inline-flex text-lg font-semibold underline">
-                      Nota Importante:
-                    </span>
-                    <br />
-                    El sitio web no respalda ni garantiza los resultados de las
-                    apuestas, y cualquier participación en actividades de juego
-                    debe hacerse con responsabilidad. La decisión de utilizar
-                    los servicios de las casas de apuestas enlazadas es
-                    exclusivamente tuya, y debes estar al tanto de los riesgos
-                    asociados.
-                  </p>
-                </div>
-                <div>
+                <div className="space-y-2">
                   <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    2. Uso del Servicio:
+                    Enlaces de ayuda:
                   </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    El acceso y uso de nuestro servicio están condicionados a la
-                    aceptación de estos términos. Debes tener al menos 18 años
-                    para utilizar nuestro servicio, ya que no permitimos el
-                    acceso a menores de edad.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    3. Política de Privacidad:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Tu acceso y uso del servicio también están sujetos a nuestra
-                    Política de Privacidad. Te instamos a leer detenidamente
-                    esta política, ya que describe cómo manejamos tu información
-                    personal.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg even:after:font-semibold">
-                    4. Enlaces a Terceros:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Nuestro servicio puede contener enlaces a sitios web de
-                    terceros. No tenemos control sobre estos sitios y no somos
-                    responsables de su contenido o políticas de privacidad. Te
-                    recomendamos revisar los términos y condiciones de estos
-                    sitios antes de utilizarlos.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    5. Terminación:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Nos reservamos el derecho de suspender o terminar tu acceso
-                    al servicio sin previo aviso si se incumplen estos términos.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    6. Cambios en los Términos y Condiciones:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Actualizaremos esta política y notificaremos cambios a
-                    través del servicio o correo electrónico antes de que entren
-                    en vigencia. Le recomendamos revisar periódicamente esta
-                    Política de Privacidad para estar al tanto de cualquier
-                    cambio. Si tiene alguna pregunta o inquietud sobre esta
-                    Política de Privacidad, contáctenos.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    7. Derechos de Autor:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Todo el contenido de nuestro sitio está protegido por
-                    derechos de autor. No se permite la reproducción de ningún
-                    contenido sin nuestro consentimiento por escrito.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    8. Limitación de Responsabilidad:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    No ofrecemos servicios de juego y la información
-                    proporcionada es solo con fines informativos. No somos
-                    responsables de pérdidas reales o percibidas. Cualquier
-                    problema con proveedores de servicios debe ser dirigido
-                    directamente a ellos. No nos responsabilizamos de virus,
-                    malware o incidentes similares.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    9. Privacidad y Compartición de Información:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Tomamos medidas para proteger tu información personal, pero
-                    no nos responsabilizamos por accesos no autorizados,
-                    divulgación no autorizada o eventos similares. Actualmente,
-                    no recopilamos información personal, pero si se proporciona,
-                    nos reservamos el derecho de utilizarla con fines de
-                    marketing y compartirla según sea necesario para protegernos
-                    de fraude o acceso malicioso.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
-                    10. Términos Generales:
-                  </h5>
-                  <p className="tracking-tight font-light text-pretty">
-                    Proporcionamos enlaces a sitios externos para tu
-                    conveniencia, pero no somos responsables de su contenido ni
-                    de las transacciones con ellos. El registro con un socio de
-                    apuestas a través de nuestro servicio forma un contrato
-                    entre tú y ese socio, sin nuestra responsabilidad en dicho
-                    acuerdo.
-                  </p>
+                  <h6 className="tracking-tight font-semibold">Español:</h6>
+                  <div>
+                    <ul className="list-disc list-inside tracking-tight font-light text-pretty">
+                      <li>
+                        México:
+                        <br />
+                        <a
+                          href="https:www.ejemplo.com"
+                          target="_blank"
+                          rel="noopener noreferrer external"
+                          className="hover:text-gray-400"
+                        >
+                          https://www.ejemplo.com/
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h6 className="tracking-tight font-semibold">English:</h6>
+                  <div>
+                    <ul className="list-disc list-inside space-y-2 tracking-tight font-light text-pretty">
+                      <li>
+                        GamCare:
+                        <br />
+                        <a
+                          href="https://www.gamcare.org.uk/"
+                          target="_blank"
+                          rel="noopener noreferrer external"
+                          className="hover:text-gray-400"
+                        >
+                          https://www.gamcare.org.uk/
+                        </a>
+                      </li>
+                      <li>
+                        BeGambleAware:
+                        <br />
+                        <a
+                          href="https://www.begambleaware.org/"
+                          target="_blank"
+                          rel="noopener noreferrer external"
+                          className="hover:text-gray-400"
+                        >
+                          https://www.begambleaware.org/
+                        </a>
+                      </li>
+                      <li>
+                        MGA:
+                        <br />
+                        <a
+                          href="https://www.mga.org.mt/"
+                          target="_blank"
+                          rel="noopener noreferrer external"
+                          className="hover:text-gray-400"
+                        >
+                          https://www.mga.org.mt/
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </article>
             </div>
