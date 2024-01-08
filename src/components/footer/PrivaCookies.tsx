@@ -16,7 +16,7 @@ const PrivaCookies = () => {
   return (
     <>
       <button className="hover:text-gray-400" onClick={showDrawer}>
-        Términos y Condiciones
+        Política de privacidad y Cookies
       </button>
 
       {/* Drawer component */}
