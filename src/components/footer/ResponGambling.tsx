@@ -48,9 +48,9 @@ const ResponGambling = () => {
               </button>
               <article className="space-y-2 overflow-y-auto w-full my-5 mt-12 border-t flex flex-col justify-start items-start text-start border-gray-800">
                 <div>
-                  <h5 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
+                  <h4 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
                     Juego Responsable
-                  </h5>
+                  </h4>
                   <p className="tracking-tight text-sm font-light mb-5 text-pretty">
                     Última actualización: 10/01/2024
                   </p>
@@ -64,9 +64,9 @@ const ResponGambling = () => {
                   accedas a nuestro servicio.
                 </p>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     1. Nuestro servicio
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Ofrecemos información sobre diversas casas de apuestas para
                     ayudarte a tomar decisiones informadas. Los enlaces externos
@@ -99,9 +99,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     2. Uso del Servicio:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     El acceso y uso de nuestro servicio están condicionados a la
                     aceptación de estos términos. Debes tener al menos 18 años
@@ -110,9 +110,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     3. Política de Privacidad:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Tu acceso y uso del servicio también están sujetos a nuestra
                     Política de Privacidad. Te instamos a leer detenidamente
@@ -121,9 +121,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg even:after:font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg even:after:font-semibold">
                     4. Enlaces a Terceros:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Nuestro servicio puede contener enlaces a sitios web de
                     terceros. No tenemos control sobre estos sitios y no somos
@@ -133,18 +133,18 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     5. Terminación:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Nos reservamos el derecho de suspender o terminar tu acceso
                     al servicio sin previo aviso si se incumplen estos términos.
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     6. Cambios en los Términos y Condiciones:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Actualizaremos esta política y notificaremos cambios a
                     través del servicio o correo electrónico antes de que entren
@@ -155,9 +155,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     7. Derechos de Autor:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Todo el contenido de nuestro sitio está protegido por
                     derechos de autor. No se permite la reproducción de ningún
@@ -165,9 +165,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     8. Limitación de Responsabilidad:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     No ofrecemos servicios de juego y la información
                     proporcionada es solo con fines informativos. No somos
@@ -178,9 +178,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     9. Privacidad y Compartición de Información:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Tomamos medidas para proteger tu información personal, pero
                     no nos responsabilizamos por accesos no autorizados,
@@ -192,9 +192,9 @@ const ResponGambling = () => {
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
                     10. Términos Generales:
-                  </h6>
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Proporcionamos enlaces a sitios externos para tu
                     conveniencia, pero no somos responsables de su contenido ni
