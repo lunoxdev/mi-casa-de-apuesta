@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const PromoCode = ({ ...info }) => {
   const [copied, setCopied] = useState(false);
@@ -19,7 +19,7 @@ const PromoCode = ({ ...info }) => {
         onClick={handleCopyClick}
       >
         <p className="hover:scale-110 uppercase">
-          {copied ? 'Copiado' : info.promocode}
+          {copied ? "Copiado" : info.promocode}
         </p>
       </button>
     </>
