@@ -16,18 +16,18 @@ const ResponGambling = () => {
   return (
     <>
       <button className="hover:text-gray-400" onClick={showDrawer}>
-        Términos y Condiciones
+        Juego Responsable
       </button>
 
       {/* Drawer component */}
       {isDrawerOpen && (
         <>
-          <div
-            className="fixed bottom-0 left-0 right-0 h-3/4 z-50 w-full transition-transform bg-black text-[#f0f3ff] rounded-t-3xl border-t-2"
+          <section
+            className="fixed bottom-0 left-0 right-0 h-2/3 z-50 w-full transition-transform bg-black text-[#f0f3ff] rounded-t-3xl border-t-2"
             aria-labelledby="drawer-bottom-label"
           >
             <div className="fixed z-60 inset-0 bg-black opacity-70"></div>
-            <div className="relative max-w-screen-lg flex flex-col justify-center items-center p-4 mx-auto ">
+            <div className="relative max-w-screen-lg max-h-screen h-full flex flex-col p-4 mx-auto ">
               <button
                 type="button"
                 className="w-9 h-9 absolute left-2 top-2 inline-flex items-center justify-center hover:bg-gray-800 hover:rounded-full"
@@ -46,98 +46,167 @@ const ResponGambling = () => {
                   />
                 </svg>
               </button>
-              <div className="max-h-screen overflow-y-auto w-full mt-16 border-t flex flex-col justify-start items-start border-gray-800">
-                <h5 className="inline-flex mb-4 text-2xl mt-10 font-semibold">
-                  Términos y Condiciones
-                </h5>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
+              <article className="space-y-2 overflow-y-auto w-full my-5 mt-12 border-t flex flex-col justify-start items-start text-start border-gray-800">
+                <div>
+                  <h5 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
+                    Juego Responsable
+                  </h5>
+                  <p className="tracking-tight text-sm font-light mb-5 text-pretty">
+                    Última actualización: 10/01/2024
+                  </p>
+                </div>
+                <p className="tracking-tight font-light text-pretty">
+                  Antes de comenzar, es importante que leas detenidamente estos
+                  Términos y Condiciones, ya que rigen tu acceso y uso de
+                  nuestro sitio web. Al utilizar nuestros servicios, aceptas
+                  cumplir con estos términos. Si no estás de acuerdo con alguna
+                  parte de estos Términos y Condiciones, te pedimos que no
+                  accedas a nuestro servicio.
                 </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-                <p className="max-w-lg mb-6 text-sm">
-                  Última actualización: 02/01/2024
-                </p>
-              </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    1. Nuestro servicio
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Ofrecemos información sobre diversas casas de apuestas para
+                    ayudarte a tomar decisiones informadas. Los enlaces externos
+                    a estas casas de apuestas son proporcionados con el objetivo
+                    de facilitar tu acceso a sus servicios. Sin embargo, no
+                    tenemos control sobre sus operaciones.
+                  </p>
+                  <p className="tracking-tight font-light text-pretty">
+                    Al hacer uso de nuestros servicios de afiliados, reconoces y
+                    aceptas que la Compañía no se hace responsable por cualquier
+                    daño o pérdida causada o presuntamente causada por el uso de
+                    los servicios de las casas de apuestas enlazadas. Te
+                    recomendamos revisar los términos y condiciones específicos
+                    de cada casa de apuestas antes de participar en sus
+                    servicios.
+                  </p>
+                </div>
+                <div>
+                  <p className="tracking-tight font-light text-pretty">
+                    <span className="inline-flex text-lg font-semibold underline">
+                      Nota Importante:
+                    </span>
+                    <br />
+                    El sitio web no respalda ni garantiza los resultados de las
+                    apuestas, y cualquier participación en actividades de juego
+                    debe hacerse con responsabilidad. La decisión de utilizar
+                    los servicios de las casas de apuestas enlazadas es
+                    exclusivamente tuya, y debes estar al tanto de los riesgos
+                    asociados.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    2. Uso del Servicio:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    El acceso y uso de nuestro servicio están condicionados a la
+                    aceptación de estos términos. Debes tener al menos 18 años
+                    para utilizar nuestro servicio, ya que no permitimos el
+                    acceso a menores de edad.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    3. Política de Privacidad:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Tu acceso y uso del servicio también están sujetos a nuestra
+                    Política de Privacidad. Te instamos a leer detenidamente
+                    esta política, ya que describe cómo manejamos tu información
+                    personal.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg even:after:font-semibold">
+                    4. Enlaces a Terceros:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Nuestro servicio puede contener enlaces a sitios web de
+                    terceros. No tenemos control sobre estos sitios y no somos
+                    responsables de su contenido o políticas de privacidad. Te
+                    recomendamos revisar los términos y condiciones de estos
+                    sitios antes de utilizarlos.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    5. Terminación:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Nos reservamos el derecho de suspender o terminar tu acceso
+                    al servicio sin previo aviso si se incumplen estos términos.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    6. Cambios en los Términos y Condiciones:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Actualizaremos esta política y notificaremos cambios a
+                    través del servicio o correo electrónico antes de que entren
+                    en vigencia. Le recomendamos revisar periódicamente esta
+                    Política de Privacidad para estar al tanto de cualquier
+                    cambio. Si tiene alguna pregunta o inquietud sobre esta
+                    Política de Privacidad, contáctenos.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    7. Derechos de Autor:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Todo el contenido de nuestro sitio está protegido por
+                    derechos de autor. No se permite la reproducción de ningún
+                    contenido sin nuestro consentimiento por escrito.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    8. Limitación de Responsabilidad:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    No ofrecemos servicios de juego y la información
+                    proporcionada es solo con fines informativos. No somos
+                    responsables de pérdidas reales o percibidas. Cualquier
+                    problema con proveedores de servicios debe ser dirigido
+                    directamente a ellos. No nos responsabilizamos de virus,
+                    malware o incidentes similares.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    9. Privacidad y Compartición de Información:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Tomamos medidas para proteger tu información personal, pero
+                    no nos responsabilizamos por accesos no autorizados,
+                    divulgación no autorizada o eventos similares. Actualmente,
+                    no recopilamos información personal, pero si se proporciona,
+                    nos reservamos el derecho de utilizarla con fines de
+                    marketing y compartirla según sea necesario para protegernos
+                    de fraude o acceso malicioso.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
+                    10. Términos Generales:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Proporcionamos enlaces a sitios externos para tu
+                    conveniencia, pero no somos responsables de su contenido ni
+                    de las transacciones con ellos. El registro con un socio de
+                    apuestas a través de nuestro servicio forma un contrato
+                    entre tú y ese socio, sin nuestra responsabilidad en dicho
+                    acuerdo.
+                  </p>
+                </div>
+              </article>
             </div>
-          </div>
+          </section>
         </>
       )}
     </>
