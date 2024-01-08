@@ -57,11 +57,10 @@ const TermsConditions = () => {
                 </div>
                 <p className="tracking-tight font-light text-pretty">
                   Antes de comenzar, es importante que leas detenidamente estos
-                  Términos y Condiciones, ya que rigen tu acceso y uso de
-                  nuestro sitio web. Al utilizar nuestros servicios, aceptas
-                  cumplir con estos términos. Si no estás de acuerdo con alguna
-                  parte de estos Términos y Condiciones, te pedimos que no
-                  accedas a nuestro servicio.
+                  Términos y Condiciones. Al utilizar nuestros servicios,
+                  aceptas cumplir con estos términos. Si no estás de acuerdo con
+                  alguna parte de estos Términos y Condiciones, te pedimos que
+                  no accedas a nuestro servicio.
                 </p>
                 <div>
                   <h5 className="inline-flex tracking-tight text-lg font-semibold">
