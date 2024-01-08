@@ -48,160 +48,190 @@ const PrivaCookies = () => {
               </button>
               <article className="space-y-2 overflow-y-auto w-full my-5 mt-12 border-t flex flex-col justify-start items-start text-start border-gray-800">
                 <div>
-                  <h5 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
+                  <h4 className="inline-flex text-xl sm:text-2xl mt-5 font-semibold">
                     Política de privacidad y Cookies
-                  </h5>
+                  </h4>
                   <p className="tracking-tight text-sm font-light mb-5 text-pretty">
                     Última actualización: 10/01/2024
                   </p>
                 </div>
                 <p className="tracking-tight font-light text-pretty">
-                  Antes de comenzar, es importante que leas detenidamente estos
-                  Términos y Condiciones, ya que rigen tu acceso y uso de
-                  nuestro sitio web. Al utilizar nuestros servicios, aceptas
-                  cumplir con estos términos. Si no estás de acuerdo con alguna
-                  parte de estos Términos y Condiciones, te pedimos que no
-                  accedas a nuestro servicio.
+                  Esta Política de Privacidad describe nuestras políticas y
+                  procedimientos sobre la recopilación, uso y divulgación de
+                  información cuando utiliza nuestro servicio y le informa sobre
+                  sus derechos de privacidad. Al acceder y utilizar nuestro
+                  servicio, usted acepta los términos descritos en esta
+                  política.
                 </p>
+                <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                  Datos Recopilados
+                </h5>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    1. Nuestro servicio
+                  <h6 className="inline-flex tracking-tight font-semibold">
+                    Datos Personales:
                   </h6>
                   <p className="tracking-tight font-light text-pretty">
-                    Ofrecemos información sobre diversas casas de apuestas para
-                    ayudarte a tomar decisiones informadas. Los enlaces externos
-                    a estas casas de apuestas son proporcionados con el objetivo
-                    de facilitar tu acceso a sus servicios. Sin embargo, no
-                    tenemos control sobre sus operaciones.
-                  </p>
-                  <p className="tracking-tight font-light text-pretty">
-                    Al hacer uso de nuestros servicios de afiliados, reconoces y
-                    aceptas que la Compañía no se hace responsable por cualquier
-                    daño o pérdida causada o presuntamente causada por el uso de
-                    los servicios de las casas de apuestas enlazadas. Te
-                    recomendamos revisar los términos y condiciones específicos
-                    de cada casa de apuestas antes de participar en sus
-                    servicios.
+                    Mientras usa nuestro servicio, podemos solicitarle que nos
+                    proporcione cierta información personal identificable que se
+                    puede utilizar para contactarlo o identificarlo.
                   </p>
                 </div>
                 <div>
+                  <h6 className="inline-flex tracking-tight font-semibold">
+                    Datos de Uso:
+                  </h6>
                   <p className="tracking-tight font-light text-pretty">
-                    <span className="inline-flex text-lg font-semibold underline">
-                      Nota Importante:
+                    Los datos de uso se recopilan automáticamente al utilizar el
+                    servicio. Los datos de uso pueden incluir información como
+                    la dirección de Protocolo de Internet (IP) del dispositivo
+                    que utiliza, el tipo de navegador, las páginas de nuestro
+                    servicio que visita, la fecha y hora de su visita, el tiempo
+                    que pasa en esas páginas, identificadores únicos de
+                    dispositivos y otros datos de diagnóstico. Esto para todos
+                    los dispositivos.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Tecnologías de Seguimiento y Cookies
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    Utilizamos cookies y tecnologías de seguimiento para
+                    rastrear la actividad en nuestro servicio. Además de las
+                    cookies necesarias, utilizamos las siguientes:
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight font-semibold">
+                    Hotjar:
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Propósito: Analizar la interacción del usuario con el
+                    servicio para mejorar la experiencia y la usabilidad del
+                    mismo.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight font-semibold">
+                    Google Analytics (GA4):
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Propósito: Recopilar información estadística sobre el uso
+                    del servicio, como páginas visitadas, tiempo de permanencia
+                    y fuentes de tráfico, con el fin de entender y mejorar el
+                    rendimiento y la eficacia del servicio.
+                  </p>
+                </div>
+                <div>
+                  <h6 className="inline-flex tracking-tight font-semibold">
+                    Google Tag Manager (GTM):
+                  </h6>
+                  <p className="tracking-tight font-light text-pretty">
+                    Propósito: Facilitar la gestión e implementación de
+                    etiquetas y scripts en el servicio, lo que permite un
+                    seguimiento preciso y la recopilación de datos para análisis
+                    y mejoras.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Uso de Datos Personales
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    La información recopilada se utiliza para:
+                  </p>
+                </div>
+                <div>
+                  <ul className="list-disc list-inside tracking-tight font-light text-pretty">
+                    <li>Mantener y mejorar nuestro servicio.</li>
+                    <li>
+                      Proporcionar noticias, ofertas e información general, a
+                      menos que opte por no recibirla.
+                    </li>
+                    <li>Gestionar solicitudes y consultas.</li>
+                    <li>
+                      Análisis de datos, identificación de tendencias y mejora
+                      continua del servicio.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Compartir Información
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    Podemos compartir información con proveedores de servicios,
+                    afiliados y socios comerciales para mejorar y analizar
+                    nuestro servicio. En áreas públicas, la información
+                    compartida puede ser vista por otros usuarios.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Retención y Eliminación de Datos
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    Retenemos datos personales el tiempo necesario para los
+                    propósitos establecidos en esta Política. Puede solicitar la
+                    eliminación de datos personales.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Cumplimiento Legal
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    Bajo ciertas circunstancias, podemos divulgar datos
+                    personales si lo exige la ley o para proteger derechos,
+                    propiedad o seguridad.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Seguridad de Datos Personales
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    La seguridad no puede garantizarse al 100%, pero tomamos
+                    medidas para proteger sus datos de acuerdo con esta
+                    Política.
+                  </p>
+                </div>
+                <div>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Privacidad de los Niños o menores de edad
+                  </h5>
+                  <p className="tracking-tight font-light text-pretty">
+                    No dirigimos nuestro servicio a menores de 18 años. Si tiene
+                    conocimiento de que un menor nos ha proporcionado datos
+                    personales,{" "}
+                    <span className="font-semibold">
+                      <strong>contáctenos.</strong>
                     </span>
-                    <br />
-                    El sitio web no respalda ni garantiza los resultados de las
-                    apuestas, y cualquier participación en actividades de juego
-                    debe hacerse con responsabilidad. La decisión de utilizar
-                    los servicios de las casas de apuestas enlazadas es
-                    exclusivamente tuya, y debes estar al tanto de los riesgos
-                    asociados.
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    2. Uso del Servicio:
-                  </h6>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Enlaces a Otros Sitios Web
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
-                    El acceso y uso de nuestro servicio están condicionados a la
-                    aceptación de estos términos. Debes tener al menos 18 años
-                    para utilizar nuestro servicio, ya que no permitimos el
-                    acceso a menores de edad.
+                    No tenemos control sobre sitios web de terceros.
+                    Recomendamos revisar sus políticas de privacidad.
                   </p>
                 </div>
                 <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    3. Política de Privacidad:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Tu acceso y uso del servicio también están sujetos a nuestra
-                    Política de Privacidad. Te instamos a leer detenidamente
-                    esta política, ya que describe cómo manejamos tu información
-                    personal.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg even:after:font-semibold">
-                    4. Enlaces a Terceros:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Nuestro servicio puede contener enlaces a sitios web de
-                    terceros. No tenemos control sobre estos sitios y no somos
-                    responsables de su contenido o políticas de privacidad. Te
-                    recomendamos revisar los términos y condiciones de estos
-                    sitios antes de utilizarlos.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    5. Terminación:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Nos reservamos el derecho de suspender o terminar tu acceso
-                    al servicio sin previo aviso si se incumplen estos términos.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    6. Cambios en los Términos y Condiciones:
-                  </h6>
+                  <h5 className="inline-flex tracking-tight text-lg font-semibold">
+                    Cambios a esta Política de Privacidad
+                  </h5>
                   <p className="tracking-tight font-light text-pretty">
                     Actualizaremos esta política y notificaremos cambios a
                     través del servicio o correo electrónico antes de que entren
                     en vigencia. Le recomendamos revisar periódicamente esta
                     Política de Privacidad para estar al tanto de cualquier
                     cambio. Si tiene alguna pregunta o inquietud sobre esta
-                    Política de Privacidad, contáctenos.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    7. Derechos de Autor:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Todo el contenido de nuestro sitio está protegido por
-                    derechos de autor. No se permite la reproducción de ningún
-                    contenido sin nuestro consentimiento por escrito.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    8. Limitación de Responsabilidad:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    No ofrecemos servicios de juego y la información
-                    proporcionada es solo con fines informativos. No somos
-                    responsables de pérdidas reales o percibidas. Cualquier
-                    problema con proveedores de servicios debe ser dirigido
-                    directamente a ellos. No nos responsabilizamos de virus,
-                    malware o incidentes similares.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    9. Privacidad y Compartición de Información:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Tomamos medidas para proteger tu información personal, pero
-                    no nos responsabilizamos por accesos no autorizados,
-                    divulgación no autorizada o eventos similares. Actualmente,
-                    no recopilamos información personal, pero si se proporciona,
-                    nos reservamos el derecho de utilizarla con fines de
-                    marketing y compartirla según sea necesario para protegernos
-                    de fraude o acceso malicioso.
-                  </p>
-                </div>
-                <div>
-                  <h6 className="inline-flex tracking-tight text-lg font-semibold">
-                    10. Términos Generales:
-                  </h6>
-                  <p className="tracking-tight font-light text-pretty">
-                    Proporcionamos enlaces a sitios externos para tu
-                    conveniencia, pero no somos responsables de su contenido ni
-                    de las transacciones con ellos. El registro con un socio de
-                    apuestas a través de nuestro servicio forma un contrato
-                    entre tú y ese socio, sin nuestra responsabilidad en dicho
-                    acuerdo.
+                    Política de Privacidad,{" "}
+                    <span className="font-semibold">
+                      <strong>contáctenos.</strong>
+                    </span>
                   </p>
                 </div>
               </article>
