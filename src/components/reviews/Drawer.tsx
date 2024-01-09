@@ -106,7 +106,7 @@ const Drawer = ({ ...info }) => {
                 </span>
               </a>
             </div>
-            <div className="flex flex-row justify-center items-center mx-auto mt-9 space-x-3 tracking-tight font-extralight ">
+            <div className="flex flex-row justify-center items-center mx-auto mt-9 space-x-4 tracking-tight font-extralight ">
               <TabBtns
                 tabNumber={1}
                 activeTab={activeTab}
