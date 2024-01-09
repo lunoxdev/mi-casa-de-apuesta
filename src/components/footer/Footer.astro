@@ -2,14 +2,13 @@
 import TermsConditions from "./TermsConditions";
 import PrivaCookies from "./PrivaCookies";
 import ResponGambling from "./ResponGambling";
-
 ---
 
-<section
+<footer
   id="footer"
   class="flex flex-col max-w-screen-md mx-auto space-y-8 p-4 my-10 text-[#f0f3ff]"
 >
-  <div class="flex flex-col justify-center items-center space-y-5">
+  <section class="flex flex-col justify-center items-center space-y-5">
     <h2
       class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-90"
     >
@@ -21,7 +20,7 @@ import ResponGambling from "./ResponGambling";
       tecnologías modernas para ofrecer contenido relevante y actualizado,
       buscando proporcionar una experiencia de usuario única.
     </p>
-    <!-- Jugar Ahora -->
+    <!-- Contáctenos-->
     <a
       href="mailto:lunox.code@gmail.com"
       class="relative inline-flex w-40 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
@@ -36,17 +35,17 @@ import ResponGambling from "./ResponGambling";
         Contáctenos
       </span>
     </a>
-  </div>
+  </section>
   <hr />
   <div
     class="flex flex-row w-full font-light px-4 text-center text-sm justify-between items-center"
   >
-  <TermsConditions client:visible/>
-  <PrivaCookies client:visible/>
-  <ResponGambling client:visible/>
+    <TermsConditions client:visible />
+    <PrivaCookies client:visible />
+    <ResponGambling client:visible />
   </div>
   <p class="text-center text-balance px-5 font-light tracking-tight text-sm">
     Derechos Reservados © 2024 - micasadeapuesta.com | Mejores Casas de
     Apuestas
   </p>
-</section>
+</footer>
