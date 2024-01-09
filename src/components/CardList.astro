@@ -1,36 +1,6 @@
 ---
 import Card from "./Card.astro";
-
-interface Review {
-  id: number;
-  name: string;
-  img: string;
-  rating: number;
-  promocode: string;
-  urlregistro: string;
-  urlbono: string;
-}
-
-const reviews: Review[] = [
-  {
-    id: 1,
-    name: "Stake",
-    img: "operators/withbg/stake.svg",
-    rating: 3.5,
-    promocode: "XXXXXX",
-    urlregistro: "https://moisesobando.com/",
-    urlbono: "https://moisesobando.com/",
-  },
-  {
-    id: 2,
-    name: "Betano",
-    img: "operators/withbg/betano.svg",
-    rating: 4.5,
-    promocode: "YYYYYY",
-    urlregistro: "https://moisesobando.com/",
-    urlbono: "https://moisesobando.com/",
-  },
-];
+import { operators } from "../lib/data";
 ---
 
 <section id="lista" class="flex flex-col my-20 space-y-10 w-full p-4">
@@ -40,7 +10,7 @@ const reviews: Review[] = [
     MEJORES CASAS DE APUESTAS
   </h2>
   {
-    reviews.map((info) => (
+    operators.map((info) => (
       <article>
         <Card {...info} />
       </article>
