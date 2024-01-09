@@ -1,5 +1,6 @@
 ---
 import Layout from "../layout/layout.astro";
+import Header from "../components/Header.astro";
 import Intro from "../components/Intro.astro";
 import CardList from "../components/CardList.astro";
 import Carousel from "../components/Carousel.astro";
@@ -11,6 +12,8 @@ import Footer from "../components/footer/Footer.astro";
 ---
 
 <Layout>
+  <!-- Header -->
+  <Header />
   <main>
     <Intro />
     <CardList />
@@ -21,7 +24,5 @@ import Footer from "../components/footer/Footer.astro";
     <!-- <UnderConstruction /> -->
   </main>
   <!-- Footer -->
-  <footer>
-    <Footer />
-  </footer>
+  <Footer />
 </Layout>
