@@ -55,39 +55,39 @@ const HeaderReview = ({ ...info }) => {
       </div>
 
       {/* Nav Bottons */}
-      <nav className=" flex flex-row flex-grow flex-wrap justify-center items-center mx-auto mt-9 space-x-4 tracking-tight font-extralight">
+      <nav className=" flex flex-row flex-grow flex-wrap justify-center items-center mx-auto mt-9 space-x-4 tracking-tight">
         <a
           href="#detalle"
           onClick={() => handleTabClick("#detalle")}
-          className="hover:underline-offset-8 hover:underline hover:font-medium mb-3 sm:mb-0"
+          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
         >
           Detalles
         </a>
         <a
           href="#bonos"
           onClick={() => handleTabClick("#bonos")}
-          className="hover:underline-offset-8 hover:underline hover:font-medium mb-3 sm:mb-0"
+          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
         >
           Bonos
         </a>
         <a
           href="#promociones"
           onClick={() => handleTabClick("#promociones")}
-          className="hover:underline-offset-8 hover:underline hover:font-medium mb-3 sm:mb-0"
+          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
         >
           Promociones
         </a>
         <a
           href="#deportes"
           onClick={() => handleTabClick("#deportes")}
-          className="hover:underline-offset-8 hover:underline hover:font-medium placeholder: mb-3 sm:mb-0"
+          className="hover:underline-offset-8 hover:underline hover:font-semibold placeholder: mb-3 sm:mb-0"
         >
           Deportes
         </a>
         <a
           href="#soporte"
           onClick={() => handleTabClick("#soporte")}
-          className="hover:underline-offset-8 hover:underline hover:font-medium mb-3 sm:mb-0"
+          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
         >
           Soporte
         </a>
