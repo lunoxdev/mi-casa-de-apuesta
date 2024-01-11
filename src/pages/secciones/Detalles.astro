@@ -1,5 +1,8 @@
 ---
 import StarRating from "../../components/icons/StarRating.astro";
+import Android from "../../components/icons/Android.astro";
+import IOS from "../../components/icons/IOS.astro";
+import WebApp from "../../components/icons/WebApp.astro";
 
 const { ...info } = Astro.props;
 ---
@@ -57,12 +60,12 @@ const { ...info } = Astro.props;
   >
     <div class="flex flex-row justify-start items-end w-full gap-2">
       <h2
-        class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff]"
+        class="uppercase text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
       >
         ¿Por qué {info.name}?
       </h2>
-      <div class="flex flex-row justify-center items-center text-xl">
-        <StarRating w={"20"} h={"20"} />
+      <div class="flex flex-row justify-center items-center text-lg">
+        <StarRating w={"19"} h={"19"} />
         <p class="text-end">
           {info.rating}
         </p>
@@ -82,6 +85,45 @@ const { ...info } = Astro.props;
       emoción de apostar en más de mil eventos deportivos y una amplia variedad
       de juegos.
     </p>
+    <p class="text-pretty tracking-tight font-light">
+      Si te gusta el deporte, seguro has notado la presencia destacada de
+      <strong>{info.name}</strong>. No solo es un gigante en la industria del
+      juego, sino que también una opción intrigante en apuestas y casinos en
+      línea. En <strong>micasadeapuesta.com</strong>, hemos examinado en detalle
+      lo que hace única a esta plataforma. Revisa cada una de nuestras secciones
+      en la reseña para tomar una desición informada y actualizada.
+    </p>
+    <p class="text-pretty tracking-tight font-light">
+      Descubre una experiencia única de apuestas en
+      <strong>{info.name}</strong>, donde en cada evento deportivo te espera la
+      emoción de apostar en más de mil eventos deportivos y una amplia variedad
+      de juegos.
+    </p>
+  </section>
+
+  <!-- Apps -->
+  <section
+    class="flex flex-col max-w-screen-lg w-full p-4 space-y-2 text-[#f0f3ff] text-opacity-90"
+  >
+    <h2
+      class="text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
+    >
+      DISPOSITIVOS MÓVILES
+    </h2>
+    <div class="flex flex-row flex-wrap gap-3">
+      <div class="flex flex-row space-x-1">
+        <Android />
+        <p>Android</p>
+      </div>
+      <div class="flex flex-row space-x-1">
+        <IOS />
+        <p>iPhone</p>
+      </div>
+      <div class="flex flex-row space-x-1">
+        <WebApp />
+        <p>Aplicativo web</p>
+      </div>
+    </div>
   </section>
 
   <!-- Advantage and Disadvantages -->
@@ -91,7 +133,9 @@ const { ...info } = Astro.props;
     <div
       class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
-      <h3 class="inline-flex tracking-tight text-2xl font-semibold mb-2">
+      <h3
+        class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
+      >
         Ventajas
       </h3>
       <div>
@@ -110,7 +154,9 @@ const { ...info } = Astro.props;
     <div
       class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
-      <h3 class="inline-flex tracking-tight text-2xl font-semibold mb-2">
+      <h3
+        class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
+      >
         Desventajas
       </h3>
       <div>
