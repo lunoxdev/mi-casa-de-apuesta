@@ -32,21 +32,23 @@ const { ...info } = Astro.props;
         </div>
       </div>
       <figcaption
-        class="uppercase text-center font-semibold text-sm bg-black z-10 py-1 text-[#f0f3ff]"
+        class="uppercase text-center font-semibold bg-black z-10 py-1 text-[#f0f3ff]"
       >
         {info.name}
       </figcaption>
     </figure>
     <!-- Rating & Devices -->
-    <div class="flex flex-row justify-between mt-4 mb-2">
-      <div class="flex gap-1 flex-row mx-auto">
-        <StarRating w={"19"} h={"19"} />
+    <div
+      class="flex flex-row justify-center items-center mx-auto space-x-2 mt-4 mb-2"
+    >
+      <div class="flex flex-row justify-start items-end mx-auto">
+        <StarRating w={"22"} h={"26"} />
         {info.rating}
       </div>
-      <div class="flex flex-row">
-        <Android />
-        <IOS />
-        <WebApp />
+      <div class="flex flex-row justify-center items-center mx-auto">
+        <Android w={"16"} h={"16"} />
+        <IOS w={"18"} h={"18"} />
+        <WebApp w={"16"} h={"16"} />
       </div>
     </div>
   </section>

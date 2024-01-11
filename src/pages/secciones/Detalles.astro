@@ -64,8 +64,8 @@ const { ...info } = Astro.props;
       >
         ¿Por qué {info.name}?
       </h2>
-      <div class="flex flex-row justify-center items-center text-lg">
-        <StarRating w={"19"} h={"19"} />
+      <div class="flex flex-row justify-center items-end">
+        <StarRating w={"22"} h={"26"} />
         <p class="text-end">
           {info.rating}
         </p>
@@ -110,17 +110,17 @@ const { ...info } = Astro.props;
     >
       DISPOSITIVOS MÓVILES
     </h2>
-    <div class="flex flex-row flex-wrap gap-3">
-      <div class="flex flex-row space-x-1">
-        <Android />
+    <div class="flex flex-row justify-start items-start flex-wrap gap-3">
+      <div class="flex flex-row justify-start items-center">
+        <Android w={"24"} h={"16"} />
         <p>Android</p>
       </div>
-      <div class="flex flex-row space-x-1">
-        <IOS />
+      <div class="flex flex-row justify-start items-center">
+        <IOS w={"24"} h={"18"} />
         <p>iPhone</p>
       </div>
-      <div class="flex flex-row space-x-1">
-        <WebApp />
+      <div class="flex flex-row justify-start items-center">
+        <WebApp w={"22"} h={"16"} />
         <p>Aplicativo web</p>
       </div>
     </div>
