@@ -1,5 +1,5 @@
 ---
-import Review from "../components/reviews/Review";
+import HeaderReview from "../components/reviews/HeaderReview";
 import Layout from "../layout/layout.astro";
 import { operators } from "../lib/data";
 
@@ -11,321 +11,52 @@ const { ...info } = operator;
 
 <Layout>
   <>
-  <Review {...info} client:load />
-  <h1>{info.name}</h1>
-  <section id="detalle">
-    <h2>Contenido de la Opción 1</h2>
-    <!-- Agrega aquí el contenido específico para la Opción 1 -->
-    Claro, aquí tienes un texto largo para tus necesidades: En los confines del universo,
-    donde las estrellas destellan como joyas en la negrura cósmica, se despliega
-    un vasto tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias
-    danzan en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo. Claro, aquí
-    tienes un texto largo para tus necesidades: En los confines del universo, donde
-    las estrellas destellan como joyas en la negrura cósmica, se despliega un vasto
-    tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias danzan
-    en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo.
-  </section>
-
-  <section id="bonos">
-    <h2>Contenido de la Opción 2</h2>
-    <!-- Agrega aquí el contenido específico para la Opción 2 -->
-    Claro, aquí tienes un texto largo para tus necesidades: En los confines del universo,
-    donde las estrellas destellan como joyas en la negrura cósmica, se despliega
-    un vasto tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias
-    danzan en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo. Claro, aquí
-    tienes un texto largo para tus necesidades: En los confines del universo, donde
-    las estrellas destellan como joyas en la negrura cósmica, se despliega un vasto
-    tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias danzan
-    en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo.
-  </section>
-
-  <section id="promociones">
-    <h2>Contenido de la Opción 3</h2>
-    <!-- Agrega aquí el contenido específico para la Opción 3 -->
-    Claro, aquí tienes un texto largo para tus necesidades: En los confines del universo,
-    donde las estrellas destellan como joyas en la negrura cósmica, se despliega
-    un vasto tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias
-    danzan en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo. Claro, aquí
-    tienes un texto largo para tus necesidades: En los confines del universo, donde
-    las estrellas destellan como joyas en la negrura cósmica, se despliega un vasto
-    tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias danzan
-    en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo.
-  </section>
-
-  <section id="deportes">
-    <h2>Contenido de la Opción 3</h2>
-    <!-- Agrega aquí el contenido específico para la Opción 3 -->
-    Claro, aquí tienes un texto largo para tus necesidades: En los confines del universo,
-    donde las estrellas destellan como joyas en la negrura cósmica, se despliega
-    un vasto tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias
-    danzan en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo. Claro, aquí
-    tienes un texto largo para tus necesidades: En los confines del universo, donde
-    las estrellas destellan como joyas en la negrura cósmica, se despliega un vasto
-    tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias danzan
-    en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo.
-  </section>
-
-  <section id="soporte">
-    <h2>Contenido de la Opción 3</h2>
-    <!-- Agrega aquí el contenido específico para la Opción 3 -->
-    Claro, aquí tienes un texto largo para tus necesidades: En los confines del universo,
-    donde las estrellas destellan como joyas en la negrura cósmica, se despliega
-    un vasto tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias
-    danzan en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo. Claro, aquí
-    tienes un texto largo para tus necesidades: En los confines del universo, donde
-    las estrellas destellan como joyas en la negrura cósmica, se despliega un vasto
-    tapiz de misterios y maravillas. En la inmensidad del espacio, galaxias danzan
-    en una coreografía cósmica, entrelazando sus brazos espirales en una sinfonía
-    que ha perdurado a lo largo de eones. Nebulosas resplandecen con colores etéreos,
-    mientras que planetas y lunas orbitan en una danza celestial. En uno de esos
-    planetas, en un rincón remoto de la galaxia, la vida ha florecido en formas inimaginables.
-    Bosques exuberantes ondean con la brisa de mundos lejanos, océanos interminables
-    susurran secretos antiguos, y montañas majestuosas tocan los cielos estrellados.
-    En este rincón del cosmos, la diversidad es la norma, y cada criatura, desde
-    las más diminutas hasta las más imponentes, contribuye a la rica tapestry de
-    la existencia. En el corazón de este mundo, las civilizaciones han surgido y
-    caído, dejando tras de sí ruinas que cuentan historias de conquistas, descubrimientos
-    y tragedias. Los seres inteligentes han explorado los confines de su hogar planetario,
-    lanzándose a los cielos en naves espaciales para explorar otros mundos y desentrañar
-    los secretos del universo. Han construido ciudades que se alzan como testamentos
-    a su ingenio y ambición, conectando a comunidades a lo largo de vastas distancias.
-    Sin embargo, incluso en la vastedad del cosmos, la humanidad no está exenta de
-    desafíos. Enfrentan dilemas éticos y preguntas existenciales, luchan por la supervivencia
-    en un entorno cósmico implacable y buscan respuestas a preguntas que han intrigado
-    a filósofos y científicos a lo largo de la historia. ¿Cuál es el propósito de
-    la existencia? ¿Hay vida más allá de este rincón del universo? ¿Qué secretos
-    ocultan las estrellas distantes? A medida que la humanidad continúa su viaje
-    en el vasto cosmos, se enfrenta a nuevas fronteras y oportunidades. Exploradores
-    espaciales trazan rutas a través de sistemas estelares desconocidos, científicos
-    desentrañan los misterios de la materia oscura y la energía oscura, y artistas
-    capturan la esencia del cosmos en obras que trascienden el tiempo y el espacio.
-    En cada paso, la humanidad deja su huella en la historia cósmica, una pequeña
-    pero significativa chispa en el infinito resplandor del universo.
-  </section>
+    <HeaderReview {...info} client:load />
+    <section
+      id="detalle"
+      class="my-8 flex flex-col max-w-screen-lg w-full p-4 mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
+    >
+      <h1
+        class="inline-flex mx-auto uppercase animate-background-shine bg-[linear-gradient(110deg,#939393,45%,#f0f3ff,65%,#939393)] bg-[length:250%_100%] bg-clip-text text-transparent text-5xl sm:text-7xl font-semibold"
+      >
+        {info.name}
+      </h1>
+      <div
+        class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 mx-auto h-auto py-10 px-5 border gap-5 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <div
+          class="flex flex-col grow w-1/3 sm:w-full items-center pl-5 text-pretty space-y-3"
+        >
+          <p class="text-4xl font-semibold">+70,000</p>
+          <p class="text-xl text-center font-light tracking-tight">
+            Jugadores activos
+          </p>
+        </div>
+        <div
+          class="flex flex-col grow w-1/3 sm:w-full items-center pl-5 text-balance space-y-3"
+        >
+          <p class="text-4xl font-semibold">62</p>
+          <p class="text-xl text-center font-light tracking-tight">
+            Países en cobertura
+          </p>
+        </div>
+        <div
+          class="flex flex-col grow w-1/3 sm:w-full items-center pl-5 text-pretty space-y-3"
+        >
+          <p class="text-4xl font-semibold">49</p>
+          <p class="text-xl text-center font-light tracking-tight">
+            Idiomas soportados
+          </p>
+        </div>
+        <div
+          class="flex flex-col grow w-1/3 sm:w-full items-center pl-5 text-pretty space-y-3"
+        >
+          <p class="text-4xl font-semibold">160</p>
+          <p class="text-xl text-center font-light tracking-tight">
+            Métodos de pago
+          </p>
+        </div>
+      </div>
+    </section>
   </>
 </Layout>
