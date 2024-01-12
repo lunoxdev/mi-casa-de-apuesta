@@ -1,0 +1,163 @@
+---
+import PromoCode from "../../components/reviews/PromoCodeReview";
+
+const { ...info } = Astro.props;
+---
+
+<>
+  <!-- ¡Aumenta tus ganancias! -->
+  <section
+    id="promociones"
+    class="my-14 flex flex-col w-full mx-auto space-y-5 text-[#f0f3ff] text-opacity-90"
+  >
+    <h2
+      class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+    >
+      ¡Aumenta tus ganancias!
+    </h2>
+    <div>
+      <article class="flex flex-row flex-wrap sm:flex-nowrap w-full gap-10">
+        <div
+          class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+        >
+          <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+          ></span>
+          <div
+            class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-5 px-5 text-sm font-medium text-white backdrop-blur-3xl"
+          >
+            <div
+              class="flex flex-col justify-center items-center mx-auto p-4 space-y-3 text-[#f0f3ff] text-opacity-90"
+            >
+              <h3
+                class="inline-flex underline underline-offset-8 text-center tracking-tight text-xl font-semibold"
+              >
+                Código Promocional
+              </h3>
+              <p class="text-pretty text-center p-2 tracking-tight font-light">
+                Ingresa este código Promocional para obtener un porcentaje
+                adicional en tu depósito. No dejes pasar la oportunidad de
+                mejorar tu experiencia de juego y aumentar tus fondos.
+              </p>
+              <PromoCode {...info} client:idle />
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+        >
+          <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+          ></span>
+          <div
+            class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-10 px-5 text-sm font-medium text-white backdrop-blur-3xl"
+          >
+            <div
+              class="flex flex-col justify-center items-center mx-auto p-4 space-y-3 text-[#f0f3ff] text-opacity-90"
+            >
+              <h3
+                class="inline-flex underline underline-offset-8 text-center tracking-tight text-xl font-semibold"
+              >
+                Bono de Bienvenida
+              </h3>
+              <p class="text-pretty text-center tracking-tight font-light">
+                ¡Regístrese y reciba un bono del 200% de hasta el 100 USD con su
+                primer depósito!
+              </p>
+              <p class="text-pretty text-center tracking-tight font-light">
+                Puede estar sujeta a un rollover. Revisa los términos y
+                condiciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div
+        class="w-full mt-10 flex flex-col justify-start items-start text-start"
+      >
+        <div class="space-y-1 text-[#f0f3ff] text-opacity-90">
+          <p class="tracking-tight font-light text-pretty">
+            <span
+              class="inline-flex font-semibold underline underline-offset-4 mb-1"
+            >
+              IMPORTANTE:
+            </span>
+            <br />
+            Después de realizar tu primer depósito, recibirás el
+            <strong>Bono de Bienvenida</strong> automáticamente. Sin embargo, si
+            no lo recibes, debes ponerte en contacto con el soporte. Luego, busca
+            la sección de <strong>Promociones o Código Promocional.</strong> Esta
+            área suele estar ubicada en la página principal o en el menú de tu cuenta.
+            Una vez allí, introduce tu <strong>Código Promocional</strong>
+            que puedes encontrar en la reseña de nuestra pagina. Confirma y reclama
+            tu oferta para aprovechar al máximo tu bonificación. Recuerda revisar
+            siempre los términos y condiciones para conocer cualquier requisito o
+            restricción asociada con la promoción.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonos, sorteos y mas -->
+  <section
+    class="flex flex-col w-full mx-auto space-y-3 text-[#f0f3ff] text-opacity-90"
+  >
+    <article class="text-[#f0f3ff] text-opacity-90">
+      <h3 class="font-semibold tracking-tight text-lg">BONOS, SORTEOS Y MÁS</h3>
+      <div class="space-y-1">
+        <p class="text-pretty tracking-tight font-light">
+          Con su enfoque en la innovación y la variedad, <strong
+            >{info.name}</strong
+          > ofrece constantemente nuevas oportunidades para ganar y disfrutar. Al
+          unirte, disfrutarás de eventos futbolísticos con promociones, participarás
+          en experiencias únicas como "Become a Legend" y recibirás sorpresas especiales
+          en el "New Year's Luck".
+        </p>
+        <p class="text-pretty tracking-tight font-light">
+          Además, cada día es tu día de suerte con recompensas diarias y
+          competiciones emocionantes como la "Batalla de las Combinadas", la
+          "Esports Era" y más.
+        </p>
+      </div>
+    </article>
+
+    <!-- Rollover -->
+    <article class="text-[#f0f3ff] text-opacity-90">
+      <h3 class="font-semibold tracking-tight text-lg">ROLLOVER</h3>
+      <div class="space-y-1">
+        <p class="text-pretty tracking-tight font-light">
+          Se refiere a la cantidad de <strong>veces que debes apostar</strong>
+          un bono antes de poder retirar las ganancias asociadas con ese bono. En
+          otras palabras, es un requisito de apuesta. Por ejemplo, si tienes un bono
+          de $100 con un rollover de 10x, necesitarías realizar apuestas por un total
+          de $1,000 antes de poder retirar las ganancias.
+        </p>
+        <p class="text-pretty tracking-tight font-light">
+          ¡Entender el rollover es clave para aprovechar al máximo las ofertas
+          de bonificación en las casas de apuestas!
+        </p>
+      </div>
+    </article>
+
+    <!-- Bonos Casino -->
+    <article class="text-[#f0f3ff] text-opacity-90">
+      <h3 class="font-semibold tracking-tight text-lg">BONOS CASINO</h3>
+      <div class="space-y-1">
+        <p class="text-pretty tracking-tight font-light">
+          Sumérgete en un universo emocionante de bonos de casino en
+          <strong>{info.name}</strong>, diseñados para elevar tu experiencia de
+          juego. Disfruta de un Paquete de Bienvenida generoso que te brindará
+          una ventaja extraordinaria desde el primer momento.
+        </p>
+        <p class="text-pretty tracking-tight font-light">
+          Adicionalmente, descubre las recompensas exclusivas del programa de
+          fidelidad VIP de <strong>{info.name}</strong>, donde tu lealtad se
+          traduce en beneficios especiales. Sumérgete de lleno en la acción y
+          saca el máximo provecho de estos atractivos bonos de casino en
+          <strong>{info.name}</strong>.
+        </p>
+      </div>
+    </article>
+  </section>
+</>
