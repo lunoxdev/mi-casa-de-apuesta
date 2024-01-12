@@ -3,6 +3,7 @@ import Layout from "../layout/layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
 import Detalles from "./secciones/Detalles.astro";
+import Promociones from "./secciones/Promociones.astro";
 
 const operator = operators.find((operator) => operator.name === "Stake")!;
 if (!operator) return Astro.redirect("/404");
@@ -12,7 +13,15 @@ const { ...info } = operator;
 
 <Layout>
   <>
+    <!-- Header Review -->
     <HeaderReview {...info} client:load />
-    <Detalles {...info} />
+
+    <!-- Content -->
+    <main class="max-w-screen-lg p-4">
+      <Detalles {...info} />
+      <Promociones {...info} />
+    </main>
+
+    <!-- Footer -->
   </>
 </Layout>
