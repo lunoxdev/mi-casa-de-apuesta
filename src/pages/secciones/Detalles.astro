@@ -11,7 +11,7 @@ const { ...info } = Astro.props;
   <!-- Stadistics -->
   <section
     id="detalle"
-    class="my-8 flex flex-col max-w-screen-lg w-full p-4 mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
+    class="my-14 flex flex-col w-full mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
   >
     <h1
       class="inline-flex mx-auto uppercase animate-background-shine bg-[linear-gradient(110deg,#939393,45%,#f0f3ff,65%,#939393)] bg-[length:250%_100%] bg-clip-text text-transparent text-4xl sm:text-6xl font-semibold"
@@ -56,14 +56,14 @@ const { ...info } = Astro.props;
 
   <!-- Why choose this Operator? -->
   <section
-    class="flex flex-col max-w-screen-lg w-full p-4 space-y-2 text-[#f0f3ff] text-opacity-90"
+    class="my-14 flex flex-col w-full space-y-2 text-[#f0f3ff] text-opacity-90"
   >
     <div class="flex flex-row justify-start items-end w-full gap-2">
-      <h2
+      <h3
         class="uppercase text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
       >
         ¿Por qué {info.name}?
-      </h2>
+      </h3>
       <div class="flex flex-row justify-center items-end">
         <StarRating w={"22"} h={"26"} />
         <p class="text-end">
@@ -103,14 +103,14 @@ const { ...info } = Astro.props;
 
   <!-- Apps -->
   <section
-    class="flex flex-col max-w-screen-lg w-full p-4 space-y-2 text-[#f0f3ff] text-opacity-90"
+    class="my-14 flex flex-col w-full space-y-2 text-[#f0f3ff] text-opacity-90"
   >
-    <h2
+    <h3
       class="text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
     >
       DISPOSITIVOS MÓVILES
-    </h2>
-    <div class="flex flex-row justify-start items-start flex-wrap gap-3">
+    </h3>
+    <div class="flex flex-row justify-start items-start flex-wrap gap-1">
       <div class="flex flex-row justify-start items-center">
         <Android w={"24"} h={"16"} />
         <p>Android</p>
@@ -128,7 +128,7 @@ const { ...info } = Astro.props;
 
   <!-- Advantage and Disadvantages -->
   <section
-    class="my-8 flex flex-row flex-wrap sm:flex-nowrap max-w-screen-lg w-full p-4 mx-auto gap-10 text-[#f0f3ff] text-opacity-90"
+    class="my-14 flex flex-row flex-wrap sm:flex-nowrap w-full mx-auto gap-10 text-[#f0f3ff] text-opacity-90"
   >
     <div
       class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
