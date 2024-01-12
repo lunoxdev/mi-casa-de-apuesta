@@ -64,18 +64,18 @@ const HeaderReview = ({ ...info }) => {
           Detalles
         </a>
         <a
-          href="#bonos"
-          onClick={() => handleTabClick("#bonos")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
-        >
-          Bonos
-        </a>
-        <a
           href="#promociones"
           onClick={() => handleTabClick("#promociones")}
           className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
         >
           Promociones
+        </a>
+        <a
+          href="#pagos"
+          onClick={() => handleTabClick("#bonos")}
+          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
+        >
+          Pagos
         </a>
         <a
           href="#deportes"
