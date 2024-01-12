@@ -1,0 +1,193 @@
+---
+const { ...info } = Astro.props;
+---
+
+<section>
+  <!-- Payments Methods -->
+  <article
+    id="pagos"
+    class="my-14 flex flex-col w-full mx-auto space-y-10 text-[#f0f3ff] text-opacity-90"
+  >
+    <h2
+      class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
+    >
+      Métodos de depósitos y retiros de {info.name}
+    </h2>
+    <div class="space-y-2">
+      <p class="text-pretty tracking-tight font-light">
+        {info.name} nos ofrece una amplia variedad de métodos de pago, que abarcan
+        desde criptomonedas hasta opciones tradicionales. Además, se actualiza regularmente
+        para incluir nuevas alternativas, asegurando así una experiencia siempre
+        actualizada y adaptada a las necesidades cambiantes.
+      </p>
+      <p class="text-pretty tracking-tight font-light">
+        A continuación, te presentamos las opciones más populares entre los
+        jugadores en la actualidad, destacando por su rapidez, facilidad y
+        seguridad en las transacciones.
+      </p>
+    </div>
+
+    <!-- Payments Methods -->
+    <div
+      class="flex flex-row flex-wrap sm:flex-nowrap w-full gap-10 mx-auto text-[#f0f3ff] text-opacity-90"
+    >
+      <!-- Tradicional Payments -->
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <h3
+          class="inline-flex mx-auto text-center text-pretty tracking-tight text-xl sm:text-2xl font-semibold mb-2"
+        >
+          Métodos más comúnes
+        </h3>
+        <div
+          class="flex flex-wrap justify-center items-center mx-auto p-2 gap-1"
+        >
+          <img src="/payments/PayPal.svg" alt="Pagos" width="52" height="40" />
+          <img
+            src="/payments/american-express.svg"
+            alt="Pagos"
+            width="52"
+            height="40"
+          />
+          <img
+            src="/payments/mastercard.svg"
+            alt="Pagos"
+            width="44"
+            height="44"
+          />
+          <img src="/payments/shopify.svg" alt="Pagos" width="52" height="40" />
+          <img src="/payments/skrill.svg" alt="Pagos" width="52" height="40" />
+          <img src="/payments/visa.svg" alt="Pagos" width="52" height="40" />
+          <img src="/payments/wepay.svg" alt="Pagos" width="52" height="40" />
+          <img src="/payments/PayPal.svg" alt="Pagos" width="52" height="40" />
+          <img src="/payments/shopify.svg" alt="Pagos" width="52" height="40" />
+        </div>
+      </div>
+
+      <!-- Crypto Payments -->
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <h3
+          class="inline-flex mx-auto text-center text-pretty tracking-tight text-xl sm:text-2xl font-semibold mb-2"
+        >
+          Criptomonedas más comúnes
+        </h3>
+        <div
+          class="flex flex-wrap justify-center items-center mx-auto p-2 gap-3"
+        >
+          <img
+            src="/payments/crypto/dai.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/litecoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/bitcoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/tether.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/dai.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/litecoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/bitcoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/tether.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/litecoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/bitcoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/dai.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+          <img
+            src="/payments/crypto/litecoin.svg"
+            alt="Pagos"
+            width="32"
+            height="32"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full mt-10 flex flex-col justify-start items-start text-start"
+    >
+      <div class="space-y-1 text-[#f0f3ff] text-opacity-90">
+        <p class="tracking-tight font-light text-pretty">
+          <span
+            class="inline-flex font-semibold underline underline-offset-4 mb-1"
+          >
+            IMPORTANTE:
+          </span>
+          <br />
+          Explora otros métodos de pago al hacer clic en “Reclamar Bono” usando el
+          código promocional o al hacer clic en “Jugar Ahora”.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tiempo de Acreditaciòn -->
+    <div class="flex flex-col w-full mx-auto text-[#f0f3ff] text-opacity-90">
+      <h3 class="font-semibold tracking-tight text-lg">
+        TIEMPOS DE ACREDITACIÓN
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight font-light">
+          En <strong>{info.name}</strong>, tu comodidad es una prioridad. Los
+          tiempos de acreditación son rápidos y eficientes, permitiéndote
+          disfrutar de tus ganancias prácticamente al instante. Trabajan
+          constantemente en optimizar los procesos para minimizar los tiempos de
+          espera y asegurar una experiencia de usuario sin contratiempos.
+        </p>
+        <p class="text-pretty tracking-tight font-light">
+          Puedes confiar en que tu experiencia no se va a ver afectada por
+          largos periodos de espera.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
