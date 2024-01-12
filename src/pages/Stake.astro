@@ -5,6 +5,7 @@ import HeaderReview from "../components/reviews/HeaderReview";
 import Detalles from "./secciones/Detalles.astro";
 import Promociones from "./secciones/Promociones.astro";
 import Pagos from "./secciones/Pagos.astro";
+import Deportes from "./secciones/Deportes.astro";
 
 const operator = operators.find((operator) => operator.name === "Stake")!;
 if (!operator) return Astro.redirect("/404");
@@ -22,6 +23,7 @@ const { ...info } = operator;
       <Detalles {...info} />
       <Promociones {...info} />
       <Pagos {...info} />
+      <Deportes {...info} />
     </main>
 
     <!-- Footer -->
