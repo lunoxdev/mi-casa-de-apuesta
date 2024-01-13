@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           </a>
         </div>
         <nav className="hidden md:flex flex-grow basis-0 w-full space-x-5 md:justify-center">
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#lista">
+          <a className="hover:underline-offset-8 hover:underline font-light" href="#operadores">
             Lista de Operadores
           </a>
           <a className="hover:underline-offset-8 hover:underline font-light" href="#apostar">
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             isMobileMenuVisible ? 'flex' : 'hidden'
           } bg-black backdrop-blur-3xl w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 min-h-screen place-content-center`}
         >
-          <a className="my-2 hover:underline hover:underline-offset-8" href="#lista" onClick={closeMobileMenu}>
+          <a className="my-2 hover:underline hover:underline-offset-8" href="#operadores" onClick={closeMobileMenu}>
             Lista de Operadores
           </a>
           <a className="my-2 hover:underline hover:underline-offset-8" href="#apostar" onClick={closeMobileMenu}>
