@@ -4,7 +4,7 @@ const { ...info } = Astro.props;
 
 <section
   id="soporte"
-  class="my-8 flex flex-col w-full mx-auto space-y-10 text-[#f0f3ff] text-opacity-90"
+  class="my-8 flex flex-col w-full mx-auto space-y-16 text-[#f0f3ff] text-opacity-90"
 >
   <h2
     class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
@@ -22,46 +22,46 @@ const { ...info } = Astro.props;
       es necesario, sino que también diferencia a una casa de apuestas.
     </p>
     <p class="text-pretty tracking-tight font-light">
-      Estos son los canales de servicio al cliente que se ofrecen:
+      Estos son los canales de servicio al cliente que se ofrecen en <strong
+        >{info.name}</strong
+      >:
     </p>
   </div>
 
   <!-- Support Channels -->
   <div
-    class="flex flex-row justify-center items-center gap-5 sm:gap-10 w-full mx-auto"
+    class="flex flex-row flex-wrap sm:flex-nowrap justify-center items-center gap-5 px-20 w-full mx-auto"
   >
-    <div class="flex flex-col justify-center items-center space-y-3">
-      <img
-        src="/support/live-chat.svg"
-        alt="Icono de chat en vivo"
-        width="44"
-        height="40"
-      />
-      <p class="text-center text-wrap text-base font-light">
-        Chat en vivo 24/7
-      </p>
-    </div>
-    <div class="flex flex-col justify-center items-center space-y-3">
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
         src="/support/email-operator.svg"
         alt="Icono de email del operador"
-        width="44"
-        height="44"
+        width="40"
+        height="40"
       />
-      <p class="text-center text-wrap text-base font-light">
+      <p class="text-center text-wrap font-light">
         {info.email}
       </p>
     </div>
-    <div class="flex flex-col justify-center items-center space-y-3">
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
         src="/support/phone.svg"
         alt="Icono de telefono de la casa de apuestas"
         width="40"
         height="40"
       />
-      <p class="text-center text-wrap text-base font-light">
+      <p class="text-center text-wrap font-light">
         {info.phone}
       </p>
+    </div>
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/live-chat.svg"
+        alt="Icono de chat en vivo"
+        width="40"
+        height="36"
+      />
+      <p class="text-center text-wrap font-light">Chat en vivo 24/7</p>
     </div>
   </div>
 
