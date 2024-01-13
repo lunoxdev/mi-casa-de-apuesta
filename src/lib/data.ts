@@ -17,14 +17,25 @@ export interface Operator {
     nameios?: string;
     nameweb?: string;
   }[];
+  payments?: {
+    paypal?: string;
+    americanexpress?: string;
+    mastercard?: string;
+    shopify?: string;
+    skrill?: string;
+    visa?: string;
+    litecoin?: string;
+    bitcoin?: string;
+
+  }[];
 }
 
 export const operators: Operator[] = [
   {
     id: 1,
-    name: "Stake",
+    name: "Example",
     img: "operators/withbg/stake.svg",
-    rating: 3.5,
+    rating: 4.9,
     promocode: "XXXXXX",
     urlregistro: "https://moisesobando.com/",
     urlbono: "https://moisesobando.com/",
@@ -39,6 +50,18 @@ export const operators: Operator[] = [
         nameios: "iPhone",
         webapp: "/devices/phone.svg",
         nameweb: "Aplicación Web",
+      },
+    ],
+    payments: [
+      {
+        paypal: "/payments/common/paypal.svg",
+        americanexpress: "/payments/common/american-express.svg",
+        mastercard: "/payments/common/mastercard.svg",
+        shopify: "/payments/common/shopify.svg",
+        skrill: "/payments/common/skrill.svg",
+        visa: "/payments/common/visa.svg",
+        litecoin: "/payments/crypto/litecoin.svg",
+        bitcoin: "/payments/crypto/bitcoin.svg",
       },
     ],
   },
@@ -59,6 +82,17 @@ export const operators: Operator[] = [
         nameandroid: "Android",
         webapp: "/devices/phone.svg",
         nameweb: "Aplicación Web",
+      },
+    ],
+    payments: [
+      {
+        paypal: "/payments/common/paypal.svg",
+        mastercard: "/payments/common/mastercard.svg",
+        skrill: "/payments/common/skrill.svg",
+        visa: "/payments/common/visa.svg",
+        americanexpress: "/payments/common/american-express.svg",
+        litecoin: "/payments/crypto/litecoin.svg",
+        bitcoin: "/payments/crypto/bitcoin.svg",
       },
     ],
   },
