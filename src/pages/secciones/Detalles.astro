@@ -3,6 +3,7 @@ import StarRating from "../../components/icons/StarRating.astro";
 import Android from "../../components/icons/Android.astro";
 import IOS from "../../components/icons/IOS.astro";
 import WebApp from "../../components/icons/WebApp.astro";
+import { CountUp } from "../../components/reviews/CountUp";
 
 const { ...info } = Astro.props;
 ---
@@ -22,7 +23,7 @@ const { ...info } = Astro.props;
       class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 mx-auto h-auto space-y-5 sm:space-y-0 py-10 px-5 border gap-5 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
       <div class="flex flex-col grow w-full items-center text-pretty space-y-3">
-        <p class="text-4xl sm:text-5xl font-semibold">+70,000</p>
+        <CountUp client:visible initial={0} final={70000} />
         <p class="text-lg sm:text-xl text-center font-light tracking-tight">
           Jugadores activos
         </p>
@@ -30,7 +31,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full items-center pl-5 text-balance space-y-3"
       >
-        <p class="text-4xl sm:text-5xl font-semibold">62</p>
+        <CountUp client:visible initial={0} final={62} showPlusSign={false} />
         <p class="text-lg sm:text-xl text-center font-light tracking-tight">
           Países en cobertura
         </p>
@@ -38,7 +39,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full items-center pl-5 text-pretty space-y-3"
       >
-        <p class="text-4xl sm:text-5xl font-semibold">49</p>
+        <CountUp client:visible initial={0} final={49} showPlusSign={false} />
         <p class="text-lg sm:text-xl text-center font-light tracking-tight">
           Idiomas soportados
         </p>
@@ -46,7 +47,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full items-center pl-5 text-pretty space-y-3"
       >
-        <p class="text-4xl sm:text-5xl font-semibold">160</p>
+        <CountUp client:visible initial={0} final={160} />
         <p class="text-lg sm:text-xl text-center font-light tracking-tight">
           Métodos de pago
         </p>
