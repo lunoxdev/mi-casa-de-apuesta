@@ -6,6 +6,9 @@ export interface Operator {
     promocode: string;
     urlregistro: string;
     urlbono: string;
+    email: string;
+    phone: string;
+    license: string;
   }
   
   export const operators: Operator[] = [
@@ -17,6 +20,9 @@ export interface Operator {
       promocode: "XXXXXX",
       urlregistro: "https://moisesobando.com/",
       urlbono: "https://moisesobando.com/",
+      email: "ayuda@operador.com",
+      phone: "+000 00000000",
+      license: "Nombre de la licencia"
     },
     {
       id: 2,
@@ -26,5 +32,8 @@ export interface Operator {
       promocode: "YYYYYY",
       urlregistro: "https://moisesobando.com/",
       urlbono: "https://moisesobando.com/",
+      email: "ayuda@operador.com",
+      phone: "+000 00000000",
+      license: "Nombre de la licencia"
     },
   ];
