@@ -1,0 +1,104 @@
+---
+import OurExpert from "../../components/OurExpert.astro";
+
+const { ...info } = Astro.props;
+---
+
+<section
+  id="soporte"
+  class="my-8 flex flex-col w-full mx-auto space-y-16 text-[#f0f3ff] text-opacity-90"
+>
+  <h2
+    class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
+  >
+    Servicio al cliente
+  </h2>
+  <div class="space-y-2 text-center">
+    <p class="text-pretty tracking-tight font-light">
+      El servicio al cliente en las casas de apuestas es esencial para construir
+      confianza y credibilidad. Un soporte eficiente resuelve problemas
+      rápidamente, mejora la experiencia del usuario y cumple con regulaciones.
+      Además, promueve el juego responsable al ofrecer información sobre límites
+      y autoexclusión. La interacción constante proporciona feedback valioso
+      para mejoras. En un mercado competitivo, un servicio excepcional no solo
+      es necesario, sino que también diferencia a una casa de apuestas.
+    </p>
+    <p class="text-pretty tracking-tight font-light">
+      Estos son los canales de servicio al cliente que se ofrecen en <strong
+        >{info.name}</strong
+      >:
+    </p>
+  </div>
+
+  <!-- Support Channels -->
+  <div
+    class="flex flex-row flex-wrap sm:flex-nowrap justify-center items-center gap-5 px-20 w-full mx-auto"
+  >
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/email-operator.svg"
+        alt="Icono de email del operador"
+        width="40"
+        height="40"
+      />
+      <p class="text-center text-wrap font-light">
+        {info.email}
+      </p>
+    </div>
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/phone.svg"
+        alt="Icono de telefono de la casa de apuestas"
+        width="40"
+        height="40"
+      />
+      <p class="text-center text-wrap font-light">
+        {info.phone}
+      </p>
+    </div>
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/live-chat.svg"
+        alt="Icono de chat en vivo"
+        width="40"
+        height="36"
+      />
+      <p class="text-center text-wrap font-light">Chat en vivo 24/7</p>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div
+    class="flex flex-row justify-center items-center gap-3 sm:gap-10 w-full mx-auto"
+  >
+    <div class="flex flex-col justify-center items-center mx-auto space-y-2">
+      <p class="inline-flex tracking-tight font-semibold">
+        Idiomas de soporte:
+      </p>
+      <p>Español | English | Português</p>
+    </div>
+  </div>
+
+  <!-- License -->
+  <div
+    class="flex flex-row justify-center items-center gap-3 sm:gap-10 w-full mx-auto"
+  >
+    <div class="flex flex-col justify-center items-center mx-auto space-y-2">
+      <p class="inline-flex tracking-tight font-semibold">Licencia</p>
+      <p>{info.license}</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Our Experts -->
+  <div class="flex flex-row justify-start items-start w-full">
+    <OurExpert
+      title={"Nuestro/a experto/a"}
+      name={"Nombre Apellido"}
+      category={"Experta en iGaming | Redactora de contenido"}
+      linkedIn={"https://moisesobando.com/"}
+      about={"Lorem ipsum dolor sit amet consectetur. Tristique odio donec porttitor rutrum viverra etiam urna. In faucibus eget id nunc pretium maecenas orci nunc tempus. Erat sollicitudin et aliquet auctor in eu."}
+    />
+  </div>
+</section>
