@@ -1,10 +1,6 @@
 ---
 import StarRating from "../components/icons/StarRating.astro";
-import Android from "../components/icons/Android.astro";
-import IOS from "../components/icons/IOS.astro";
-import WebApp from "../components/icons/WebApp.astro";
 import Check from "../components/icons/Check.astro";
-// import Drawer from "../components/reviews/Drawer";
 import PromoCode from "../components/buttons/PromoCode";
 
 const { ...info } = Astro.props;
@@ -41,14 +37,35 @@ const { ...info } = Astro.props;
     <div
       class="flex flex-row justify-center items-center mx-auto space-x-2 mt-4 mb-2"
     >
-      <div class="flex flex-row justify-start items-end mx-auto">
+      <div class="flex flex-row grow justify-start items-end mx-auto">
         <StarRating w={"22"} h={"26"} />
         {info.rating}
       </div>
-      <div class="flex flex-row justify-center items-center mx-auto">
-        <Android w={"16"} h={"16"} />
+      <div>
+        {
+          info.apps.map(
+            (app: {
+              android: string | null | undefined;
+              ios: string | null | undefined;
+              webapp: string | null | undefined;
+            }) => (
+              <div class="flex flex-row justify-center items-center mx-auto">
+                {app.android && (
+                  <img src={app.android} alt="Android" width="16" height="16" />
+                )}
+                {app.ios && (
+                  <img src={app.ios} alt="iOS" width="16" height="16" />
+                )}
+                {app.webapp && (
+                  <img src={app.webapp} alt="WebApp" width="16" height="16" />
+                )}
+              </div>
+            )
+          )
+        }
+        <!-- <Android w={"16"} h={"16"} />
         <IOS w={"18"} h={"18"} />
-        <WebApp w={"16"} h={"16"} />
+        <WebApp w={"16"} h={"16"} /> -->
       </div>
     </div>
   </section>

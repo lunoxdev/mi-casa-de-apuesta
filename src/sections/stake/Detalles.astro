@@ -1,8 +1,5 @@
 ---
-import Android from "../../components/icons/Android.astro";
-import IOS from "../../components/icons/IOS.astro";
 import StarRating from "../../components/icons/StarRating.astro";
-import WebApp from "../../components/icons/WebApp.astro";
 import { CountUp } from "../../components/reviews/CountUp";
 
 const { ...info } = Astro.props;
@@ -55,8 +52,35 @@ const { ...info } = Astro.props;
     </div>
 
     <!-- Apps -->
-    <div class="flex flex-row justify-center items-center flex-wrap gap-1">
-      <div class="flex flex-row justify-start items-center">
+    <div class="flex flex-row justify-center items-center flex-wrap">
+      {
+        info.apps.map(
+          (app: {
+            android: string | null | undefined;
+            ios: string | null | undefined;
+            webapp: string | null | undefined;
+            nameandroid: string | null | undefined;
+            nameios: string | null | undefined;
+            nameweb: string | null | undefined;
+          }) => (
+            <div class="flex flex-row justify-start items-center gap-2">
+              {app.android && (
+                <img src={app.android} alt="Android" width="16" height="16" />
+                <p>{app.nameandroid}</p>
+              )}
+              {app.ios && (
+                <img src={app.ios} alt="iOS" width="16" height="16" />
+                <p>{app.nameios}</p>
+              )}
+              {app.webapp && (
+                <img src={app.webapp} alt="WebApp" width="16" height="16" />
+                <p>{app.nameweb}</p>
+              )}
+            </div>
+          )
+        )
+      }
+      <!-- <div class="flex flex-row justify-start items-center">
         <Android w={"24"} h={"16"} />
         <p>Android</p>
       </div>
@@ -67,7 +91,7 @@ const { ...info } = Astro.props;
       <div class="flex flex-row justify-start items-center">
         <WebApp w={"22"} h={"16"} />
         <p>Aplicativo web</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- Why choose this Operator? -->
