@@ -45,8 +45,8 @@ const { ...info } = Astro.props;
       <img
         src="/support/email-operator.svg"
         alt="Icono de email del operador"
-        width="40"
-        height="40"
+        width="44"
+        height="44"
       />
       <p class="text-center text-wrap text-base font-light">
         {info.email}
@@ -85,5 +85,49 @@ const { ...info } = Astro.props;
       <p class="inline-flex tracking-tight font-semibold">Licencia</p>
       <p>{info.license}</p>
     </div>
+  </div>
+
+  <hr />
+
+  <!-- Our Experts -->
+  <div class="flex flex-row justify-start items-start w-full">
+    <article class="text-[#f0f3ff] text-opacity-90 space-y-3">
+      <h3 class="font-semibold tracking-tight text-lg">Nuestro/a experto/a</h3>
+      <ul>
+        <li class="mb-5 flex flex-row">
+          <span class="w-20 h-20 mr-3">
+            <img
+              src="/expert/expert-icon.svg"
+              alt="Imagen de nuestro experto"
+              width="96"
+              height="96"
+            />
+          </span>
+          <div class="flex flex-col justify-start items-start text-pretty">
+            <h3 class="font-semibold tracking-tight">Nombre Apellido</h3>
+            <p class="tracking-tight font-light">
+              Experta en iGaming | Redactora de contenido
+            </p>
+            <a
+              href="https://moisesobando.com/"
+              target="_blank"
+              rel="external noopener nofollow"
+              class="hover:underline underline-offset-8"
+            >
+              <span
+                class="bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent"
+              >
+                Linkedin
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <p class="text-pretty tracking-tight font-light">
+        Lorem ipsum dolor sit amet consectetur. Tristique odio donec porttitor
+        rutrum viverra etiam urna. In faucibus eget id nunc pretium maecenas
+        orci nunc tempus. Erat sollicitudin et aliquet auctor in eu.
+      </p>
+    </article>
   </div>
 </section>
