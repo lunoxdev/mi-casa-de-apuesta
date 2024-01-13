@@ -63,9 +63,6 @@ const { ...info } = Astro.props;
             )
           )
         }
-        <!-- <Android w={"16"} h={"16"} />
-        <IOS w={"18"} h={"18"} />
-        <WebApp w={"16"} h={"16"} /> -->
       </div>
     </div>
   </section>
@@ -78,21 +75,63 @@ const { ...info } = Astro.props;
     <div class="flex grow-0 items-center justify-center mt-3">
       <PromoCode {...info} client:load />
     </div>
-
-    <div class="flex flex-wrap justify-center gap-1">
-      <img src="/payments/PayPal.svg" alt="Pagos" width="44" height="44" />
-      <img
-        src="/payments/american-express.svg"
-        alt="Pagos"
-        width="44"
-        height="44"
-      />
-      <img src="/payments/mastercard.svg" alt="Pagos" width="44" height="44" />
-      <img src="/payments/shopify.svg" alt="Pagos" width="44" height="44" />
-      <img src="/payments/skrill.svg" alt="Pagos" width="44" height="44" />
-      <img src="/payments/visa.svg" alt="Pagos" width="44" height="44" />
-      <img src="/payments/wepay.svg" alt="Pagos" width="44" height="44" />
-      <img src="/payments/PayPal.svg" alt="Pagos" width="44" height="44" />
+    <div class="flex flex-row justify-center items-center mx-auto gap-1">
+      {
+        info.payments?.map(
+          (payment: {
+            paypal: string | null | undefined;
+            americanexpress: string | null | undefined;
+            mastercard: string | null | undefined;
+            shopify: string | null | undefined;
+            skrill: string | null | undefined;
+            visa: string | null | undefined;
+            litecoin: string | null | undefined;
+            bitcoin: string | null | undefined;
+          }) => (
+            <div class="flex flex-wrap justify-center gap-1">
+              {payment.paypal && (
+                <img src={payment.paypal} alt="Pagos" width="44" height="44" />
+              )}
+              {payment.americanexpress && (
+                <img
+                  src={payment.americanexpress}
+                  alt="Pagos"
+                  width="44"
+                  height="44"
+                />
+              )}
+              {payment.mastercard && (
+                <img
+                  src={payment.mastercard}
+                  alt="Pagos"
+                  width="40"
+                  height="40"
+                />
+              )}
+              {payment.shopify && (
+                <img src={payment.shopify} alt="Pagos" width="44" height="44" />
+              )}
+              {payment.skrill && (
+                <img src={payment.skrill} alt="Pagos" width="44" height="44" />
+              )}
+              {payment.visa && (
+                <img src={payment.visa} alt="Pagos" width="44" height="44" />
+              )}
+              {payment.litecoin && (
+                <img
+                  src={payment.litecoin}
+                  alt="Pagos"
+                  width="28"
+                  height="28"
+                />
+              )}
+              {payment.bitcoin && (
+                <img src={payment.bitcoin} alt="Pagos" width="28" height="28" />
+              )}
+            </div>
+          )
+        )
+      }
     </div>
   </section>
 
