@@ -53,63 +53,9 @@ const { ...info } = Astro.props;
         </p>
       </div>
     </div>
-  </section>
 
-  <!-- Why choose this Operator? -->
-  <section
-    class="my-14 flex flex-col w-full space-y-2 text-[#f0f3ff] text-opacity-90"
-  >
-    <div class="flex flex-row justify-start items-end w-full gap-2">
-      <h2
-        class="uppercase text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
-      >
-        ¿Por qué elegir {info.name}?
-      </h2>
-      <div class="flex flex-row justify-center items-end">
-        <StarRating w={"22"} h={"26"} />
-        <p class="text-end">{info.rating}</p>
-      </div>
-    </div>
-    <p class="text-pretty tracking-tight font-light">
-      Si te gusta el deporte, seguro has notado la presencia destacada de
-      <strong>{info.name}</strong>. No solo es un gigante en la industria del
-      juego, sino que también una opción intrigante en apuestas y casinos en
-      línea. En <strong>micasadeapuesta.com</strong>, hemos examinado en detalle
-      lo que hace única a esta plataforma. Revisa cada una de nuestras secciones
-      en la reseña para tomar una desición informada y actualizada.
-    </p>
-    <p class="text-pretty tracking-tight font-light">
-      Descubre una experiencia única de apuestas en
-      <strong>{info.name}</strong>, donde en cada evento deportivo te espera la
-      emoción de apostar en más de mil eventos deportivos y una amplia variedad
-      de juegos.
-    </p>
-    <p class="text-pretty tracking-tight font-light">
-      Si te gusta el deporte, seguro has notado la presencia destacada de
-      <strong>{info.name}</strong>. No solo es un gigante en la industria del
-      juego, sino que también una opción intrigante en apuestas y casinos en
-      línea. En <strong>micasadeapuesta.com</strong>, hemos examinado en detalle
-      lo que hace única a esta plataforma. Revisa cada una de nuestras secciones
-      en la reseña para tomar una desición informada y actualizada.
-    </p>
-    <p class="text-pretty tracking-tight font-light">
-      Descubre una experiencia única de apuestas en
-      <strong>{info.name}</strong>, donde en cada evento deportivo te espera la
-      emoción de apostar en más de mil eventos deportivos y una amplia variedad
-      de juegos.
-    </p>
-  </section>
-
-  <!-- Apps -->
-  <section
-    class="my-14 flex flex-col w-full space-y-2 text-[#f0f3ff] text-opacity-90"
-  >
-    <h3
-      class="text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
-    >
-      DISPOSITIVOS MÓVILES
-    </h3>
-    <div class="flex flex-row justify-start items-start flex-wrap gap-1">
+    <!-- Apps -->
+    <div class="flex flex-row justify-center items-center flex-wrap gap-1">
       <div class="flex flex-row justify-start items-center">
         <Android w={"24"} h={"16"} />
         <p>Android</p>
@@ -123,55 +69,108 @@ const { ...info } = Astro.props;
         <p>Aplicativo web</p>
       </div>
     </div>
-  </section>
 
-  <!-- Advantage and Disadvantages -->
-  <section
-    class="my-14 flex flex-row flex-wrap sm:flex-nowrap w-full mx-auto gap-10 text-[#f0f3ff] text-opacity-90"
-  >
-    <div
-      class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+    <!-- Why choose this Operator? -->
+    <section
+      class="my-14 flex flex-col w-full space-y-2 text-[#f0f3ff] text-opacity-90"
     >
-      <h3
-        class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
-      >
-        Ventajas
-      </h3>
-      <div>
-        <ul class="list-disc list-inside tracking-tight font-light text-pretty">
-          <li>Orci libero aliquam sodales vel.</li>
-          <li>Orci libero aliquam sodales sit libero sit elementum vel.</li>
-          <li>Orci libero aliquam sodales sit libero sit vel.</li>
-          <li>Orci libero aliquam sodales sit sit elementum libero aliquam.</li>
-          <li>Orci libero aliquam elementum vel.</li>
-          <li>
-            Orci libero aliquam sodales sit eleme liquam sodale libero aliquam.
-          </li>
-        </ul>
+      <div class="flex flex-row justify-start items-end w-full gap-2">
+        <h2
+          class="uppercase text-xl text-pretty tracking-tight font-bold text-[#f0f3ff] text-opacity-90"
+        >
+          ¿Por qué elegir {info.name}?
+        </h2>
+        <div class="flex flex-row justify-center items-end">
+          <StarRating w={"22"} h={"26"} />
+          <p class="text-end">{info.rating}</p>
+        </div>
       </div>
-    </div>
-    <div
-      class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      <p class="text-pretty tracking-tight font-light">
+        Si te gusta el deporte, seguro has notado la presencia destacada de
+        <strong>{info.name}</strong>. No solo es un gigante en la industria del
+        juego, sino que también una opción intrigante en apuestas y casinos en
+        línea. En <strong>micasadeapuesta.com</strong>, hemos examinado en
+        detalle lo que hace única a esta plataforma. Revisa cada una de nuestras
+        secciones en la reseña para tomar una desición informada y actualizada.
+      </p>
+      <p class="text-pretty tracking-tight font-light">
+        Descubre una experiencia única de apuestas en
+        <strong>{info.name}</strong>, donde en cada evento deportivo te espera
+        la emoción de apostar en más de mil eventos deportivos y una amplia
+        variedad de juegos.
+      </p>
+      <p class="text-pretty tracking-tight font-light">
+        Si te gusta el deporte, seguro has notado la presencia destacada de
+        <strong>{info.name}</strong>. No solo es un gigante en la industria del
+        juego, sino que también una opción intrigante en apuestas y casinos en
+        línea. En <strong>micasadeapuesta.com</strong>, hemos examinado en
+        detalle lo que hace única a esta plataforma. Revisa cada una de nuestras
+        secciones en la reseña para tomar una desición informada y actualizada.
+      </p>
+      <p class="text-pretty tracking-tight font-light">
+        Descubre una experiencia única de apuestas en
+        <strong>{info.name}</strong>, donde en cada evento deportivo te espera
+        la emoción de apostar en más de mil eventos deportivos y una amplia
+        variedad de juegos.
+      </p>
+    </section>
+
+    <!-- Advantage and Disadvantages -->
+    <section
+      class="my-14 flex flex-row flex-wrap sm:flex-nowrap w-full mx-auto gap-10 text-[#f0f3ff] text-opacity-90"
     >
-      <h3
-        class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
       >
-        Desventajas
-      </h3>
-      <div>
-        <ul class="list-disc list-inside tracking-tight font-light text-pretty">
-          <li>Orci libero aliquam sodales vel.</li>
-          <li>Orci libero aliquam sodales sit libero sit elementum vel.</li>
-          <li>
-            Orci libero aliquam sodales sit libero sit vel libero aliquam.
-          </li>
-          <li>Orci libero aliquam sodales sit sit elementum.</li>
-          <li>Orci libero aliquam elementum vel.</li>
-          <li>
-            Orci libero aliquam sodales sit eleme liquam sodale libero aliquam.
-          </li>
-        </ul>
+        <h3
+          class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
+        >
+          Ventajas
+        </h3>
+        <div>
+          <ul
+            class="list-disc list-inside tracking-tight font-light text-pretty"
+          >
+            <li>Orci libero aliquam sodales vel.</li>
+            <li>Orci libero aliquam sodales sit libero sit elementum vel.</li>
+            <li>Orci libero aliquam sodales sit libero sit vel.</li>
+            <li>
+              Orci libero aliquam sodales sit sit elementum libero aliquam.
+            </li>
+            <li>Orci libero aliquam elementum vel.</li>
+            <li>
+              Orci libero aliquam sodales sit eleme liquam sodale libero
+              aliquam.
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <h3
+          class="inline-flex mx-auto text-center tracking-tight text-2xl font-semibold mb-2"
+        >
+          Desventajas
+        </h3>
+        <div>
+          <ul
+            class="list-disc list-inside tracking-tight font-light text-pretty"
+          >
+            <li>Orci libero aliquam sodales vel.</li>
+            <li>Orci libero aliquam sodales sit libero sit elementum vel.</li>
+            <li>
+              Orci libero aliquam sodales sit libero sit vel libero aliquam.
+            </li>
+            <li>Orci libero aliquam sodales sit sit elementum.</li>
+            <li>Orci libero aliquam elementum vel.</li>
+            <li>
+              Orci libero aliquam sodales sit eleme liquam sodale libero
+              aliquam.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </section>
 </>
