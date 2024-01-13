@@ -2,11 +2,11 @@
 import Layout from "../layout/Layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
-import Detalles from "./secciones/Detalles.astro";
-import Promociones from "./secciones/Promociones.astro";
-import Pagos from "./secciones/Pagos.astro";
-import Deportes from "./secciones/Deportes.astro";
-import Soporte from "./secciones/Soporte.astro";
+import Detalles from "../sections/stake/Detalles.astro";
+import Promociones from "../sections/stake/Promociones.astro";
+import Pagos from "../sections/stake/Pagos.astro";
+import Deportes from "../sections/stake/Deportes.astro";
+import Soporte from "../sections/stake/Soporte.astro";
 
 const operator = operators.find((operator) => operator.name === "Stake")!;
 if (!operator) return Astro.redirect("/404");

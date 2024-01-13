@@ -1,7 +1,7 @@
 ---
-import StarRating from "../../components/icons/StarRating.astro";
 import Android from "../../components/icons/Android.astro";
 import IOS from "../../components/icons/IOS.astro";
+import StarRating from "../../components/icons/StarRating.astro";
 import WebApp from "../../components/icons/WebApp.astro";
 import { CountUp } from "../../components/reviews/CountUp";
 
@@ -67,9 +67,7 @@ const { ...info } = Astro.props;
       </h2>
       <div class="flex flex-row justify-center items-end">
         <StarRating w={"22"} h={"26"} />
-        <p class="text-end">
-          {info.rating}
-        </p>
+        <p class="text-end">{info.rating}</p>
       </div>
     </div>
     <p class="text-pretty tracking-tight font-light">
