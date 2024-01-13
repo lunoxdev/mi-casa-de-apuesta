@@ -6,6 +6,7 @@ import Detalles from "./secciones/Detalles.astro";
 import Promociones from "./secciones/Promociones.astro";
 import Pagos from "./secciones/Pagos.astro";
 import Deportes from "./secciones/Deportes.astro";
+import Soporte from "./secciones/Soporte.astro";
 
 const operator = operators.find((operator) => operator.name === "Stake")!;
 if (!operator) return Astro.redirect("/404");
@@ -13,7 +14,7 @@ if (!operator) return Astro.redirect("/404");
 const { ...info } = operator;
 ---
 
-<Layout>
+<Layout title=`Casa de apuesta ${info.name}` description=`something...`>
   <>
     <!-- Header Review -->
     <HeaderReview {...info} client:load />
@@ -27,5 +28,8 @@ const { ...info } = operator;
     </main>
 
     <!-- Footer -->
+    <footer class="max-w-screen-lg p-4">
+      <Soporte {...info} />
+    </footer>
   </>
 </Layout>
