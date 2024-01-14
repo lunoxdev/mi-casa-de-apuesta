@@ -16,13 +16,13 @@ const Navbar: React.FC = () => {
     <header id="header-nav" className="sticky z-50 top-0 w-full p-4">
       <div className="flex justify-between items-center">
         <div>
-          <a href="/">
+          <a href="https://micasadeapuesta.com/">
             <img
-              src="/favicon.svg"
+              src="/logo.svg"
               alt="Mi casas de apuestas Logo"
-              className="border rounded-full"
-              width="36"
-              height="36"
+              className=" hover:scale-110"
+              width="40"
+              height="40"
             />
           </a>
         </div>
