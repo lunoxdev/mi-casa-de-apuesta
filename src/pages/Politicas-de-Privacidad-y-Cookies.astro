@@ -4,12 +4,12 @@ import Layout from "../layout/Layout.astro";
 ---
 
 <Layout>
-  <section>
+  <section class="max-w-screen-md justify-center items-center mx-auto p-4">
     <div
       class="my-20 flex flex-col w-full mx-auto space-y-10 text-[#f0f3ff] text-opacity-90"
     >
       <h1
-        class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
+        class="text-center text-2xl text-balance tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
       >
         Política de privacidad y Cookies
       </h1>
@@ -189,6 +189,9 @@ import Layout from "../layout/Layout.astro";
         </div>
       </article>
     </div>
-    <RightsReserved />
+    <hr />
+    <div class="mt-5">
+      <RightsReserved />
+    </div>
   </section>
 </Layout>
