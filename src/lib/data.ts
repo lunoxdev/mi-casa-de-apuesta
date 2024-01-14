@@ -40,7 +40,7 @@ export interface Operator {
 export const operators: Operator[] = [
   {
     id: 1,
-    name: "Example",
+    name: "Ejemplo",
     img: "/available.webp",
     rating: 4.9,
     promocode: "XXXXXX",
@@ -84,7 +84,7 @@ export const operators: Operator[] = [
   },
   {
     id: 2,
-    name: "Example2",
+    name: "Ejemplo2",
     img: "/available.webp",
     rating: 4.5,
     promocode: "YYYYYY",
