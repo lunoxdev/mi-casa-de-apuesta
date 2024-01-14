@@ -41,7 +41,7 @@ export const operators: Operator[] = [
   {
     id: 1,
     name: "Example",
-    img: "operators/withbg/stake.svg",
+    img: "/available.webp",
     rating: 4.9,
     promocode: "XXXXXX",
     urlregistro: "https://moisesobando.com/",
@@ -84,8 +84,8 @@ export const operators: Operator[] = [
   },
   {
     id: 2,
-    name: "Betano",
-    img: "operators/withbg/betano.svg",
+    name: "Example2",
+    img: "/available.webp",
     rating: 4.5,
     promocode: "YYYYYY",
     urlregistro: "https://moisesobando.com/",
