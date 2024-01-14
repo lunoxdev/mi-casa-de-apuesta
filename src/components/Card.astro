@@ -138,19 +138,54 @@ const { ...info } = Astro.props;
   <!-- Info -->
   <section class="w-full sm:basis-1/2 grow">
     <div class="flex flex-col w-full space-y-2">
-      <ul class="space-y-1">
-        <li class="flex flex-row gap-x-2"><Check />Retiro rápido</li>
-        <li class="flex flex-row gap-x-2"><Check />Jugadas gratis</li>
-        <li class="flex flex-row gap-x-2">
-          <Check />Constructor de apuestas
-        </li>
-        <li class="flex flex-row gap-x-2"><Check />Buenas cuotas o momios</li>
-        <li class="flex flex-row gap-x-2"><Check />Casino</li>
-      </ul>
-      <p class="text-pretty">
-        Bono del <strong>200%</strong> en tu primer depósito, hasta <strong
-          >100 USD</strong
-        >
+      {
+        info.checklist?.map(
+          (check: {
+            check1: string | null | undefined;
+            check2: string | null | undefined;
+            check3: string | null | undefined;
+            check4: string | null | undefined;
+            check5: string | null | undefined;
+          }) => (
+            <ul class="space-y-1">
+              {check.check1 && (
+                <li class="flex flex-row gap-x-2">
+                  <Check />
+                  {check.check1}
+                </li>
+              )}
+              {check.check2 && (
+                <li class="flex flex-row gap-x-2">
+                  <Check />
+                  {check.check2}
+                </li>
+              )}
+              {check.check3 && (
+                <li class="flex flex-row gap-x-2">
+                  <Check />
+                  {check.check3}
+                </li>
+              )}
+              {check.check4 && (
+                <li class="flex flex-row gap-x-2">
+                  <Check />
+                  {check.check4}
+                </li>
+              )}
+              {check.check5 && (
+                <li class="flex flex-row gap-x-2">
+                  <Check />
+                  {check.check5}
+                </li>
+              )}
+            </ul>
+          )
+        )
+      }
+
+      <!-- Bono por deposito -->
+      <p class="text-pretty font-semibold">
+        {info.bonotxt}
       </p>
     </div>
   </section>
