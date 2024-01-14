@@ -12,7 +12,8 @@ const { ...info } = Astro.props;
   <!-- Image & Operator Name & Rating-->
   <section class="grow-0 w-1/3 sm:w-44 overflow-hidden">
     <figure>
-      <div class="relative overflow-hidden rounded-t-md">
+      <!-- ELIMINAR W-FULL H-32 cuando ya tenga las imagenes de los operadores -->
+      <div class="relative overflow-hidden w-full h-32 rounded-t-md">
         <a href={`/${info.name}`}>
           <img
             src={info.img}
@@ -30,7 +31,8 @@ const { ...info } = Astro.props;
       <figcaption
         class="uppercase text-center font-semibold bg-black z-10 py-1 text-[#f0f3ff]"
       >
-        {info.name}
+        <!-- {info.name} -->
+        DISPONIBLE
       </figcaption>
     </figure>
     <!-- Rating & Devices -->
