@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header id="header-nav" className="sticky z-50 top-0 w-full p-4">
+    <header id="header-nav" className="sticky z-50 top-0 w-full p-4 text-[#f0f3ff] text-opacity-90">
       <div className="flex justify-between items-center">
         <div>
           <a href="https://micasadeapuesta.com/">
