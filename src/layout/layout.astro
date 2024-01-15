@@ -5,16 +5,15 @@ import "@fontsource-variable/onest";
 import { ViewTransitions } from "astro:transitions";
 
 const meta = {
-  title: "Mejores Casas De Apuestas 2024: Favoritas de los Apostadores",
-  description:
-    "Nuevas y Populares: Descubre las mejores casas de apuestas en 2024 con excelentes cuotas, bonos y promociones. Obtén un extra con nuestros códigos promocionales.",
   img: "https://micasadeapuesta.com/favicon.svg",
   url: "https://micasadeapuesta.com/",
   sitename: "Mi Casa De Apuesta",
   creator: "Lunox | Moises Obando",
 };
 
-const { title, description, img, url, sitename, creator } = meta;
+const { img, url, sitename, creator } = meta;
+
+const { title, description } = Astro.props;
 ---
 
 <html lang="es">
@@ -47,7 +46,7 @@ const { title, description, img, url, sitename, creator } = meta;
     <meta name="twitter:creator" content={creator} />
     <ViewTransitions />
   </head>
-  <body class="bg-slate-950">
+  <body class="bg-slate-950 text-[#f0f3ff] text-opacity-90">
     <!-- <GTMBody /> -->
     <div
       class="absolute -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
