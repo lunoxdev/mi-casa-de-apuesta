@@ -12,9 +12,13 @@ const operator = operators.find((operator) => operator.name === "Ejemplo2")!;
 if (!operator) return Astro.redirect("/404");
 
 const { ...info } = operator;
+
+// SEO
+const title = `Casa de apuesta ${info.name}`;
+const description = "Some SEO description";
 ---
 
-<Layout title=`Casa de apuesta ${info.name}` description=`something...`>
+<Layout title={title} description={description}>
   <>
     <!-- Header Review -->
     <HeaderReview {...info} client:load />
