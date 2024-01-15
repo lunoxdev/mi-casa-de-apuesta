@@ -4,7 +4,7 @@ import RightsReserved from "./RightsReserved.astro";
 
 <footer
   id="footer"
-  class="flex flex-col max-w-screen-md mx-auto space-y-8 p-4 my-8 text-[#f0f3ff]"
+  class="flex flex-col max-w-screen-md mx-auto space-y-8 p-4 my-8 text-[#f0f3ff] text-opacity-90"
 >
   <section class="flex flex-col justify-center items-center space-y-5">
     <h2
@@ -38,11 +38,19 @@ import RightsReserved from "./RightsReserved.astro";
   <div
     class="flex flex-row w-full tracking-tight gap-2 text-center justify-between items-center"
   >
-    <a href="/terminos-y-condiciones">Términos y Condiciones</a>
-    <a href="/politicas-de-privacidad-y-cookies"
+    <a
+      href="/terminos-y-condiciones"
+      class="hover:underline hover:underline-offset-4">Términos y Condiciones</a
+    >
+    <a
+      href="/politicas-de-privacidad-y-cookies"
+      class="hover:underline hover:underline-offset-4"
       >Política de privacidad y Cookies</a
     >
-    <a href="/juego-responsable">Juego Responsable</a>
+    <a
+      href="/juego-responsable"
+      class="hover:underline hover:underline-offset-4">Juego Responsable</a
+    >
   </div>
   <RightsReserved />
 </footer>
