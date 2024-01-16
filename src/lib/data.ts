@@ -67,7 +67,6 @@ export const operators: Operator[] = [
         mastercard: "/payments/common/mastercard.svg",
         skrill: "/payments/common/skrill.svg",
         visa: "/payments/common/visa.svg",
-        litecoin: "/payments/crypto/litecoin.svg",
         bitcoin: "/payments/crypto/bitcoin.svg",
       },
     ],
@@ -104,7 +103,6 @@ export const operators: Operator[] = [
     payments: [
       {
         shopify: "/payments/common/shopify.svg",
-        mastercard: "/payments/common/mastercard.svg",
         skrill: "/payments/common/skrill.svg",
         visa: "/payments/common/visa.svg",
         americanexpress: "/payments/common/american-express.svg",
