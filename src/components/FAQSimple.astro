@@ -4,9 +4,9 @@ const { ...info } = Astro.props;
 
 <details id="accordion" open={info.open}>
   <summary
-    class="flex flex-row justify-between mb-3 font-semibold tracking-tight text-pretty"
+    class="flex flex-row justify-between mb-3 tracking-tight text-pretty"
   >
-    <span class="flex-1 flex pr-5">{info.question}</span>
+    <span class="flex-1 flex pr-5 font-semibold">{info.question}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18"
@@ -20,7 +20,7 @@ const { ...info } = Astro.props;
         fill-opacity="0.8"></path>
     </svg>
   </summary>
-  <p class="mb-5 font-light tracking-tight text-pretty">
+  <p class="mb-5 tracking-tight text-pretty">
     {info.answer}
   </p>
 </details>
