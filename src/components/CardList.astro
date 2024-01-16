@@ -5,16 +5,21 @@ import { operators } from "../lib/data";
 
 <section
   id="operadores"
-  class="flex flex-col my-14 sm:my-20 space-y-10 w-full p-4"
+  class="flex flex-col my-12 sm:my-20 space-y-10 w-full p-4"
 >
-  <!-- <h2
-    class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold text-[#f0f3ff] text-opacity-80 mb-3"
-  >
-    MEJORES CASAS DE APUESTAS
-  </h2> -->
   {
-    operators.map((info) => (
-      <article>
+    operators.map((info, index) => (
+      <article
+        class={`${
+          index < 3
+            ? index === 0
+              ? "shadow-[#ffd900]/50 shadow-md bg-gradient-to-t from-[#ffd900]/10 to-transparent rounded-lg"
+              : index === 1
+                ? "shadow-[#C0C0C0]/50 shadow-md bg-gradient-to-t from-[#C0C0C0]/10 to-transparent rounded-lg"
+                : "shadow-[#cd8032dc]/50 shadow-md bg-gradient-to-t from-[#cd8032dc]/10 to-transparent rounded-lg"
+            : "shadow-gray-800 shadow-md bg-gradient-to-t from-gray-800/10 to-transparent rounded-lg"
+        }`}
+      >
         <Card {...info} />
       </article>
     ))
