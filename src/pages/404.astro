@@ -3,9 +3,21 @@ import Layout from "../layout/Layout.astro";
 ---
 
 <Layout>
-  <section>
+  <section
+    class="max-w-screen-md h-screen flex flex-col justify-center items-center space-y-5 mx-auto"
+  >
     <h1 class="text-center text-balance">
-      <span class="text-3xl"> Esta página o ruta no existe</span>
+      <span
+        class="bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-xl sm:text-3xl text-balance text-transparent"
+      >
+        Esta página o ruta no existe.
+      </span>
     </h1>
+    <a
+      href="https://micasadeapuesta.com/"
+      class="text-lg sm:text-2xl hover:underline hover:underline-offset-4"
+    >
+      Volver</a
+    >
   </section>
 </Layout>
