@@ -1,37 +1,38 @@
 ---
-const { title, name, category, linkedIn } = Astro.props;
+const title = "Nuestro/a experto/a";
+const name = "Nombre Apellido";
+const category = "Experta en iGaming | Redactora de contenido";
+const linkedIn = "https://moisesobando.com/";
 ---
 
 <div class="text-[#f0f3ff] text-opacity-90 space-y-3">
   <h3 class="font-semibold tracking-tight text-lg">{title}</h3>
-  <ul>
-    <li class="mb-5 flex flex-row">
-      <span class="w-20 h-20 mr-3">
-        <img
-          src="/expert/expert-icon.svg"
-          alt="Imagen de nuestro experto"
-          width="96"
-          height="96"
-        />
-      </span>
-      <div class="flex flex-col justify-start items-start text-pretty">
-        <h3 class="font-semibold tracking-tight">{name}</h3>
-        <p class="tracking-tight font-light">
-          {category}
-        </p>
-        <a
-          href={linkedIn}
-          target="_blank"
-          rel="external noopener nofollow"
-          class="hover:underline underline-offset-8"
+  <div class="mb-5 flex flex-row">
+    <span class="w-14 h-14 mr-3">
+      <img
+        src="/expert/expert-icon.svg"
+        alt="Imagen de nuestro experto"
+        width="96"
+        height="96"
+      />
+    </span>
+    <div class="flex flex-col justify-start items-start text-pretty">
+      <h3 class="font-semibold tracking-tight">{name}</h3>
+      <p class="tracking-tight text-pretty">
+        {category}
+      </p>
+      <a
+        href={linkedIn}
+        target="_blank"
+        rel="external noopener nofollow"
+        class="hover:underline underline-offset-8"
+      >
+        <span
+          class="bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent"
         >
-          <span
-            class="bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent"
-          >
-            LinkedIn
-          </span>
-        </a>
-      </div>
-    </li>
-  </ul>
+          LinkedIn
+        </span>
+      </a>
+    </div>
+  </div>
 </div>

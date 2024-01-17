@@ -6,24 +6,25 @@ const { ...info } = Astro.props;
 
 <section
   id="soporte"
-  class="my-8 flex flex-col w-full mx-auto space-y-16 text-[#f0f3ff] text-opacity-90"
+  class="my-8 flex flex-col w-full mx-auto space-y-8 text-[#f0f3ff] text-opacity-90"
 >
   <h2
-    class="text-center text-2xl text-pretty tracking-tight sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90"
+    class="text-center text-2xl text-balance tracking-tight sm:text-4xl font-bold"
   >
-    Servicio al cliente
+    SERVICIO AL CLIENTE
   </h2>
   <div class="space-y-2 text-center">
-    <p class="text-pretty tracking-tight font-light">
-      El servicio al cliente en las casas de apuestas es esencial para construir
-      confianza y credibilidad. Un soporte eficiente resuelve problemas
-      rápidamente, mejora la experiencia del usuario y cumple con regulaciones.
-      Además, promueve el juego responsable al ofrecer información sobre límites
-      y autoexclusión. La interacción constante proporciona feedback valioso
-      para mejoras. En un mercado competitivo, un servicio excepcional no solo
-      es necesario, sino que también diferencia a una casa de apuestas.
+    <p class="text-pretty tracking-tight">
+      <strong>{info.name}</strong> sabe que el servicio al cliente es esencial para
+      construir confianza y credibilidad. Un soporte eficiente resuelve problemas
+      rápidamente y mejora la experiencia del usuario.
     </p>
-    <p class="text-pretty tracking-tight font-light">
+
+    <p class="text-pretty tracking-tight">
+      En un mercado competitivo, un servicio excepcional no solo es necesario,
+      sino que también diferencia a una casa de apuestas.
+    </p>
+    <p class="text-pretty tracking-tight">
       Estos son los canales de servicio al cliente que se ofrecen en <strong
         >{info.name}</strong
       >:
@@ -41,9 +42,7 @@ const { ...info } = Astro.props;
         width="40"
         height="40"
       />
-      <p class="text-center text-wrap font-light">
-        {info.email}
-      </p>
+      <p class="text-center text-balance">{info.email}</p>
     </div>
     <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
@@ -52,9 +51,7 @@ const { ...info } = Astro.props;
         width="40"
         height="40"
       />
-      <p class="text-center text-wrap font-light">
-        {info.phone}
-      </p>
+      <p class="text-center text-balance">{info.phone}</p>
     </div>
     <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
@@ -63,28 +60,24 @@ const { ...info } = Astro.props;
         width="40"
         height="36"
       />
-      <p class="text-center text-wrap font-light">Chat en vivo 24/7</p>
+      <p class="text-center text-balance">Chat en vivo 24/7</p>
     </div>
   </div>
 
   <!-- Languages -->
-  <div
-    class="flex flex-row justify-center items-center gap-3 sm:gap-10 w-full mx-auto"
-  >
+  <div class="flex flex-row justify-center items-center w-full mx-auto">
     <div class="flex flex-col justify-center items-center mx-auto space-y-2">
-      <p class="inline-flex tracking-tight font-semibold">
+      <h3 class="inline-flex tracking-tight font-semibold text-lg">
         Idiomas de soporte:
-      </p>
+      </h3>
       <p>Español | English | Português</p>
     </div>
   </div>
 
   <!-- License -->
-  <div
-    class="flex flex-row justify-center items-center gap-3 sm:gap-10 w-full mx-auto"
-  >
+  <div class="flex flex-row justify-center items-center w-full mx-auto">
     <div class="flex flex-col justify-center items-center mx-auto space-y-2">
-      <p class="inline-flex tracking-tight font-semibold">Licencia</p>
+      <h3 class="inline-flex tracking-tight font-semibold text-lg">Licencia</h3>
       <p>{info.license}</p>
     </div>
   </div>
@@ -93,11 +86,6 @@ const { ...info } = Astro.props;
 
   <!-- Our Experts -->
   <div class="flex flex-row justify-start items-start w-full">
-    <OurExpert
-      title={"Nuestro/a experto/a"}
-      name={"Nombre Apellido"}
-      category={"Experta en iGaming | Redactora de contenido"}
-      linkedIn={"https://moisesobando.com/"}
-    />
+    <OurExpert />
   </div>
 </section>
