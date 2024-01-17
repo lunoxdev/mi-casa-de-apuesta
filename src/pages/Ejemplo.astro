@@ -2,11 +2,11 @@
 import Layout from "../layout/Layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
-import Detalles from "../sections/example/Detalles.astro";
-import Promociones from "../sections/example/Promociones.astro";
-import Pagos from "../sections/example/Pagos.astro";
-import Deportes from "../sections/example/Deportes.astro";
-import Soporte from "../sections/example/Soporte.astro";
+import Detalles from "../components/sections/ejemplo/Detalles.astro";
+import Promociones from "../components/sections/ejemplo/Promociones.astro";
+import Pagos from "../components/sections/ejemplo/Pagos.astro";
+import Deportes from "../components/sections/ejemplo/Deportes.astro";
+import Soporte from "../components/sections/ejemplo/Soporte.astro";
 
 const operator = operators.find((operator) => operator.name === "Ejemplo")!;
 if (!operator) return Astro.redirect("/404");
