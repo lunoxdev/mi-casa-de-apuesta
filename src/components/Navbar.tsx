@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
           <a className="hover:underline-offset-8 hover:underline font-light" href="#operadores">
             Lista de Operadores
           </a>
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#apostar">
-            ¿Cómo Apostar?
-          </a>
           <a className="hover:underline-offset-8 hover:underline font-light" href="#consideraciones">
             Consideraciones
+          </a>
+          <a className="hover:underline-offset-8 hover:underline font-light" href="#apostar">
+            ¿Cómo Apostar?
           </a>
           <a className="hover:underline-offset-8 hover:underline font-light" href="#faq">
             FAQ
@@ -61,11 +61,11 @@ const Navbar: React.FC = () => {
           <a className="my-2 hover:underline hover:underline-offset-8" href="#operadores" onClick={closeMobileMenu}>
             Lista de Operadores
           </a>
-          <a className="my-2 hover:underline hover:underline-offset-8" href="#apostar" onClick={closeMobileMenu}>
-            ¿Cómo Apostar?
-          </a>
           <a className="my-2 hover:underline hover:underline-offset-8" href="#consideraciones" onClick={closeMobileMenu}>
             Consideraciones
+          </a>
+          <a className="my-2 hover:underline hover:underline-offset-8" href="#apostar" onClick={closeMobileMenu}>
+            ¿Cómo Apostar?
           </a>
           <a className="my-2 hover:underline hover:underline-offset-8" href="#faq" onClick={closeMobileMenu}>
             FAQ
