@@ -7,8 +7,6 @@ export interface Operator {
   urlregistro: string;
   urlbono: string;
   bonotxt: string;
-  email: string;
-  phone: string;
   license: string;
   apps?: {
     android?: string;
@@ -50,8 +48,6 @@ export const operators: Operator[] = [
     urlregistro: "",
     urlbono: "",
     bonotxt: "Bono del 100% en tu primer depósito",
-    email: "ayuda@operador.com",
-    phone: "08004500101",
     license: "Curacao eGaming License",
     apps: [
       {
