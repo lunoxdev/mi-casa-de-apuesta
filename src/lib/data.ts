@@ -20,13 +20,16 @@ export interface Operator {
   }[];
   payments?: {
     paypal?: string;
-    americanexpress?: string;
-    mastercard?: string;
-    shopify?: string;
+    payz?: string;
+    paysafecard?: string;
+    airtm?: string;
     skrill?: string;
     visa?: string;
     litecoin?: string;
     bitcoin?: string;
+    skrill1tap?: string;
+    tether?: string;
+    xrp?: string;
   }[];
   checklist?: {
     check1?: string;
@@ -40,16 +43,16 @@ export interface Operator {
 export const operators: Operator[] = [
   {
     id: 1,
-    name: "Ejemplo",
-    img: "/available.webp",
+    name: "1Xbet",
+    img: "/operators/withbg/1xbet.svg",
     rating: 4.9,
     promocode: "XXXXXX",
-    urlregistro: "https://moisesobando.com/",
-    urlbono: "https://moisesobando.com/",
-    bonotxt: "Bono del 200% en tu primer depósito, hasta 100 USD",
+    urlregistro: "",
+    urlbono: "",
+    bonotxt: "Bono del 100% en tu primer depósito",
     email: "ayuda@operador.com",
-    phone: "+000 00000000",
-    license: "Nombre de la licencia",
+    phone: "08004500101",
+    license: "Curacao eGaming License",
     apps: [
       {
         android: "/devices/android.svg",
@@ -62,21 +65,23 @@ export const operators: Operator[] = [
     ],
     payments: [
       {
-        paypal: "/payments/common/paypal.svg",
-        americanexpress: "/payments/common/american-express.svg",
-        mastercard: "/payments/common/mastercard.svg",
-        skrill: "/payments/common/skrill.svg",
-        visa: "/payments/common/visa.svg",
+        skrill1tap: "/payments/common/skrill-1-tap.svg",
+        payz: "/payments/common/payz.svg",
+        paysafecard: "/payments/common/paysafe-card.svg",
+        airtm: "/payments/common/airtm.svg",
         bitcoin: "/payments/crypto/bitcoin.svg",
+        litecoin: "/payments/crypto/litecoin.svg",
+        tether: "/payments/crypto/tether.svg",
+        xrp: "/payments/crypto/xrp.svg",
       },
     ],
     checklist: [
       {
         check1: "Retiro rápido",
-        check2: "Jugadas gratis",
+        check2: "Trasmisión en vivo",
         check3: "Constructor de apuestas",
         check4: "Buenas cuotas o momios",
-        check5: "Casino",
+        check5: "TOTO-15 y TOTO",
       },
     ],
   },

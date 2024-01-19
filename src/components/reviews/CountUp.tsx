@@ -11,7 +11,7 @@ export const CountUp = ({ initial, final, duration, showPlusSign = true }: { ini
   const formattedCount = new Intl.NumberFormat().format(count); // Formatea el número con la coma
 
   return (
-    <p className="text-4xl sm:text-5xl font-semibold">
+    <p className="text-3xl sm:text-4xl font-semibold">
       {showPlusSign ? `+${formattedCount}` : formattedCount}
     </p>
   );

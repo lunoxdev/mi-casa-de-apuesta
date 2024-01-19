@@ -1,0 +1,38 @@
+---
+import Layout from "../layout/Layout.astro";
+import { operators } from "../lib/data";
+import HeaderReview from "../components/reviews/HeaderReview";
+import Detalles from "../components/sections/1xbet/Detalles.astro";
+import Promociones from "../components/sections/1xbet/Promociones.astro";
+import Pagos from "../components/sections/1xbet/Pagos.astro";
+import Deportes from "../components/sections/1xbet/Deportes.astro";
+import Soporte from "../components/sections/1xbet/Soporte.astro";
+
+const operator = operators.find((operator) => operator.name === "1Xbet")!;
+if (!operator) return Astro.redirect("/404");
+
+const { ...info } = operator;
+
+const title = `Casa de apuesta ${info.name}`;
+const description = "Some SEO description";
+---
+
+<Layout title={title} description={description}>
+  <>
+    <!-- Header Review -->
+    <HeaderReview {...info} client:load />
+
+    <!-- Content -->
+    <main class="max-w-screen-lg px-4">
+      <Detalles {...info} />
+      <Promociones {...info} />
+      <Pagos {...info} />
+      <Deportes {...info} />
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-screen-lg px-4">
+      <Soporte {...info} />
+    </footer>
+  </>
+</Layout>

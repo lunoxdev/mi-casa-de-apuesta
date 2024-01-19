@@ -1,0 +1,94 @@
+---
+import OurExpert from "../../../components/OurExpert.astro";
+
+const { ...info } = Astro.props;
+---
+
+<section
+  id="soporte"
+  class="mb-10 mt-5 flex flex-col w-full mx-auto space-y-8 text-[#f0f3ff] text-opacity-90"
+>
+  <h2
+    class="text-center text-2xl text-balance tracking-tight sm:text-4xl font-bold"
+  >
+    SERVICIO AL CLIENTE
+  </h2>
+  <div class="space-y-2 text-center">
+    <p class="text-pretty tracking-tight">
+      <strong>{info.name}</strong> sabe que el servicio al cliente es esencial para
+      construir confianza y credibilidad. Un soporte eficiente resuelve problemas
+      rápidamente y mejora la experiencia del usuario.
+    </p>
+
+    <p class="text-pretty tracking-tight">
+      En un mercado competitivo, un servicio excepcional no solo es necesario,
+      sino que también diferencia a una casa de apuestas.
+    </p>
+    <p class="text-pretty tracking-tight">
+      Estos son los canales de servicio al cliente que se ofrecen en <strong
+        >{info.name}</strong
+      >:
+    </p>
+  </div>
+
+  <!-- Support Channels -->
+  <div
+    class="flex flex-row flex-wrap sm:flex-nowrap justify-center items-center gap-5 px-20 w-full mx-auto"
+  >
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/email-operator.svg"
+        alt="Icono de email del operador"
+        width="40"
+        height="40"
+        loading="lazy"
+      />
+      <p class="text-center text-balance">{info.email}</p>
+    </div>
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/phone.svg"
+        alt="Icono de telefono de la casa de apuestas"
+        width="40"
+        height="40"
+        loading="lazy"
+      />
+      <p class="text-center text-balance">{info.phone}</p>
+    </div>
+    <div class="flex flex-col w-full justify-center items-center space-y-3">
+      <img
+        src="/support/live-chat.svg"
+        alt="Icono de chat en vivo"
+        width="40"
+        height="36"
+        loading="lazy"
+      />
+      <p class="text-center text-balance">Chat en vivo 24/7</p>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="flex flex-row justify-center items-center w-full mx-auto">
+    <div class="flex flex-col justify-center items-center mx-auto space-y-2">
+      <h3 class="inline-flex tracking-tight font-semibold text-lg">
+        Idiomas de soporte:
+      </h3>
+      <p>Español | English | Português</p>
+    </div>
+  </div>
+
+  <!-- License -->
+  <div class="flex flex-row justify-center items-center w-full mx-auto">
+    <div class="flex flex-col justify-center items-center mx-auto space-y-2">
+      <h3 class="inline-flex tracking-tight font-semibold text-lg">Licencia</h3>
+      <p>{info.license}</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Our Experts -->
+  <div class="flex flex-row justify-start items-start w-full">
+    <OurExpert />
+  </div>
+</section>
