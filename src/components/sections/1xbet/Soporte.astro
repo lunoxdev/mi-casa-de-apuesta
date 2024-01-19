@@ -43,7 +43,7 @@ const { ...info } = Astro.props;
         height="40"
         loading="lazy"
       />
-      <p class="text-center text-balance">{info.email}</p>
+      <p class="text-center text-balance">Correo Electrónico</p>
     </div>
     <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
@@ -53,7 +53,7 @@ const { ...info } = Astro.props;
         height="40"
         loading="lazy"
       />
-      <p class="text-center text-balance">{info.phone}</p>
+      <p class="text-center text-balance">Teléfono</p>
     </div>
     <div class="flex flex-col w-full justify-center items-center space-y-3">
       <img
@@ -73,7 +73,9 @@ const { ...info } = Astro.props;
       <h3 class="inline-flex tracking-tight font-semibold text-lg">
         Idiomas de soporte:
       </h3>
-      <p>Español | English | Português</p>
+      <p class="text-center text-balance">
+        <strong>{info.name}</strong> nos ofrece soporte en 49 idiomas
+      </p>
     </div>
   </div>
 
@@ -85,10 +87,10 @@ const { ...info } = Astro.props;
     </div>
   </div>
 
-  <hr />
+  <!-- <hr /> -->
 
   <!-- Our Experts -->
-  <div class="flex flex-row justify-start items-start w-full">
+  <!-- <div class="flex flex-row justify-start items-start w-full">
     <OurExpert />
-  </div>
+  </div> -->
 </section>
