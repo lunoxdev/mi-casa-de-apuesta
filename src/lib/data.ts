@@ -45,8 +45,8 @@ export const operators: Operator[] = [
     img: "/operators/withbg/1xbet.svg",
     rating: 4.9,
     promocode: "1x_1484789",
-    urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97",
-    urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97",
+    urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
+    urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
     bonotxt: "Bono del 100% en tu primer depósito",
     license: "Curacao eGaming License",
     apps: [
