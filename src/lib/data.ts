@@ -48,7 +48,7 @@ export const operators: Operator[] = [
     urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
     urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
     bonotxt: "Bono del 100% en tu primer depósito",
-    license: "Curacao eGaming License",
+    license: "Curaçao eGaming License",
     apps: [
       {
         android: "/devices/android.svg",

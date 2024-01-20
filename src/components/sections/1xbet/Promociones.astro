@@ -34,8 +34,9 @@ const { ...info } = Astro.props;
               Código Promocional
             </h3>
             <p class="text-pretty text-center p-2 tracking-tight">
-              Ingresa este código Promocional para obtener un porcentaje
-              adicional en tu depósito. No dejes pasar la oportunidad de mejorar
+              Ingresa este código Promocional para obtener un <strong
+                >30%</strong
+              > adicional en tu depósito. No dejes pasar la oportunidad de mejorar
               tu experiencia de juego y aumentar tus fondos.
             </p>
             <PromoCode {...info} client:idle />
@@ -90,8 +91,8 @@ const { ...info } = Astro.props;
           > Esta área suele estar ubicada en la página principal o en el menú de
           tu cuenta. Una vez allí, introduce tu <strong
             >Código Promocional</strong
-          >
-          que puedes encontrar en la reseña de nuestra pagina. Confirma y reclama
+          > para recibir un <strong>30% adicional</strong> en tu depósito, puedes
+          encontrar el código en la reseña de nuestra página. Confirma y reclama
           tu oferta para aprovechar al máximo tu bonificación. Recuerda revisar siempre
           los términos y condiciones para conocer cualquier requisito o restricción
           asociada con la promoción.
@@ -100,7 +101,7 @@ const { ...info } = Astro.props;
     </div>
 
     <h3 class="font-semibold text-balance tracking-tight text-lg">
-      Estas son las 4 categorias que {info.name} ofrece:
+      Estas son las 4 categorías que {info.name} ofrece:
     </h3>
 
     <!-- JUEGOS DE BONO -->
