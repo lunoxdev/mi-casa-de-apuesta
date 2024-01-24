@@ -1,0 +1,163 @@
+---
+import StarRating from "../../../components/icons/StarRating.astro";
+import { CountUp } from "../../../components/reviews/CountUp";
+import Check from "../../icons/Check.astro";
+import Equis from "../../icons/Equis.astro";
+
+const { ...info } = Astro.props;
+---
+
+<>
+  <!-- Stadistics -->
+  <section
+    id="detalle"
+    class="my-20 flex flex-col w-full mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
+  >
+    <h1
+      class="inline-flex mx-auto uppercase animate-background-shine bg-[linear-gradient(110deg,#939393,45%,#f0f3ff,65%,#939393)] bg-[length:250%_100%] bg-clip-text text-transparent text-4xl sm:text-6xl font-semibold"
+    >
+      {info.name}
+    </h1>
+    <div
+      class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 h-auto space-y-5 sm:space-y-0 py-10 px-2 border gap-3 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+    >
+      <div class="flex flex-col grow w-full items-center text-balance space-y-3">
+        <CountUp client:visible initial={0} final={1000}/>
+        <p class="text-lg sm:text-xl text-center tracking-tight">
+          Eventos diarios
+        </p>
+      </div>
+      <div
+        class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
+      >
+        <CountUp client:visible initial={0} final={17} />
+        <p class="text-lg sm:text-xl text-center tracking-tight">
+          Países en cobertura
+        </p>
+      </div>
+      <div
+        class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
+      >
+      <CountUp client:visible initial={0} final={50} />
+      <p class="text-lg sm:text-xl text-center tracking-tight">
+        Diferentes deportes
+      </p>
+      </div>
+      <div
+        class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-0 sm:pl-5 text-balance space-y-3"
+      >
+        <CountUp client:visible initial={0} final={100} />
+        <p class="text-lg sm:text-xl text-center tracking-tight">
+          Métodos de pago
+        </p>
+      </div>
+    </div>
+
+    <!-- Apps -->
+    <div class="flex flex-row justify-center items-center flex-wrap">
+      {
+        info.apps.map(
+          (app: {
+            android: string | null | undefined;
+            ios: string | null | undefined;
+            webapp: string | null | undefined;
+            nameandroid: string | null | undefined;
+            nameios: string | null | undefined;
+            nameweb: string | null | undefined;
+          }) => (
+            <div class="flex flex-row justify-start items-center gap-2">
+              {app.android && (
+                <img src={app.android} alt="Android" width="16" height="16" />
+                <p>{app.nameandroid}</p>
+              )}
+              {app.ios && (
+                <img src={app.ios} alt="iOS" width="16" height="16" />
+                <p>{app.nameios}</p>
+              )}
+              {app.webapp && (
+                <img src={app.webapp} alt="WebApp" width="16" height="16" />
+                <p>{app.nameweb}</p>
+              )}
+            </div>
+          )
+        )
+      }
+    </div>
+
+    <!-- Why choose this Operator? -->
+    <section
+      class="my-14 flex flex-col w-full space-y-3"
+    >
+      <div class="flex flex-wrap justify-start items-end w-full gap-2">
+        <h2
+          class="uppercase text-xl text-balance tracking-tight font-bold"
+        >
+          ¿Por qué elegir {info.name}?
+        </h2>
+        <div class="flex flex-row justify-center items-end">
+          <StarRating w={"22"} h={"26"} />
+          <p class="text-end">{info.rating}</p>
+        </div>
+      </div>
+      <p class="text-pretty tracking-tight">
+       Es una de las casas de apuestas más populares, respetadas del mundo y claramente la pionera en <strong>esports.</strong> Fundada en 1998, Pinnacle cuenta con más de 20 años de experiencia en el sector de apuestas, y durante este tiempo, la compañía ha desarrollado una reputación de excelencia en la oferta de cuotas competitivas, amplia variedad de deportes, mercados, y una plataforma de apuestas segura y fiable.
+      </p>
+      <p class="text-pretty tracking-tight">
+        <strong>{info.name}</strong> es sin duda conocida por ofrecer las cuotas más competitivas del mercado. En general, sus cuotas son entre un 5% y un 10% más altas que las de otras casas de apuestas. Esto significa que los apostadores tienen más probabilidades de ganar dinero al apostar con <strong>{info.name}</strong>.
+      </p>
+      <p class="text-pretty tracking-tight">
+        Lo mejor es que están comprometidos a brindar la mejor experiencia posible. Esto se ve reflejado en su enfoque en la innovación y la mejora continua. Su plataforma es fácil de usar e intuitiva, lo que hace que sea fácil encontrar lo que estás buscando.
+      </p>
+      <p class="text-pretty tracking-tight">
+        <strong>{info.name}</strong> no ofrece un bono de bienvenida. Sin embargo, la casa de apuestas ofrece otras promociones, como reembolsos en caso de derrota y apuestas gratuitas.
+      </p>
+      <p class="text-pretty tracking-tight">
+        Si buscas una casa de apuestas con experiencia y compromiso con la excelencia, <strong>{info.name}</strong> es la mejor opción.
+      </p>
+    </section>
+
+    <!-- Advantage and Disadvantages -->
+    <section
+      class="my-14 flex flex-row flex-wrap sm:flex-nowrap w-full mx-auto gap-10"
+    >
+      <div
+        class="flex flex-wrap flex-col w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <h3
+          class="inline-flex mx-auto text-center text-balance tracking-tight text-2xl font-semibold mb-2"
+        >
+          Ventajas de {info.name}
+        </h3>
+        <div>
+          <ul
+            class="list-inside tracking-tight text-pretty"
+          >
+            <li class="flex flex-row gap-2"><Check /> Las mejores Cuotas o momios</li>
+            <li class="flex flex-row gap-2"><Check /> Apuestas en vivo</li>
+            <li class="flex flex-row gap-2"><Check /> Pionera en apuestas de esports</li>
+            <li class="flex flex-row gap-2"><Check /> Depósito y retiro rápidos</li>
+            <li class="flex flex-row gap-2"><Check /> Excelente diseño web</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap flex-col w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <h3
+          class="inline-flex mx-auto text-center text-balance tracking-tight text-2xl font-semibold mb-2"
+        >
+          Desventajas de {info.name}
+        </h3>
+        <div>
+          <ul
+            class="list-disc list-inside tracking-tight text-pretty"
+          >
+          <li class="flex flex-row gap-2"><Equis />Sin bono de bienvenida</li>
+          <li class="flex flex-row gap-2"><Equis />No ofrece chat en vivo</li>
+          <li class="flex flex-row gap-2"><Equis />Límites de apuesta altos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+</>

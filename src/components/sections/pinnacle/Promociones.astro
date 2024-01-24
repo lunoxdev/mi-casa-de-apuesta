@@ -1,0 +1,101 @@
+---
+import PromoCode from "../../reviews/PromoCodeReview";
+
+const { ...info } = Astro.props;
+---
+
+<>
+  <!-- ¡Aumenta tus ganancias! -->
+  <section
+    id="promociones"
+    class="my-20 flex flex-col w-full mx-auto space-y-5 text-[#f0f3ff] text-opacity-90"
+  >
+    <h2
+      class="text-center text-2xl text-pretty tracking-tight uppercase sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+    >
+      ¿CÓMO AUMENTAR TUS GANANCIAS EN {info.name}?
+    </h2>
+    <article class="flex flex-row flex-wrap sm:flex-nowrap w-full gap-10">
+      <div
+        class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+      >
+        <span
+          class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+        ></span>
+        <div
+          class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-5 px-5 text-sm font-medium backdrop-blur-3xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center mx-auto p-4 space-y-3"
+          >
+            <h3
+              class="inline-flex underline text-balance underline-offset-8 text-center tracking-tight text-xl font-semibold"
+            >
+              Código Promocional
+            </h3>
+            <p class="text-pretty text-center p-2 tracking-tight">
+              <strong>{info.name}</strong> no ofrece código promocional, pero sus
+              cuotas son las mejores del mercado. Esto significa que los ganadores
+              obtienen más dinero a largo plazo que en cualquier otra casa de apuestas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+      >
+        <span
+          class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+        ></span>
+        <div
+          class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-10 px-5 text-sm font-medium backdrop-blur-3xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center mx-auto p-4 space-y-3"
+          >
+            <h3
+              class="inline-flex text-balance underline underline-offset-8 text-center tracking-tight text-xl font-semibold"
+            >
+              Bono de Bienvenida
+            </h3>
+            <p class="text-pretty text-center tracking-tight">
+              Pinnacle no ofrece un bono de bienvenida. Sin embargo, la casa de
+              apuestas ofrece a sus nuevos clientes otras promociones, como
+              reembolsos en caso de derrota y apuestas gratuitas.
+            </p>
+            <!-- <p class="text-pretty text-center tracking-tight">
+              Puede estar sujeta a un rollover. Revisa los términos y
+              condiciones.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="w-full flex flex-col justify-start items-start text-start">
+      <div class="space-y-3 mt-5">
+        <p class="tracking-tight text-pretty">
+          <span
+            class="inline-flex font-semibold underline underline-offset-4 mb-1"
+          >
+            IMPORTANTE:
+          </span>
+          <br />
+          <strong>{info.name} Casino</strong> ofrece una variedad de promociones
+          para los nuevos jugadores y recompensar a los clientes habituales. Una
+          de las promociones más populares es el Juegue y Gane de Pragmatic Play.
+          Esta promoción ofrece un pozo de premios total de <strong
+            >$2,000,000</strong
+          >. Solo debe de jugar en las máquinas tragamonedas seleccionadas.
+        </p>
+        <p class="tracking-tight text-pretty">
+          Otra promoción popular es las 200 tiradas gratis para los nuevos
+          clientes. Para obtener esta promoción, los jugadores deben registrarse
+          en Pinnacle Casino y jugar cualquiera de los más de 2500 juegos de
+          casino en las primeras 24 horas. Será necesaria una <strong
+            >apuesta mínima de $25</strong
+          > en cualquier juego de máquina tragamonedas.
+        </p>
+      </div>
+    </div>
+  </section>
+</>

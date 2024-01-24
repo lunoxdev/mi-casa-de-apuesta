@@ -8,6 +8,7 @@ export interface Operator {
   urlbono: string;
   bonotxt: string;
   license: string;
+  payfront: string;
   apps?: {
     android?: string;
     ios?: string;
@@ -15,19 +16,6 @@ export interface Operator {
     nameandroid?: string;
     nameios?: string;
     nameweb?: string;
-  }[];
-  payments?: {
-    paypal?: string;
-    payz?: string;
-    paysafecard?: string;
-    airtm?: string;
-    skrill?: string;
-    visa?: string;
-    litecoin?: string;
-    bitcoin?: string;
-    skrill1tap?: string;
-    tether?: string;
-    xrp?: string;
   }[];
   checklist?: {
     check1?: string;
@@ -48,7 +36,8 @@ export const operators: Operator[] = [
     urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
     urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
     bonotxt: "Bono del 100% en tu primer depósito",
-    license: "Curaçao eGaming License",
+    license: "Licencia de Curaçao",
+    payfront: "/payments/frontend/1Xbet-pay-front.svg",
     apps: [
       {
         android: "/devices/android.svg",
@@ -57,18 +46,6 @@ export const operators: Operator[] = [
         nameios: "iPhone",
         webapp: "/devices/phone.svg",
         nameweb: "Aplicación Web",
-      },
-    ],
-    payments: [
-      {
-        skrill1tap: "/payments/common/skrill-1-tap.svg",
-        payz: "/payments/common/payz.svg",
-        paysafecard: "/payments/common/paysafe-card.svg",
-        airtm: "/payments/common/airtm.svg",
-        bitcoin: "/payments/crypto/bitcoin.svg",
-        litecoin: "/payments/crypto/litecoin.svg",
-        tether: "/payments/crypto/tether.svg",
-        xrp: "/payments/crypto/xrp.svg",
       },
     ],
     checklist: [
@@ -81,160 +58,35 @@ export const operators: Operator[] = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   name: "Ejemplo2",
-  //   img: "/available.webp",
-  //   rating: 4.5,
-  //   promocode: "YYYYYY",
-  //   urlregistro: "https://moisesobando.com/",
-  //   urlbono: "https://moisesobando.com/",
-  //   bonotxt: "Bono del 100% en tu primer depósito, hasta 250 USD",
-  //   email: "ayuda@operador.com",
-  //   phone: "+000 00000000",
-  //   license: "Nombre de la licencia",
-  //   apps: [
-  //     {
-  //       android: "/devices/android.svg",
-  //       nameandroid: "Android",
-  //       webapp: "/devices/phone.svg",
-  //       nameweb: "Aplicación Web",
-  //     },
-  //   ],
-  //   payments: [
-  //     {
-  //       shopify: "/payments/common/shopify.svg",
-  //       skrill: "/payments/common/skrill.svg",
-  //       visa: "/payments/common/visa.svg",
-  //       americanexpress: "/payments/common/american-express.svg",
-  //       litecoin: "/payments/crypto/litecoin.svg",
-  //       bitcoin: "/payments/crypto/bitcoin.svg",
-  //     },
-  //   ],
-  //   checklist: [
-  //     {
-  //       check1: "Buenas cuotas o momios",
-  //       check2: "Casino",
-  //       check3: "Jugadas gratis",
-  //       check4: "Retiro rápido",
-  //       check5: "Constructor de apuestas",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   name: "Ejemplo3",
-  //   img: "/available.webp",
-  //   rating: 4.5,
-  //   promocode: "OOOOOO",
-  //   urlregistro: "https://moisesobando.com/",
-  //   urlbono: "https://moisesobando.com/",
-  //   bonotxt: "Bono del 80% en tu primer depósito, hasta 100 USD",
-  //   email: "ayuda@operador.com",
-  //   phone: "+000 00000000",
-  //   license: "Nombre de la licencia",
-  //   apps: [
-  //     {
-  //       webapp: "/devices/phone.svg",
-  //       nameweb: "Aplicación Web",
-  //     },
-  //   ],
-  //   payments: [
-  //     {
-  //       paypal: "/payments/common/paypal.svg",
-  //       skrill: "/payments/common/skrill.svg",
-  //       visa: "/payments/common/visa.svg",
-  //       americanexpress: "/payments/common/american-express.svg",
-  //       shopify: "/payments/common/shopify.svg",
-  //     },
-  //   ],
-  //   checklist: [
-  //     {
-  //       check1: "Retiro rápido",
-  //       check2: "Jugadas gratis",
-  //       check5: "Casino",
-  //       check3: "Constructor de apuestas",
-  //       check4: "Buenas cuotas o momios",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   name: "Ejemplo4",
-  //   img: "/available.webp",
-  //   rating: 4.5,
-  //   promocode: "AAAAAA",
-  //   urlregistro: "https://moisesobando.com/",
-  //   urlbono: "https://moisesobando.com/",
-  //   bonotxt: "Bono del 100% en tu primer depósito, hasta 500 USD",
-  //   email: "ayuda@operador.com",
-  //   phone: "+000 00000000",
-  //   license: "Nombre de la licencia",
-  //   apps: [
-  //     {
-  //       webapp: "/devices/phone.svg",
-  //       nameweb: "Aplicación Web",
-  //     },
-  //   ],
-  //   payments: [
-  //     {
-  //       paypal: "/payments/common/paypal.svg",
-  //       mastercard: "/payments/common/mastercard.svg",
-  //       skrill: "/payments/common/skrill.svg",
-  //       visa: "/payments/common/visa.svg",
-  //       americanexpress: "/payments/common/american-express.svg",
-  //     },
-  //   ],
-  //   checklist: [
-  //     {
-  //       check5: "Casino",
-  //       check1: "Retiro rápido",
-  //       check3: "Constructor de apuestas",
-  //       check2: "Jugadas gratis",
-  //       check4: "Buenas cuotas o momios",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   name: "Ejemplo5",
-  //   img: "/available.webp",
-  //   rating: 4.5,
-  //   promocode: "MMMMMM",
-  //   urlregistro: "https://moisesobando.com/",
-  //   urlbono: "https://moisesobando.com/",
-  //   bonotxt: "Bono del 200% en tu primer depósito, hasta 250 USD",
-  //   email: "ayuda@operador.com",
-  //   phone: "+000 00000000",
-  //   license: "Nombre de la licencia",
-  //   apps: [
-  //     {
-  //       android: "/devices/android.svg",
-  //       nameandroid: "Android",
-  //       ios: "/devices/ios.svg",
-  //       nameios: "iPhone",
-  //       webapp: "/devices/phone.svg",
-  //       nameweb: "Aplicación Web",
-  //     },
-  //   ],
-  //   payments: [
-  //     {
-  //       paypal: "/payments/common/paypal.svg",
-  //       americanexpress: "/payments/common/american-express.svg",
-  //       mastercard: "/payments/common/mastercard.svg",
-  //       shopify: "/payments/common/shopify.svg",
-  //       skrill: "/payments/common/skrill.svg",
-  //       visa: "/payments/common/visa.svg",
-  //     },
-  //   ],
-  //   checklist: [
-  //     {
-  //       check1: "Retiro rápido",
-  //       check2: "Jugadas gratis",
-  //       check3: "Constructor de apuestas",
-  //       check4: "Buenas cuotas o momios",
-  //       check5: "Casino",
-  //     },
-  //   ],
-  // },
+  {
+    id: 2,
+    name: "Pinnacle",
+    img: "/operators/withbg/pinnacle.svg",
+    rating: 4.8,
+    promocode: "NO DISPONIBLE",
+    urlregistro: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18926c_&affid=25020&siteid=31512&adid=18926&c=",
+    urlbono: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18851c_&affid=25020&siteid=31512&adid=18851&c=",
+    bonotxt: "Cuotas más altas, valor real, más dinero",
+    license: "Licencia de Curaçao, Malta, Canadá, Italia y Suecia",
+    payfront: "/payments/frontend/pinnacle-pay-front.svg",
+    apps: [
+      {
+        android: "/devices/android.svg",
+        nameandroid: "Android",
+        ios: "/devices/ios.svg",
+        nameios: "iPhone",
+        webapp: "/devices/phone.svg",
+        nameweb: "Aplicación Web",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Las mejores Cuotas o momios",
+        check2: "Pionera en apuestas de esports",
+        check3: "Excelente diseño web",
+        check4: "Depósito y retiro rápidos",
+        check5: "Apuestas en vivo",
+      },
+    ],
+  },
 ];
