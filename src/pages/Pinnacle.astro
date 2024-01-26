@@ -8,7 +8,7 @@ import Pagos from "../components/sections/pinnacle/Pagos.astro";
 import Deportes from "../components/sections/pinnacle/Deportes.astro";
 import Soporte from "../components/sections/pinnacle/Soporte.astro";
 
-const operator = operators.find((operator) => operator.name === "Pinnacle")!;
+const operator = operators.find((operator) => operator.pageName === "pinnacle")!;
 if (!operator) return Astro.redirect("/404");
 
 const { ...info } = operator;

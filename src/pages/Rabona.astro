@@ -8,7 +8,7 @@ import Pagos from "../components/sections/rabona/Pagos.astro";
 import Deportes from "../components/sections/rabona/Deportes.astro";
 import Soporte from "../components/sections/rabona/Soporte.astro";
 
-const operator = operators.find((operator) => operator.name === "Rabona")!;
+const operator = operators.find((operator) => operator.pageName === "rabona")!;
 if (!operator) return Astro.redirect("/404");
 
 const { ...info } = operator;
