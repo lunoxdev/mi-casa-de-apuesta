@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /Ejemplo
+Disallow: /Ejemplo2
+Disallow: /Ejemplo3
+Disallow: /Ejemplo4
+Disallow: /Ejemplo5
