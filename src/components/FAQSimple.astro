@@ -2,11 +2,14 @@
 const { ...info } = Astro.props;
 ---
 
-<details id="accordion" open={info.open}>
+<details
+  open={info.open}
+  id={`accordion_${Math.random().toString(36).substring(2, 15)}`}
+>
   <summary class="flex flex-row justify-between mb-3">
-    <span class="flex-1 flex pr-5 font-semibold tracking-tight text-pretty"
-      >{info.question}</span
-    >
+    <span class="flex-1 flex pr-5 font-semibold tracking-tight text-pretty">
+      {info.question}
+    </span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18"
@@ -20,21 +23,12 @@ const { ...info } = Astro.props;
         fill-opacity="0.8"></path>
     </svg>
   </summary>
-  <p class="mb-5 tracking-tight text-pretty">
-    {info.answer}
-  </p>
+  <p class="mb-5 tracking-tight text-pretty">{info.answer}</p>
 </details>
-
-<style>
-  #accordion[open] svg path {
-    transform: rotate(180deg);
-    transform-origin: center;
-  }
-</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const accordions = document.querySelectorAll("#accordion");
+    const accordions = document.querySelectorAll('[id^="accordion_"]');
 
     accordions.forEach(function (accordion) {
       accordion.addEventListener("click", function () {
@@ -51,3 +45,10 @@ const { ...info } = Astro.props;
     });
   });
 </script>
+
+<style>
+  [id^="accordion_"][open] svg path {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+</style>

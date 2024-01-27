@@ -15,9 +15,10 @@ const { ...info } = operator;
 
 const title = `Casa de apuesta ${info.name}`;
 const description = `${info.name}, casa de apuestas con diseño atractivo, seguridad garantizada, amplia variedad de deportes y promociones innovadoras.`;
+const canonicalUrl = "https://micasadeapuesta.com/rabona/";
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
     <HeaderReview {...info} client:load />

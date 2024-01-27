@@ -1,12 +1,15 @@
 ---
 import RightsReserved from "../components/footer/RightsReserved.astro";
 import Layout from "../layout/Layout.astro";
+
+const title = "Política de privacidad y Cookies";
+const description =
+  "Aquí describe nuestros procedimientos sobre la recopilación, uso y divulgación de información cuando utiliza o accede a nuestra página y le informa sobre sus derechos de privacidad.";
+const canonicalUrl =
+  "https://micasadeapuesta.com/politicas-de-privacidad-y-cookies/";
 ---
 
-<Layout
-  title="Política de privacidad y Cookies"
-  description="Aquí describe nuestros procedimientos sobre la recopilación, uso y divulgación de información cuando utiliza o accede a nuestra página y le informa sobre sus derechos de privacidad."
->
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <section
     class="max-w-screen-md justify-center items-center mx-auto p-4 text-[#f0f3ff] text-opacity-90"
   >

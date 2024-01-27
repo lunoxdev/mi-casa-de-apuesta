@@ -15,9 +15,10 @@ const { ...info } = operator;
 
 const title = `Casa de apuesta ${info.name}`;
 const description = `${info.name}, casa de apuesta con amplia variedad de deportes, mercados, bonos y promociones, plataforma segura y métodos de retiro y depósito rápidos.`;
+const canonicalUrl = "https://micasadeapuesta.com/1xbet/";
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
     <HeaderReview {...info} client:load />

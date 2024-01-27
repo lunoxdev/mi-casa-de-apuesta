@@ -1,12 +1,14 @@
 ---
 import RightsReserved from "../components/footer/RightsReserved.astro";
 import Layout from "../layout/Layout.astro";
+
+const title = "Términos y Condiciones";
+const description =
+  "Al utilizar nuestros servicios, aceptas cumplir con estos términos. Si no estás de acuerdo con alguna parte de estos Términos y Condiciones, te pedimos que no accedas a nuestro servicio.";
+const canonicalUrl = "https://micasadeapuesta.com/terminos-y-condiciones/";
 ---
 
-<Layout
-  title="Términos y Condiciones"
-  description="Al utilizar nuestros servicios, aceptas cumplir con estos términos. Si no estás de acuerdo con alguna parte de estos Términos y Condiciones, te pedimos que no accedas a nuestro servicio."
->
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <section
     class="max-w-screen-md justify-center items-center mx-auto p-4 text-[#f0f3ff] text-opacity-90"
   >

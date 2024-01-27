@@ -8,16 +8,19 @@ import Pagos from "../components/sections/pinnacle/Pagos.astro";
 import Deportes from "../components/sections/pinnacle/Deportes.astro";
 import Soporte from "../components/sections/pinnacle/Soporte.astro";
 
-const operator = operators.find((operator) => operator.pageName === "pinnacle")!;
+const operator = operators.find(
+  (operator) => operator.pageName === "pinnacle"
+)!;
 if (!operator) return Astro.redirect("/404");
 
 const { ...info } = operator;
 
 const title = `Casa de apuesta ${info.name}`;
 const description = `${info.name}, la casa de apuesta pionera en esports con cuotas competitivas, amplia variedad de deportes y mercados, y plataforma segura.`;
+const canonicalUrl = "https://micasadeapuesta.com/pinnacle/";
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
     <HeaderReview {...info} client:load />

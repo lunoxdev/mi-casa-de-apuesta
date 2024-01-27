@@ -1,0 +1,193 @@
+---
+const { ...info } = Astro.props;
+---
+
+<section
+  id="deportes"
+  class="my-20 flex flex-col w-full mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
+>
+  <!-- Servicios -->
+  <div class="space-y-10">
+    <h2
+      class="text-center text-2xl text-balance tracking-tight sm:text-4xl font-bold uppercase"
+    >
+      SERVICIOS QUE NOS OFRECE {info.name}
+    </h2>
+    <div
+      class="flex flex-row flex-wrap sm:flex-nowrap w-full gap-10 mx-auto text-[#f0f3ff] text-opacity-90"
+    >
+      <!-- E-Sports -->
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <div class="flex flex-col justify-center items-center mx-auto">
+          <img
+            src="/sports/esports.svg"
+            alt="Icono de Sports"
+            width="56"
+            height="56"
+            loading="lazy"
+          />
+          <h3
+            class="inline-flex mx-auto text-center tracking-tight text-xl sm:text-2xl font-semibold mb-2"
+          >
+            Esports
+          </h3>
+          <p class="text-pretty text-center tracking-tight">
+            Muchos eventos en más de 30 disciplinas
+          </p>
+        </div>
+      </div>
+
+      <!-- Sports -->
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <div class="flex flex-col justify-center items-center mx-auto">
+          <img
+            src="/sports/sports.svg"
+            alt="Icono de Sports"
+            width="56"
+            height="56"
+            loading="lazy"
+          />
+          <h3
+            class="inline-flex mx-auto text-center tracking-tight text-xl sm:text-2xl font-semibold mb-2"
+          >
+            Deportes
+          </h3>
+          <p class="text-pretty text-center tracking-tight">
+            Más de 30 deportes con más de 1,000 eventos diarios
+          </p>
+        </div>
+      </div>
+
+      <!-- Casino -->
+      <div
+        class="flex flex-wrap w-full sm:w-1/2 h-auto py-10 px-5 border rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      >
+        <div class="flex flex-col justify-center items-center mx-auto">
+          <img
+            src="/sports/casino.svg"
+            alt="Icono de Sports"
+            width="56"
+            height="56"
+            loading="lazy"
+          />
+          <h3
+            class="inline-flex mx-auto text-center tracking-tight text-xl sm:text-2xl font-semibold mb-2"
+          >
+            Casino
+          </h3>
+          <p class="text-pretty text-center tracking-tight">
+            Más de 1,000 juegos de casino disponibles
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mejores Deportes -->
+  <div class="flex flex-col w-full mx-auto space-y-10">
+    <h2
+      class="text-center text-2xl text-balance tracking-tight uppercase sm:text-4xl font-bold"
+    >
+      DEPORTES MÁS APOSTADOS EN {info.name}
+    </h2>
+    <div
+      class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 mx-auto h-auto space-y-5 sm:space-y-0 py-10 px-5 border gap-5 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+    >
+      <div
+        class="flex flex-col w-1/2 sm:w-full justify-center items-center sm:pl-5 text-balance space-y-3"
+      >
+        <img
+          src="/sports/futbol.svg"
+          alt="Icono de Fútbol"
+          width="56"
+          height="56"
+          loading="lazy"
+        />
+        <h3 class="text-center">Fútbol</h3>
+      </div>
+      <div
+        class="flex flex-col grow w-1/3 sm:w-full justify-center items-center sm:pl-5 text-pretty space-y-3"
+      >
+        <img
+          src="/sports/racinghorses.svg"
+          alt="Icono de carrera de caballos"
+          width="56"
+          height="56"
+          loading="lazy"
+        />
+        <h3 class="text-center">Carrera de Caballos</h3>
+      </div>
+      <div
+        class="flex flex-col grow w-1/3 sm:w-full justify-center items-center sm:pl-5 text-pretty space-y-3"
+      >
+        <img
+          src="/sports/carracing.svg"
+          alt="Icono de Automovilismo"
+          width="72"
+          height="72"
+          loading="lazy"
+        />
+        <h3 class="text-center">Automovilismo</h3>
+      </div>
+      <div
+        class="flex flex-col w-1/2 sm:w-full justify-center items-center sm:pl-5 text-balance space-y-3"
+      >
+        <img
+          src="/sports/basketball.svg"
+          alt="Icono de Baloncesto"
+          width="56"
+          height="56"
+          loading="lazy"
+        />
+        <h3 class="text-center">Baloncesto</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cuotas o momios -->
+  <div class="space-y-10">
+    <div class="w-full flex flex-col justify-start items-start text-start">
+      <div class="space-y-3">
+        <p class="tracking-tight text-pretty">
+          La joya de la corona de cualquier casa de apuestas son sus ofertas
+          deportivas y las cuotas que proporciona. En este sentido, <strong
+            >{info.name}</strong
+          > no decepciona, ofreciendo una amplia gama de deportes y eventos con cuotas
+          competitivas.
+        </p>
+        <p class="tracking-tight text-pretty">
+          La diversidad de deportes en <strong>{info.name}</strong> es impresionante.
+          Desde los deportes más populares como fútbol, baloncesto y tenis, hasta
+          opciones más especializadas como deportes electrónicos, rugby y deportes
+          de invierno, la plataforma cubre prácticamente todos los intereses deportivos
+          imaginables. Esto asegura que los usuarios tengan acceso a una experiencia
+          de apuestas completa, independientemente de sus preferencias personales.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col w-full mx-auto">
+      <h3 class="font-semibold text-balance tracking-tight uppercase text-lg">
+        CUOTAS O MOMIOS EN {info.name}
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          En cuanto a las cuotas, <strong>{info.name}</strong> se esfuerza por ofrecer
+          líneas competitivas que se mantienen al nivel de las principales casas
+          de apuestas, adaptándose así a las preferencias individuales de los usuarios.
+        </p>
+        <p class="text-pretty tracking-tight">
+          La actualización en tiempo real de las cuotas durante los eventos en
+          vivo permite a los apostadores tomar decisiones informadas basadas en
+          el rendimiento actual de los equipos o jugadores. Esto añade un
+          elemento dinámico y emocionante a la experiencia de apuestas,
+          especialmente para aquellos que disfrutan de la acción en vivo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
