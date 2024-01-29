@@ -30,9 +30,9 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
       >
-        <CountUp client:visible initial={0} final={50} />
+        <CountUp client:visible initial={0} final={3} showPlusSign={false} />
         <p class="text-lg sm:text-xl text-center tracking-tight">
-          Países en cobertura
+          Formatos de cuotas
         </p>
       </div>
       <div
@@ -46,7 +46,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-0 sm:pl-5 text-balance space-y-3"
       >
-        <CountUp client:visible initial={0} final={50} />
+        <CountUp client:visible initial={0} final={20} />
         <p class="text-lg sm:text-xl text-center tracking-tight">
           Métodos de pago
         </p>
