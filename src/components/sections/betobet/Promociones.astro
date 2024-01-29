@@ -1,0 +1,181 @@
+---
+import PromoCode from "../../reviews/PromoCodeReview";
+
+const { ...info } = Astro.props;
+---
+
+<>
+  <!-- ¡Aumenta tus ganancias! -->
+  <section
+    id="promociones"
+    class="my-20 flex flex-col w-full mx-auto space-y-5 text-[#f0f3ff] text-opacity-90"
+  >
+    <h2
+      class="text-center text-2xl text-pretty tracking-tight uppercase sm:text-4xl font-bold text-[#f0f3ff] text-opacity-90 mb-3"
+    >
+      ¿CÓMO AUMENTAR TUS GANANCIAS EN {info.name}?
+    </h2>
+    <article class="flex flex-row flex-wrap sm:flex-nowrap w-full gap-10">
+      <div
+        class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+      >
+        <span
+          class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+        ></span>
+        <div
+          class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-5 px-5 text-sm font-medium backdrop-blur-3xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center mx-auto p-4 space-y-3"
+          >
+            <h3
+              class="inline-flex underline text-balance underline-offset-8 text-center tracking-tight text-xl font-semibold"
+            >
+              Código Promocional
+            </h3>
+            <p class="text-pretty text-center p-2 tracking-tight">
+              Ingresa este código Promocional para obtener un adicional en tu
+              depósito. No dejes pasar la oportunidad de mejorar tu experiencia
+              de juego y aumentar tus fondos.
+            </p>
+            <PromoCode {...info} client:idle />
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative overflow-hidden w-full sm:w-1/2 h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+      >
+        <span
+          class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+        ></span>
+        <div
+          class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 py-10 px-5 text-sm font-medium backdrop-blur-3xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center mx-auto p-4 space-y-3"
+          >
+            <h3
+              class="inline-flex text-balance underline underline-offset-8 text-center tracking-tight text-xl font-semibold"
+            >
+              Bono de Bienvenida
+            </h3>
+            <p class="text-pretty text-center tracking-tight">
+              ¡Regístrate y reciba un {info.bonotxt}!
+            </p>
+            <p class="text-pretty text-center tracking-tight">
+              Puede estar sujeta a un rollover. Revisa los términos y
+              condiciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="w-full flex flex-col justify-start items-start text-start">
+      <div class="space-y-3 mt-5">
+        <p class="tracking-tight text-pretty">
+          <span
+            class="inline-flex font-semibold underline underline-offset-4 mb-1"
+          >
+            IMPORTANTE:
+          </span>
+          <br />
+          Al momento de registrarse, deberás de ingresar el Código Promocional <strong
+            >{info.promocode}</strong
+          > antes de finalizar el registro.
+        </p>
+        <p class="tracking-tight text-pretty">
+          Luego del registro, deberás realizar tu primer depósito. El Bono de
+          Bienvenida del 100% lo recibirás automáticamente a este punto. Sin
+          embargo, si no lo recibes, debes ponerte en contacto con el soporte.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="font-semibold text-balance tracking-tight text-lg">
+      Estas son las 6 categorías que {info.name} ofrece:
+    </h3>
+
+    <!-- ¡CONSIGUE TU ACCA BONIFICACIÓN YA! -->
+    <article class="flex flex-col w-full mx-auto">
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        ¡CONSIGUE TU ACCA BONIFICACIÓN YA!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Si una de tus apuestas ACCA de +5 falla, te devuelven el dinero con
+          una apuesta gratis.
+        </p>
+      </div>
+    </article>
+
+    <!-- ¡GANA UNA RECOMPENSA DE 50 USD PARA CADA AMIGO! -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        ¡GANA UNA RECOMPENSA DE 50 USD PARA CADA AMIGO!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Como bien lo indica el título de la promoción, ganas $50 por cada
+          amigo referido.
+        </p>
+      </div>
+    </article>
+
+    <!-- ¡BOB ESTÁ AQUÍ CON UN BONO DEPORTIVO DE 200 USD! -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        ¡BOB ESTÁ AQUÍ CON UN BONO DEPORTIVO DE 200 USD!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Bob te regala un bono del 100%, hasta 200 USD, para jugar en los
+          juegos deportivos de <strong>{info.name}</strong> todos los lunes.
+        </p>
+      </div>
+    </article>
+
+    <!-- ¡20 GIROS GRATIS PARA UN DEPÓSITO EL MARTES! -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        ¡20 GIROS GRATIS PARA UN DEPÓSITO EL MARTES!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          <strong>{info.name}</strong> te da giros gratis todos los martes.
+        </p>
+      </div>
+    </article>
+
+    <!-- 10 USD DE APUESTA GRATUITA, ¡CONSIGUE TU BONO AHORA! -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        10 USD DE APUESTA GRATUITA, ¡CONSIGUE TU BONO AHORA!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Bob te obsequia un bono del 10% en apuestas deportivas, ¡hasta 10 USD,
+          con tu depósito!
+        </p>
+      </div>
+    </article>
+
+    <!-- BONO DE RECARGA MENSUAL DEL 50% HASTA 200 USD EN EL CASINO! -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        BONO DE RECARGA MENSUAL DEL 50% HASTA 200 USD EN EL CASINO!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Te obsequian un bono de recarga mensual equivalente al 50% hasta 200
+          USD únicamente en casino.
+        </p>
+      </div>
+    </article>
+
+    <p class="tracking-tight text-pretty underline">
+      Las promociones de <strong>{info.name}</strong> están sujetas a cambios. Es
+      importante consultar los términos y condiciones de cada promoción antes de
+      participar.
+    </p>
+  </section>
+</>

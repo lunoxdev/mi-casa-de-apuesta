@@ -94,6 +94,36 @@ export const operators: Operator[] = [
   },
   {
     id: 3,
+    name: "bet O bet",
+    pageName: "betobet",
+    img: "/operators/withbg/betobet.svg",
+    rating: 4.8,
+    promocode: "SPORT100",
+    urlregistro: "https://go.betobet.online/visit/?bta=37769&nci=6499",
+    urlbono: "https://go.betobet.online/visit/?bta=37769&nci=5484",
+    bonotxt: "Bono Bienvenida del 100% hasta 100 USD",
+    license: "Licencia de Curazao",
+    payfront: "/payments/frontend/betobet-front.svg",
+    apps: [
+      {
+        android: "/devices/android.svg",
+        nameandroid: "Android",
+        webapp: "/devices/phone.svg",
+        nameweb: "Aplicación Web",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Soporte al cliente 24/7",
+        check2: "Tasas de pago competitivas",
+        check3: "Métodos de pago seguros y rápidos",
+        check4: "Variedad de eventos deportivos",
+        check5: "Bonos y promociones atractivos",
+      },
+    ],
+  },
+  {
+    id: 4,
     name: "Pinnacle",
     pageName: "pinnacle",
     img: "/operators/withbg/pinnacle.svg",
@@ -102,7 +132,7 @@ export const operators: Operator[] = [
     urlregistro: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18926c_&affid=25020&siteid=31512&adid=18926&c=",
     urlbono: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18851c_&affid=25020&siteid=31512&adid=18851&c=",
     bonotxt: "Cuotas más altas, valor real, más dinero",
-    license: "Licencia de Curaçao, Malta, Canadá, Italia y Suecia",
+    license: "Licencia de Curazao, Malta, Canadá, Italia y Suecia",
     payfront: "/payments/frontend/pinnacle-pay-front.svg",
     apps: [
       {
