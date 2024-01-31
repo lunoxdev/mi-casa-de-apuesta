@@ -10,6 +10,7 @@ export interface Operator {
   license: string;
   payfront: string;
   pageName: string;
+  urlpromo: string;
   apps?: {
     android?: string;
     ios?: string;
@@ -37,6 +38,7 @@ export const operators: Operator[] = [
     promocode: "1x_1484789",
     urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
     urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
+    urlpromo: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/",
     bonotxt: "Bono del 100% hasta 100 USD en tu primer depósito",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/1Xbet-pay-front.svg",
@@ -69,6 +71,7 @@ export const operators: Operator[] = [
     promocode: "Lunox",
     urlregistro: "https://rbn.servclick1move.com/?mid=95157_714721",
     urlbono: "https://rbn.servclick1move.com/?mid=95157_714737",
+    urlpromo: "https://rbn.servclick1move.com/?mid=95157_718469",
     bonotxt: "Bono del 100% en tu primer depósito hasta 100 USD",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/rabona-pay-front.svg",
@@ -101,6 +104,7 @@ export const operators: Operator[] = [
     promocode: "SPORT100",
     urlregistro: "https://go.betobet.online/visit/?bta=37769&nci=6499",
     urlbono: "https://go.betobet.online/visit/?bta=37769&nci=5484",
+    urlpromo: "https://go.betobet.online/visit/?bta=37769&nci=5654",
     bonotxt: "Bono Bienvenida del 100% hasta 100 USD",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/betobet-front.svg",
@@ -124,6 +128,35 @@ export const operators: Operator[] = [
   },
   {
     id: 4,
+    name: "Stake",
+    pageName: "stake",
+    img: "/operators/withbg/stake.svg",
+    rating: 4.7,
+    promocode: "Lunox",
+    urlregistro: "https://stake.com/?c=RmJRJH9W",
+    urlbono: "https://stake.com/?c=RmJRJH9W",
+    urlpromo: "https://stake.com/?c=J0mYOFPm",
+    bonotxt: "Recibe el bono de bienvenida usando el código: Lunox",
+    license: "Licencia de Curazao",
+    payfront: "/payments/frontend/stake-front.svg",
+    apps: [
+      {
+        webapp: "/devices/phone.svg",
+        nameweb: "Aplicación Web",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Ingresos pasivos",
+        check2: "Variedad de deportes y mercados",
+        check3: "Diversidad de pagos con criptomonedas",
+        check4: "Plataforma es fácil de usar y navegar",
+        check5: "Se puede compra criptomonedas con MoonPay",
+      },
+    ],
+  },
+  {
+    id: 5,
     name: "Pinnacle",
     pageName: "pinnacle",
     img: "/operators/withbg/pinnacle.svg",
@@ -131,6 +164,7 @@ export const operators: Operator[] = [
     promocode: "NO DISPONIBLE",
     urlregistro: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18926c_&affid=25020&siteid=31512&adid=18926&c=",
     urlbono: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18851c_&affid=25020&siteid=31512&adid=18851&c=",
+    urlpromo: "",
     bonotxt: "Cuotas más altas, valor real, más dinero",
     license: "Licencia de Curazao, Malta, Canadá, Italia y Suecia",
     payfront: "/payments/frontend/pinnacle-pay-front.svg",
