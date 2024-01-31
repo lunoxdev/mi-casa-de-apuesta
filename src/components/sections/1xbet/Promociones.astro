@@ -154,5 +154,17 @@ const { ...info } = Astro.props;
         </p>
       </div>
     </article>
+
+    <p class="text-pretty tracking-tight">
+      Clic <a
+        href={info.urlpromo}
+        target="_blank"
+        rel="external noopener nofollow"
+        class="underline hover:text-gray-400"
+        aria-label="Ir a la pagina de promociones">aquí</a
+      >
+      para saber más de las promociones que <strong>{info.name}</strong>
+      ofrece:
+    </p>
   </section>
 </>
