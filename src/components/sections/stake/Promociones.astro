@@ -36,8 +36,8 @@ const { ...info } = Astro.props;
             <p class="text-pretty text-center p-2 tracking-tight">
               Ingresa este código Promocional para obtener un <strong
                 >Bono de bienvenida</strong
-              > adicional. No dejes pasar la oportunidad de mejorar
-              tu experiencia de juego y aumentar tus fondos.
+              > adicional. No dejes pasar la oportunidad de mejorar tu experiencia
+              de juego y aumentar tus fondos.
             </p>
             <PromoCode {...info} client:idle />
           </div>
@@ -68,8 +68,9 @@ const { ...info } = Astro.props;
       </div>
     </article>
 
-    <p class=" text-balance tracking-tight text-lg">
-     <strong>{info.name}</strong> ofrece gran variedad de promociones, aquí te mencionamos alguna de ellas:
+    <p class="text-balance tracking-tight text-lg">
+      <strong>{info.name}</strong> ofrece gran variedad de promociones, aquí te mencionamos
+      alguna de ellas:
     </p>
 
     <!-- JUEGOS DE BONO -->
@@ -79,10 +80,12 @@ const { ...info } = Astro.props;
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Apuesta eligiendo uno de los dos equipos, si ese equipo marca 2 o más goles en la primera mitad, recibirás un pago como ganador, incluso si el equipo no gana el partido, con un límite de hasta $100 USD.
+          Apuesta eligiendo uno de los dos equipos, si ese equipo marca 2 o más
+          goles en la primera mitad, recibirás un pago como ganador, incluso si
+          el equipo no gana el partido, con un límite de hasta $100 USD.
         </p>
       </div>
-    </article>
+    </articdee>
 
     <!-- PROMOCIONES -->
     <article>
@@ -91,7 +94,8 @@ const { ...info } = Astro.props;
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Puedes ganar hasta $100 USD si tu equipo lidera por 9 puntos al finalizar el tercer cuarto.
+          Puedes ganar hasta $100 USD si tu equipo lidera por 9 puntos al
+          finalizar el tercer cuarto.
         </p>
       </div>
     </article>
@@ -103,10 +107,12 @@ const { ...info } = Astro.props;
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Apuesta por un equipo en la Premier League en el mercado de 1x2. Si el partido termina en empate sin goles, recibirás un reembolso de hasta $100 USD.
+          Apuesta por un equipo en la Premier League en el mercado de 1x2. Si el
+          partido termina en empate sin goles, recibirás un reembolso de hasta
+          $100 USD.
         </p>
       </div>
-    </arle>
+    </article>
 
     <!-- TIENDA DE CÓDIGOS PROMOCIONALES-->
     <article>
@@ -115,19 +121,22 @@ const { ...info } = Astro.props;
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Apuesta por un equipo en el mercado 1x2. Si tu selección gana y el jugador elegido alcanza su objetivo, ganarás el doble, hasta $100 USD.
+          Apuesta por un equipo en el mercado 1x2. Si tu selección gana y el
+          jugador elegido alcanza su objetivo, ganarás el doble, hasta $100 USD.
         </p>
       </div>
     </article>
 
     <p class="text-pretty tracking-tight">
-      Clic <a href={info.urlpromo}
-      target="_blank"
-      rel="external noopener nofollow"
-      class="underline hover:text-gray-400"
-      aria-label="Ir a la pagina de promociones">aquí</a> 
-      para saber más de las promociones que <strong>{info.name}</strong> 
-      ofrece:
+      Leer más acerca de las
+      <a
+        href={info.urlpromo}
+        target="_blank"
+        rel="external noopener nofollow"
+        class="underline hover:text-gray-400"
+        aria-label="Ir a la pagina de promociones"
+        >promociones de <strong>{info.name}</strong>
+      </a>
     </p>
 
     <p class="tracking-tight text-pretty underline">
