@@ -2,11 +2,11 @@
 import Layout from "../layout/Layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
-import Detalles from "../components/sections/betobet/Detalles.astro";
-import Promociones from "../components/sections/betobet/Promociones.astro";
-import Pagos from "../components/sections/betobet/Pagos.astro";
-import Deportes from "../components/sections/betobet/Deportes.astro";
-import Soporte from "../components/sections/betobet/Soporte.astro";
+import Detalles from "../components/operators/betobet/Detalles.astro";
+import Promociones from "../components/operators/betobet/Promociones.astro";
+import Pagos from "../components/operators/betobet/Pagos.astro";
+import Deportes from "../components/operators/betobet/Deportes.astro";
+import Soporte from "../components/operators/betobet/Soporte.astro";
 
 const operator = operators.find((operator) => operator.pageName === "betobet")!;
 if (!operator) return Astro.redirect("/404");

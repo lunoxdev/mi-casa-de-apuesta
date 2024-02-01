@@ -19,7 +19,7 @@ const { ...info } = Astro.props;
       {info.name}
     </h1>
     <div
-      class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 h-auto space-y-5 sm:space-y-0 py-10 px-2 border gap-3 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
+      class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 h-auto space-y-5 sm:space-y-0 py-10 px-2 border gap-1 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
       <div class="flex flex-col grow w-full items-center text-balance space-y-3">
         <CountUp client:visible initial={0} final={1000}/>
@@ -30,7 +30,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
       >
-        <CountUp client:visible initial={0} final={2} showPlusSign={false} />
+        <CountUp client:visible initial={0} final={6} showPlusSign={false} />
         <p class="text-lg sm:text-xl text-center tracking-tight">
           Formatos de cuotas
         </p>
@@ -38,7 +38,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
       >
-      <CountUp client:visible initial={0} final={50} />
+      <CountUp client:visible initial={0} final={30} />
       <p class="text-lg sm:text-xl text-center tracking-tight">
         Diferentes deportes
       </p>
@@ -100,19 +100,32 @@ const { ...info } = Astro.props;
         </div>
       </div>
       <p class="text-pretty tracking-tight">
-       Es una de las casas de apuestas más populares, respetadas del mundo y claramente la pionera en <strong>esports.</strong> Fundada en 1998, Pinnacle cuenta con más de 20 años de experiencia en el sector de apuestas, y durante este tiempo, la compañía ha desarrollado una reputación de excelencia en la oferta de cuotas competitivas, amplia variedad de deportes, mercados, y una plataforma de apuestas segura y fiable.
+        <strong>{info.name}</strong> se distingue de otras casas de apuestas por 
+        su enfoque en las criptomonedas. La plataforma solo acepta depósitos 
+        y retiros en criptomonedas, lo que puede ser una ventaja o una 
+        desventaja, dependiendo de tus preferencias.
       </p>
       <p class="text-pretty tracking-tight">
-        <strong>{info.name}</strong> es sin duda conocida por ofrecer las cuotas más competitivas del mercado. En general, sus cuotas son entre un 5% y un 10% más altas que las de otras casas de apuestas. Esto significa que los apostadores tienen más probabilidades de ganar dinero al apostar con <strong>{info.name}</strong>.
+        <strong>{info.name}</strong> brilla al ofrecer una variedad de 
+        mercados deportivos, y lo hace con una amplitud que satisface 
+        tanto a apostadores novatos como a expertos. Ya sea que estés interesado 
+        en los mercados estándar como el resultado final o las apuestas más 
+        especializadas, <strong>{info.name}</strong> garantiza una amplia gama 
+        de opciones para todos los gustos. Esto no solo mejora la diversión y 
+        emoción de las apuestas, sino que también permite estrategias más 
+        avanzadas y especializadas.
       </p>
       <p class="text-pretty tracking-tight">
-        Lo mejor es que están comprometidos a brindar la mejor experiencia posible. Esto se ve reflejado en su enfoque en la innovación y la mejora continua. Su plataforma es fácil de usar e intuitiva, lo que hace que sea fácil encontrar lo que estás buscando.
+        Otra de las características más destacadas de Stake es su interfaz 
+        de usuario intuitiva y fácil de navegar. La disposición clara de las 
+        secciones y la organización eficiente de la información permiten a los 
+        usuarios acceder rápidamente a sus eventos deportivos favoritos y realizar 
+        apuestas con facilidad.
       </p>
       <p class="text-pretty tracking-tight">
-        <strong>{info.name}</strong> no ofrece un bono de bienvenida. Sin embargo, la casa de apuestas ofrece otras promociones, como reembolsos en caso de derrota y apuestas gratuitas.
-      </p>
-      <p class="text-pretty tracking-tight">
-        Si buscas una casa de apuestas con experiencia y compromiso con la excelencia, <strong>{info.name}</strong> es la mejor opción.
+        Recuerda regístrate utilizando nuestro código promocional <strong>{info.promocode}</strong> para 
+        obtener un <strong>Bono de bienvenida</strong> y así descubrir una experiencia única 
+        de apuestas en <strong>{info.name}</strong>.
       </p>
     </section>
 
@@ -132,11 +145,12 @@ const { ...info } = Astro.props;
           <ul
             class="list-inside tracking-tight text-pretty"
           >
-            <li class="flex flex-row gap-2"><Check /> Las mejores Cuotas o momios</li>
-            <li class="flex flex-row gap-2"><Check /> Apuestas en vivo</li>
-            <li class="flex flex-row gap-2"><Check /> Pionera en apuestas de esports</li>
-            <li class="flex flex-row gap-2"><Check /> Depósito y retiro rápidos</li>
-            <li class="flex flex-row gap-2"><Check /> Excelente diseño web</li>
+            <li class="flex flex-row gap-2"><Check /> Ingresos pasivos</li>
+            <li class="flex flex-row gap-2"><Check /> Variedad de deportes y mercados</li>
+            <li class="flex flex-row gap-2"><Check /> Diversidad de pagos con criptomonedas</li>
+            <li class="flex flex-row gap-2"><Check /> Plataforma es fácil de usar y navegar</li>
+            <li class="flex flex-row gap-2"><Check /> Se puede compra criptomonedas con MoonPay</li>
+            <li class="flex flex-row gap-2"><Check /> Rápidos depósitos y retiros</li>
           </ul>
         </div>
       </div>
@@ -152,9 +166,8 @@ const { ...info } = Astro.props;
           <ul
             class="list-disc list-inside tracking-tight text-pretty"
           >
-          <li class="flex flex-row gap-2"><Equis />Sin bono de bienvenida</li>
-          <li class="flex flex-row gap-2"><Equis />No ofrece chat en vivo</li>
-          <li class="flex flex-row gap-2"><Equis />Límites de apuesta altos</li>
+          <li class="flex flex-row gap-2"><Equis /> Pocos pagos convencionales</li>
+          <li class="flex flex-row gap-2"><Equis /> Bono de bienvenida únicamente con código promocional</li>
           </ul>
         </div>
       </div>

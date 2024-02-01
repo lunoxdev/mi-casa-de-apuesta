@@ -2,11 +2,11 @@
 import Layout from "../layout/Layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
-import Detalles from "../components/sections/1xbet/Detalles.astro";
-import Promociones from "../components/sections/1xbet/Promociones.astro";
-import Pagos from "../components/sections/1xbet/Pagos.astro";
-import Deportes from "../components/sections/1xbet/Deportes.astro";
-import Soporte from "../components/sections/1xbet/Soporte.astro";
+import Detalles from "../components/operators/1xbet/Detalles.astro";
+import Promociones from "../components/operators/1xbet/Promociones.astro";
+import Pagos from "../components/operators/1xbet/Pagos.astro";
+import Deportes from "../components/operators/1xbet/Deportes.astro";
+import Soporte from "../components/operators/1xbet/Soporte.astro";
 
 const operator = operators.find((operator) => operator.pageName === "1xbet")!;
 if (!operator) return Astro.redirect("/404");
