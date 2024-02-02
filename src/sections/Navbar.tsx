@@ -19,7 +19,8 @@ const Navbar: React.FC = () => {
           <a href="https://micasadeapuesta.com/">
             <img
               src="/logo.svg"
-              alt="Mi casas de apuestas Logo"
+              alt="Mi casa de apuesta Logo"
+              title='Mi casa de apuesta Logo'
               className=" hover:scale-110"
               width="40"
               height="40"
