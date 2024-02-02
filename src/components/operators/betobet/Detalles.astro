@@ -67,15 +67,15 @@ const { ...info } = Astro.props;
           }) => (
             <div class="flex flex-row justify-start items-center gap-2">
               {app.android && (
-                <img src={app.android} alt="Android" width="16" height="16" />
+                <img src={app.android} alt="Android" title="Android" width="16" height="16" />
                 <p>{app.nameandroid}</p>
               )}
               {app.ios && (
-                <img src={app.ios} alt="iOS" width="16" height="16" />
+                <img src={app.ios} alt="iOS" title="iOS" width="16" height="16" />
                 <p>{app.nameios}</p>
               )}
               {app.webapp && (
-                <img src={app.webapp} alt="WebApp" width="16" height="16" />
+                <img src={app.webapp} alt="WebApp" title="WebApp" width="16" height="16" />
                 <p>{app.nameweb}</p>
               )}
             </div>
