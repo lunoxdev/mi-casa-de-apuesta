@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/onest";
-// import GTMHeader from "../components/GTM/GTMHeader.astro";
-// import GTMBody from "../components/GTM/GTMBody.astro";
+import GTMHeader from "../components/GTM/GTMHeader.astro";
+import GTMBody from "../components/GTM/GTMBody.astro";
 import { ViewTransitions } from "astro:transitions";
 
 const meta = {
@@ -43,7 +43,7 @@ const { title, description, canonicalUrl } = Astro.props;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={img} />
     <meta name="twitter:creator" content={creator} />
-    <!-- <GTMHeader /> -->
+    <GTMHeader />
     <ViewTransitions />
   </head>
   <body class="bg-slate-950 text-[#f0f3ff] text-opacity-90">
@@ -52,8 +52,8 @@ const { title, description, canonicalUrl } = Astro.props;
     >
     </div>
     <slot />
-  </body><!-- <GTMBody /> -->
-  <style is:global>
+    <GTMBody />
+  </body><style is:global>
     :root {
       color-scheme: light dark;
     }
