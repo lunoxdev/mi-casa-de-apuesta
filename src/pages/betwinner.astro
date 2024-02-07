@@ -1,0 +1,41 @@
+---
+import Layout from "../layout/Layout.astro";
+import { operators } from "../lib/data";
+import HeaderReview from "../components/reviews/HeaderReview";
+import Detalles from "../components/operators/betwinner/Detalles.astro";
+import Promociones from "../components/operators/betwinner/Promociones.astro";
+import Pagos from "../components/operators/betwinner/Pagos.astro";
+import Deportes from "../components/operators/betwinner/Deportes.astro";
+import Soporte from "../components/operators/betwinner/Soporte.astro";
+
+const operator = operators.find(
+  (operator) => operator.pageName === "betwinner"
+)!;
+if (!operator) return Astro.redirect("/404");
+
+const { ...info } = operator;
+
+const title = `Casa de apuesta ${info.name}`;
+const description = `${info.name}, casa de apuesta que redefine la emoción deportiva con sus increíbles promociones y bonos excepcionales. ¡Vive el deporte como nunca antes!`;
+const canonicalUrl = "https://micasadeapuesta.com/betwinner/";
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <>
+    <!-- Header Review -->
+    <HeaderReview {...info} client:load />
+
+    <!-- Content -->
+    <main class="max-w-screen-lg px-4">
+      <Detalles {...info} />
+      <Promociones {...info} />
+      <Pagos {...info} />
+      <Deportes {...info} />
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-screen-lg px-4">
+      <Soporte {...info} />
+    </footer>
+  </>
+</Layout>
