@@ -2,20 +2,20 @@
 import Layout from "../layout/Layout.astro";
 import { operators } from "../lib/data";
 import HeaderReview from "../components/reviews/HeaderReview";
-import Detalles from "../components/operators/1xbet/Detalles.astro";
-import Promociones from "../components/operators/1xbet/Promociones.astro";
-import Pagos from "../components/operators/1xbet/Pagos.astro";
-import Deportes from "../components/operators/1xbet/Deportes.astro";
-import Soporte from "../components/operators/1xbet/Soporte.astro";
+import Detalles from "../components/operators/betway/Detalles.astro";
+import Promociones from "../components/operators/betway/Promociones.astro";
+import Pagos from "../components/operators/betway/Pagos.astro";
+import Deportes from "../components/operators/betway/Deportes.astro";
+import Soporte from "../components/operators/betway/Soporte.astro";
 
-const operator = operators.find((operator) => operator.pageName === "1xbet")!;
+const operator = operators.find((operator) => operator.pageName === "betway")!;
 if (!operator) return Astro.redirect("/404");
 
 const { ...info } = operator;
 
 const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, casa de apuestas con una amplia variedad de deportes, mercados, bonos y promociones, métodos de retiro y depósito rápidos.`;
-const canonicalUrl = "https://micasadeapuesta.com/1xbet/";
+const description = `${info.name}, donde la emoción y las apuestas deportivas se fusionan. Variedad bonos y promociones. ¡Vive la emoción en cada apuesta!`;
+const canonicalUrl = "https://micasadeapuesta.com/betway/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
