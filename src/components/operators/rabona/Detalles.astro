@@ -22,7 +22,7 @@ const { ...info } = Astro.props;
       class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 h-auto space-y-5 sm:space-y-0 py-10 px-2 border gap-1 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
       <div class="flex flex-col grow w-full items-center text-balance space-y-3">
-        <CountUp client:visible initial={0} final={1000}/>
+        <CountUp client:visible initial={0} final={6000}/>
         <p class="text-lg sm:text-xl text-center tracking-tight">
           Eventos diarios
         </p>
@@ -38,7 +38,7 @@ const { ...info } = Astro.props;
       <div
         class="flex flex-col grow w-1/4 sm:w-full justify-center items-center pl-5 text-balance space-y-3"
       >
-      <CountUp client:visible initial={0} final={30} />
+      <CountUp client:visible initial={0} final={35} />
       <p class="text-lg sm:text-xl text-center tracking-tight">
         Diferentes deportes
       </p>
