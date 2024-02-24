@@ -53,36 +53,37 @@ const { title, description, canonicalUrl } = Astro.props;
     </div>
     <slot />
     <GTMBody />
-  </body><style is:global>
-    :root {
-      color-scheme: light dark;
-    }
+    <style is:global>
+      :root {
+        color-scheme: light dark;
+      }
 
-    html {
-      font-family: "Onest Variable", sans-serif, system-ui;
-      scroll-behavior: smooth;
-    }
+      html {
+        font-family: "Onest Variable", sans-serif, system-ui;
+        scroll-behavior: smooth;
+      }
 
-    body {
-      color: rgba(17, 17, 17, 0.9);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      max-width: 1024px;
-      margin: auto;
-      overscroll-behavior: auto;
-    }
-
+      body {
+        color: rgba(17, 17, 17, 0.9);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 1024px;
+        margin: auto;
+        /* overscroll-behavior: auto; */
+      }
+      /* 
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
       }
-    }
+    } */
 
-    @media (prefers-color-scheme: dark) {
-      body {
-        color: #f0f3ff;
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #f0f3ff;
+        }
       }
-    }
-  </style>
+    </style>
+  </body>
 </html>
