@@ -34,11 +34,8 @@ const { ...info } = Astro.props;
               Código Promocional
             </h3>
             <p class="text-pretty text-center p-2 tracking-tight">
-              No es necesario ingresar ningún código promocional de <strong
-                >{info.name}</strong
-              >, pues recibirás un bono del 100% con tu primer depósito.
+              Por el momento, <strong>{info.name}</strong> no ofrece código promocional
             </p>
-            <PromoCode {...info} client:idle />
           </div>
         </div>
       </div>
@@ -60,10 +57,8 @@ const { ...info } = Astro.props;
               Bono de Bienvenida
             </h3>
             <p class="text-pretty text-center tracking-tight">
-              ¡Regístrate y {info.bonotxt}!
-            </p>
-            <p class="text-pretty text-center tracking-tight">
-              Puede estar sujeta a cambios. Revisa los términos y condiciones.
+              <strong>{info.name}</strong> no ofrece bono de bienvenida pero ofrece
+              {info.bonotxt}
             </p>
           </div>
         </div>
@@ -71,50 +66,71 @@ const { ...info } = Astro.props;
     </article>
     <div class="w-full flex flex-col justify-start items-start text-start">
       <div class="space-y-3 mt-5">
-        <p class="tracking-tight text-pretty">
-          Aumentar las ganancias en <strong>{info.name}</strong> implica un enfoque
-          estratégico. Los apostadores pueden beneficiarse al seguir de cerca las
-          tendencias deportivas, analizar estadísticas y utilizar las herramientas
-          proporcionadas por <strong>{info.name}</strong>, como análisis de
-          cuotas y estadísticas en tiempo real.
-        </p>
-        <p class="tracking-tight text-pretty">
-          La gestión adecuada del dinero y la participación en promociones y
-          bonificaciones también son estrategias clave para optimizar las
-          ganancias a largo plazo. Además, es crucial apostar de manera
-          responsable y establecer límites para garantizar una experiencia de
-          juego saludable.
+        <p class="text-pretty tracking-tight">
+          <strong>{info.name}</strong> brinda una extensa variedad de juegos con
+          bonificaciones, promociones y ofertas exclusivas.
         </p>
       </div>
     </div>
 
     <h3 class="font-semibold text-balance tracking-tight text-lg">
-      <strong>{info.name}</strong> ofrece gran variedad de promociones, aquí te mencionamos
-      alguna de ellas:
+      Algunas de las opciones para aumentar tus ganancias son las siguientes:
     </h3>
 
-    <!-- CLUB DE APUESTAS -->
+    <!-- PRICE BOOST  -->
     <article class="flex flex-col w-full mx-auto">
       <h3 class="font-semibold text-balance tracking-tight text-lg">
-        CLUB DE APUESTAS
+        PRICE BOOST
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Puedes ganar 10 USD en <strong>apuestas gratis</strong> cada semana si
-          apuestas 25 USD en triples o combinadas.
+          Esta función te permite multiplicar las probabilidades de una apuesta
+          seleccionada, incrementando así el importe de la ganancia potencial,
+          gratuitamente. La función se puede usar una vez por día y por deporte.
         </p>
       </div>
     </article>
 
-    <!-- COMBINADA SEGURA -->
+    <!-- OFERTAS DIARIAS -->
     <article>
       <h3 class="font-semibold text-balance tracking-tight text-lg">
-        COMBINADA SEGURA
+        OFERTAS DIARIAS
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Si pierdes por una tu acumulada de 4+ selecciones, te regresan lo
-          apostado en <strong>apuestas gratis</strong>.
+          Descubre una gran variedad de promociones y apuestas en vivo en
+          nuestra página de ofertas diarias. Cada 2 horas, encontrarás nuevas
+          opciones que abarcan los principales eventos deportivos. Sin duda,
+          encontrarás una promoción perfecta para tu estilo de juego.
+        </p>
+      </div>
+    </article>
+
+    <!-- AUMENTO DE PRECIOS DIARIOS -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        AUMENTO DE PRECIOS DIARIOS
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Dirigido a los apostadores que operan en una variedad de mercados
+          diferentes, este sistema les permite elegir un aumento de precio por
+          día en los partidos seleccionados, maximizando así sus ganancias.
+          Estos aumentos de precio se ejecutan durante todo el día y se
+          reinician cada 24 horas.
+        </p>
+      </div>
+    </article>
+
+    <!-- CASINO BOOST -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        CASINO BOOST
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Esta función te permite aumentar tus ganancias durante un periodo de
+          tiempo determinado, con un porcentaje de aumento específico.
         </p>
       </div>
     </article>
