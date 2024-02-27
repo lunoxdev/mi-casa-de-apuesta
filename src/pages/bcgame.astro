@@ -1,0 +1,39 @@
+---
+import Layout from "../layout/Layout.astro";
+import { operators } from "../lib/data";
+import HeaderReview from "../components/reviews/HeaderReview";
+import Detalles from "../components/operators/bcgame/Detalles.astro";
+import Promociones from "../components/operators/bcgame/Promociones.astro";
+import Pagos from "../components/operators/bcgame/Pagos.astro";
+import Deportes from "../components/operators/bcgame/Deportes.astro";
+import Soporte from "../components/operators/bcgame/Soporte.astro";
+
+const operator = operators.find((operator) => operator.pageName === "bcgame")!;
+if (!operator) return Astro.redirect("/404");
+
+const { ...info } = operator;
+
+const title = `Reseña de la casa de apuestas ${info.name}`;
+const description = `${info.name}, plataforma de apuestas deportiva completa y segura con una amplia variedad de juegos, Casino, Tragamonedas y más.`;
+const canonicalUrl = "https://micasadeapuesta.com/bcgame/";
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <>
+    <!-- Header Review -->
+    <HeaderReview {...info} client:load />
+
+    <!-- Content -->
+    <main class="max-w-screen-lg px-4">
+      <Detalles {...info} />
+      <Promociones {...info} />
+      <Pagos {...info} />
+      <Deportes {...info} />
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-screen-lg px-4">
+      <Soporte {...info} />
+    </footer>
+  </>
+</Layout>

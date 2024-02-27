@@ -1,4 +1,6 @@
 ---
+import PromoCode from "../../reviews/PromoCodeReview";
+
 const { ...info } = Astro.props;
 ---
 
@@ -32,8 +34,12 @@ const { ...info } = Astro.props;
               Código Promocional
             </h3>
             <p class="text-pretty text-center p-2 tracking-tight">
-              Por el momento, <strong>{info.name}</strong> no ofrece código promocional
+              Ingresa este código Promocional para obtener un <strong
+                >Bono de bienvenida</strong
+              > adicional. No dejes pasar la oportunidad de mejorar tu experiencia
+              de juego y aumentar tus fondos.
             </p>
+            <PromoCode {...info} client:idle />
           </div>
         </div>
       </div>
@@ -55,80 +61,68 @@ const { ...info } = Astro.props;
               Bono de Bienvenida
             </h3>
             <p class="text-pretty text-center tracking-tight">
-              <strong>{info.name}</strong> no ofrece bono de bienvenida pero ofrece
-              {info.bonotxt}
+              Regístrate y <span class="lowercase">{info.bonotxt}</span>
             </p>
           </div>
         </div>
       </div>
     </article>
-    <div class="w-full flex flex-col justify-start items-start text-start">
-      <div class="space-y-3 mt-5">
-        <p class="text-pretty tracking-tight">
-          <strong>{info.name}</strong> brinda una extensa variedad de juegos con
-          bonificaciones, promociones y ofertas exclusivas.
-        </p>
-      </div>
-    </div>
 
-    <h3 class="font-semibold text-balance tracking-tight text-lg">
-      Algunas de las opciones para aumentar tus ganancias son las siguientes:
-    </h3>
+    <p class="text-balance tracking-tight text-lg">
+      <strong>{info.name}</strong> ofrece gran variedad de promociones, aquí te mencionamos
+      alguna de ellas:
+    </p>
 
-    <!-- PRICE BOOST  -->
-    <article class="flex flex-col w-full mx-auto">
+    <!-- JUEGOS DE BONO -->
+    <articdee class="flex flex-col w-full mx-auto">
       <h3 class="font-semibold text-balance tracking-tight text-lg">
-        PRICE BOOST
+        UEFA Champions League - ¡Dos goles en la 1era parte y ganas!
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Esta función te permite multiplicar las probabilidades de una apuesta
-          seleccionada, incrementando así el importe de la ganancia potencial,
-          gratuitamente. La función se puede usar una vez por día y por deporte.
+          Apuesta eligiendo uno de los dos equipos, si ese equipo marca 2 o más
+          goles en la primera mitad, recibirás un pago como ganador, incluso si
+          el equipo no gana el partido, con un límite de hasta $100 USD.
+        </p>
+      </div>
+    </articdee>
+
+    <!-- PROMOCIONES -->
+    <article>
+      <h3 class="font-semibold text-balance tracking-tight text-lg">
+        NGA - Lidera por 9pts tras el tercer cuarto, ¡Tu ganas!
+      </h3>
+      <div class="space-y-2">
+        <p class="text-pretty tracking-tight">
+          Puedes ganar hasta $100 USD si tu equipo lidera por 9 puntos al
+          finalizar el tercer cuarto.
         </p>
       </div>
     </article>
 
-    <!-- OFERTAS DIARIAS -->
+    <!-- BONOS Y OFERTAS -->
     <article>
       <h3 class="font-semibold text-balance tracking-tight text-lg">
-        OFERTAS DIARIAS
+        Premier League - Seguro de Empate
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Descubre una gran variedad de promociones y apuestas en vivo en
-          nuestra página de ofertas diarias. Cada 2 horas, encontrarás nuevas
-          opciones que abarcan los principales eventos deportivos. Sin duda,
-          encontrarás una promoción perfecta para tu estilo de juego.
+          Apuesta por un equipo en la Premier League en el mercado de 1x2. Si el
+          partido termina en empate sin goles, recibirás un reembolso de hasta
+          $100 USD.
         </p>
       </div>
     </article>
 
-    <!-- AUMENTO DE PRECIOS DIARIOS -->
+    <!-- TIENDA DE CÓDIGOS PROMOCIONALES-->
     <article>
       <h3 class="font-semibold text-balance tracking-tight text-lg">
-        AUMENTO DE PRECIOS DIARIOS
+        Fútbol Nacional - Ganancias Dobles
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          Dirigido a los apostadores que operan en una variedad de mercados
-          diferentes, este sistema les permite elegir un aumento de precio por
-          día en los partidos seleccionados, maximizando así sus ganancias.
-          Estos aumentos de precio se ejecutan durante todo el día y se
-          reinician cada 24 horas.
-        </p>
-      </div>
-    </article>
-
-    <!-- CASINO BOOST -->
-    <article>
-      <h3 class="font-semibold text-balance tracking-tight text-lg">
-        CASINO BOOST
-      </h3>
-      <div class="space-y-2">
-        <p class="text-pretty tracking-tight">
-          Esta función te permite aumentar tus ganancias durante un periodo de
-          tiempo determinado, con un porcentaje de aumento específico.
+          Apuesta por un equipo en el mercado 1x2. Si tu selección gana y el
+          jugador elegido alcanza su objetivo, ganarás el doble, hasta $100 USD.
         </p>
       </div>
     </article>
@@ -143,6 +137,12 @@ const { ...info } = Astro.props;
         aria-label="Ir a la pagina de promociones"
         >promociones de <strong>{info.name}</strong>
       </a>
+    </p>
+
+    <p class="tracking-tight text-pretty underline">
+      Las promociones de <strong>{info.name}</strong> están sujetas a cambios. Es
+      importante consultar los términos y condiciones de cada promoción antes de
+      participar.
     </p>
   </section>
 </>
