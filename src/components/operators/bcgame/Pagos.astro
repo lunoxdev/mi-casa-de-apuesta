@@ -15,41 +15,14 @@ const { ...info } = Astro.props;
   <article>
     <div class="space-y-2">
       <p class="text-pretty tracking-tight">
-        Como lo mencionamos al principio de esta reseña, <strong
-          >{info.name}</strong
-        >
-        es una casa de apuestas que solo acepta depósitos y retiros en criptomonedas.
-        Sin embargo, las criptomonedas ofrecen una serie de ventajas sobre los métodos
-        de pago tradicionales, como:
+        <strong>{info.name}</strong>, en su constante búsqueda de mejorar la
+        experiencia del usuario y la eficiencia de su plataforma, ha
+        implementado modificaciones en la estructura de tarifas para retiros de
+        dinero efectivo. Este ajuste está alineado con la metodología de tarifas
+        de la pasarela de pago e incorpora una nueva opción para la conversión
+        de FIAT a USDT.
       </p>
-      <ul class="list-disc list-inside tracking-tight">
-        <li>
-          Son más seguras, ya que utilizan la tecnología blockchain para
-          registrar las transacciones.
-        </li>
-        <li>
-          Son más rápidas, ya que las transacciones se procesan
-          instantáneamente.
-        </li>
-        <li>
-          Son más baratas, ya que las comisiones de las transacciones son
-          menores.
-        </li>
-      </ul>
-    </div>
-    <div class="space-y-2">
-      <p class="text-pretty tracking-tight mt-3">
-        Por otro lado, las criptomonedas también presentan algunas desventajas,
-        como:
-      </p>
-      <ul class="list-disc list-inside tracking-tight">
-        <li>
-          Son más complejas de usar que los métodos de pago tradicionales.
-        </li>
-        <li>
-          Todavía no son tan aceptadas como los métodos de pago tradicionales.
-        </li>
-      </ul>
+
       <p class="text-pretty tracking-tight">
         A continuación, te presentamos las opciones más populares entre los
         jugadores en la actualidad, destacando por su rapidez, facilidad y
@@ -74,22 +47,22 @@ const { ...info } = Astro.props;
           class="flex flex-wrap justify-center items-center mx-auto p-2 gap-2"
         >
           <img
-            src="/payments/common/astropay.svg"
-            alt="AstroPay"
-            width="96"
-            height="96"
+            src="/payments/common/visa.svg"
+            alt="Visa"
+            width="48"
+            height="48"
             loading="lazy"
           />
           <img
-            src="/payments/common/muchbetter.svg"
-            alt="Much Better"
-            width="96"
-            height="96"
+            src="/payments/common/mastercard.svg"
+            alt="Master Card"
+            width="48"
+            height="48"
             loading="lazy"
           />
           <img
-            src="/payments/common/pix.svg"
-            alt="PIX"
+            src="/payments/common/moonpay.svg"
+            alt="MoonPay"
             width="96"
             height="96"
             loading="lazy"
@@ -110,17 +83,10 @@ const { ...info } = Astro.props;
           class="flex flex-wrap justify-center items-center mx-auto p-2 gap-3"
         >
           <img
-            src="/payments/crypto/litecoin.svg"
-            alt="Litecoin"
-            width="36"
-            height="36"
-            loading="lazy"
-          />
-          <img
             src="/payments/crypto/bitcoin.svg"
             alt="Bitcoin"
-            width="36"
-            height="36"
+            width="40"
+            height="40"
             loading="lazy"
           />
           <img
@@ -128,27 +94,6 @@ const { ...info } = Astro.props;
             alt="Etherum"
             width="24"
             height="24"
-            loading="lazy"
-          />
-          <img
-            src="/payments/crypto/tron.svg"
-            alt="Tron"
-            width="32"
-            height="32"
-            loading="lazy"
-          />
-          <img
-            src="/payments/crypto/ripple.svg"
-            alt="Ripple"
-            width="32"
-            height="32"
-            loading="lazy"
-          />
-          <img
-            src="/payments/crypto/tether.svg"
-            alt="Tether"
-            width="36"
-            height="36"
             loading="lazy"
           />
           <img
@@ -161,13 +106,27 @@ const { ...info } = Astro.props;
           <img
             src="/payments/crypto/xrp.svg"
             alt="XRP"
+            width="36"
+            height="36"
+            loading="lazy"
+          />
+          <img
+            src="/payments/crypto/cardano.svg"
+            alt="Cardano"
+            width="36"
+            height="36"
+            loading="lazy"
+          />
+          <img
+            src="/payments/crypto/polkadot.svg"
+            alt="Polkadot"
             width="32"
             height="32"
             loading="lazy"
           />
           <img
-            src="/payments/crypto/metamask.svg"
-            alt="Metamask"
+            src="/payments/crypto/tron.svg"
+            alt="Tron"
             width="32"
             height="32"
             loading="lazy"
@@ -180,15 +139,29 @@ const { ...info } = Astro.props;
             loading="lazy"
           />
           <img
-            src="/payments/crypto/link.svg"
-            alt="Link"
+            src="/payments/crypto/avalanche.svg"
+            alt="Avalanche"
             width="32"
             height="32"
             loading="lazy"
           />
           <img
-            src="/payments/crypto/ape.svg"
-            alt="Ape"
+            src="/payments/crypto/solana.svg"
+            alt="Solana"
+            width="36"
+            height="36"
+            loading="lazy"
+          />
+          <img
+            src="/payments/crypto/polygon.svg"
+            alt="Polygon"
+            width="32"
+            height="32"
+            loading="lazy"
+          />
+          <img
+            src="/payments/crypto/arbitrum.svg"
+            alt="Arbitrum"
             width="32"
             height="32"
             loading="lazy"
@@ -204,10 +177,29 @@ const { ...info } = Astro.props;
       </h3>
       <div class="space-y-2">
         <p class="text-pretty tracking-tight">
-          En <strong>{info.name}</strong>, los depósitos en criptomonedas se
-          procesan instantáneamente. Los retiros en criptomonedas muy rara vez
-          pueden llegar a procesarse en un plazo de 24 horas, normalmente son
-          instantáneamente.
+          En cuanto a lo que tiene que ver con las criptomonedas, la velocidad y
+          confiabilidad de los depósitos son aspectos cruciales a tener en
+          cuenta. En <strong>{info.name}</strong>, los depósitos pueden demorar
+          entre 1 minuto y 2 horas, dependiendo de la cadena de bloques. Para
+          asegurar la rapidez, es fundamental ingresar correctamente todos los
+          detalles, como la dirección y la etiqueta/memo para USDT. Se
+          recomienda utilizar la dirección específica para ERC20 o TRC20 al
+          depositar USDT.
+        </p>
+
+        <p class="text-pretty tracking-tight">
+          Es importante señalar que las billeteras de <strong
+            >{info.name}</strong
+          >
+          no aceptan depósitos de contratos, lo que podría ocasionar retrasos de
+          hasta 12 horas. Para evitar esta situación, se aconseja utilizar billeteras
+          como Metamask, Atomic o Trust Wallet, ya que admiten depósitos sin contratos.
+        </p>
+
+        <p class="text-pretty tracking-tight">
+          Nota: En caso de que tu depósito no llegue en un plazo de 2 horas,
+          puedes contactar al servicio de atención al cliente para obtener
+          asistencia.
         </p>
       </div>
     </div>
