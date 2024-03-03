@@ -61,7 +61,12 @@ const { ...info } = Astro.props;
               Bono de Bienvenida
             </h3>
             <p class="text-pretty text-center tracking-tight">
-              Regístrate y <span class="lowercase">{info.bonotxt}</span>
+              <a
+                href={info.urlregistro}
+                target="_blank"
+                rel="external noopener noreferrer nofollow"
+                class="underline hover:text-gray-400">Regístrese ahora</a
+              > y <span class="lowercase">{info.bonotxt}</span>
             </p>
           </div>
         </div>
