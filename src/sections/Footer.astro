@@ -1,32 +1,35 @@
 ---
 import RightsReserved from "./RightsReserved.astro";
+import PeWorld from "./../components/icons/PeWorld.astro";
 ---
 
 <footer
   id="footer"
   class="flex flex-col max-w-screen-md mx-auto space-y-8 p-4 my-8 text-[#f0f3ff] text-opacity-90"
 >
-  <section class="flex flex-col justify-center items-center space-y-5">
+  <section class="flex flex-col justify-center items-center space-y-10">
     <h2
       class="text-center text-xl text-balance tracking-tight sm:text-3xl font-bold"
     >
       ACERCA DE NOSOTROS
     </h2>
-    <p class="text-center tracking-tight text-pretty">
-      Somos un equipo de expertos en apuestas deportivas en Latinoamérica,
-      dedicados a brindar información precisa y comparativa de casas de apuestas
-      del mercado.
-    </p>
-    <p class="text-center tracking-tight text-pretty">
-      Nuestro objetivo es ayudarte a encontrar la mejor casa de apuestas para
-      tus necesidades, por esta razón, realizamos una investigación exhaustiva y
-      compartimos nuestros conocimientos en guías y reseñas, para que puedas
-      tomar una decisión informada.
-    </p>
+    <div class="space-y-3">
+      <p class="text-center tracking-tight text-pretty">
+        Somos un equipo de expertos en apuestas deportivas en Latinoamérica,
+        dedicados a brindar información precisa y comparativa de casas de
+        apuestas del mercado.
+      </p>
+      <p class="text-center tracking-tight text-pretty">
+        Nuestro objetivo es ayudarte a encontrar la mejor casa de apuestas para
+        tus necesidades, por esta razón, realizamos una investigación exhaustiva
+        y compartimos nuestros conocimientos en guías y reseñas, para que puedas
+        tomar una decisión informada.
+      </p>
+    </div>
     <!-- Contáctenos-->
     <a
       href="mailto:dev.lunox@gmail.com"
-      class="relative inline-flex w-40 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
+      class="relative inline-flex w-40 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
     >
       <span
         class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
@@ -38,6 +41,26 @@ import RightsReserved from "./RightsReserved.astro";
         Contáctenos
       </span>
     </a>
+    <div class="flex flex-col space-y-2 justify-center items-center">
+      <span class="text-center tracking-tight text-pretty"
+        >Visítanos también en:
+      </span>
+      <a
+        href="https://micasadeapuesta.pe/"
+        title="Mi casa de apuesta Perú"
+        target="_self"
+        rel="external noopener noreferrer follow"
+      >
+        <span
+          class="relative text-lg flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+          aria-label="Ir al sitio web: Mi casa de apuestas LATAM"
+          typeof="button"
+        >
+          Mi casa de apuesta Perú
+          <PeWorld />
+        </span>
+      </a>
+    </div>
   </section>
   <hr />
   <div class="flex flex-col justify-center items-center mx-auto gap-3">
@@ -55,21 +78,21 @@ import RightsReserved from "./RightsReserved.astro";
     </p>
   </div>
   <div
-    class="flex flex-row w-full tracking-tight gap-2 text-center justify-between items-center"
+    class="flex flex-row w-full tracking-tight gap-2 text-center text-sm sm:text-md justify-between items-center"
   >
     <a
       href="/terminos-y-condiciones/"
-      class="underline underline-offset-4 hover:text-white/70"
+      class="relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
       >Términos y Condiciones</a
     >
     <a
       href="/politicas-de-privacidad-y-cookies/"
-      class="underline underline-offset-4 hover:text-white/70"
+      class="relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
       >Política de privacidad y Cookies</a
     >
     <a
       href="/juego-responsable/"
-      class="underline underline-offset-4 hover:text-white/70"
+      class="relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
       >Juego Responsable</a
     >
   </div>
