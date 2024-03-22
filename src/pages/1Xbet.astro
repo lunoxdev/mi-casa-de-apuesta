@@ -9,31 +9,28 @@ import Deportes from "../components/operators/1xbet/Deportes.astro";
 import Soporte from "../components/operators/1xbet/Soporte.astro";
 
 const operator = operators.find((operator) => operator.pageName === "1xbet")!;
-if (!operator) return Astro.redirect("/404");
 
-const { ...info } = operator;
-
-const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, casa de apuestas con una amplia variedad de deportes, mercados, bonos y promociones, métodos de retiro y depósito rápidos.`;
+const title = `Reseña de la casa de apuestas ${operator.name}`;
+const description = `${operator.name}, casa de apuestas con una amplia variedad de deportes, mercados, bonos y promociones, métodos de retiro y depósito rápidos.`;
 const canonicalUrl = "https://micasadeapuesta.com/1xbet/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...info} client:load />
+    <HeaderReview {...operator} client:load />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
-      <Detalles {...info} />
-      <Promociones {...info} />
-      <Pagos {...info} />
-      <Deportes {...info} />
+      <Detalles {...operator} />
+      <Promociones {...operator} />
+      <Pagos {...operator} />
+      <Deportes {...operator} />
     </main>
 
     <!-- Footer -->
     <footer class="max-w-screen-lg px-4">
-      <Soporte {...info} />
+      <Soporte {...operator} />
     </footer>
   </>
 </Layout>

@@ -9,31 +9,28 @@ import Deportes from "../components/operators/fezbet/Deportes.astro";
 import Soporte from "../components/operators/fezbet/Soporte.astro";
 
 const operator = operators.find((operator) => operator.pageName === "fezbet")!;
-if (!operator) return Astro.redirect("/404");
 
-const { ...info } = operator;
-
-const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, donde las apuestas deportivas se mezclan con la emoción del casino. ¡Gana mientras disfrutas tus juegos favoritos!`;
+const title = `Reseña de la casa de apuestas ${operator.name}`;
+const description = `${operator.name}, donde las apuestas deportivas se mezclan con la emoción del casino. ¡Gana mientras disfrutas tus juegos favoritos!`;
 const canonicalUrl = "https://micasadeapuesta.com/fezbet/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...info} client:load />
+    <HeaderReview {...operator} client:load />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
-      <Detalles {...info} />
-      <Promociones {...info} />
-      <Pagos {...info} />
-      <Deportes {...info} />
+      <Detalles {...operator} />
+      <Promociones {...operator} />
+      <Pagos {...operator} />
+      <Deportes {...operator} />
     </main>
 
     <!-- Footer -->
     <footer class="max-w-screen-lg px-4">
-      <Soporte {...info} />
+      <Soporte {...operator} />
     </footer>
   </>
 </Layout>

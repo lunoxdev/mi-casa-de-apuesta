@@ -9,31 +9,28 @@ import Deportes from "../components/operators/betobet/Deportes.astro";
 import Soporte from "../components/operators/betobet/Soporte.astro";
 
 const operator = operators.find((operator) => operator.pageName === "betobet")!;
-if (!operator) return Astro.redirect("/404");
 
-const { ...info } = operator;
-
-const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, apuestas deportivas con cuotas competitivas, confiables y emocionantes. ¡Vive la emoción del juego y apuesta como un PRO!`;
+const title = `Reseña de la casa de apuestas ${operator.name}`;
+const description = `${operator.name}, apuestas deportivas con cuotas competitivas, confiables y emocionantes. ¡Vive la emoción del juego y apuesta como un PRO!`;
 const canonicalUrl = "https://micasadeapuesta.com/betobet/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...info} client:load />
+    <HeaderReview {...operator} client:load />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
-      <Detalles {...info} />
-      <Promociones {...info} />
-      <Pagos {...info} />
-      <Deportes {...info} />
+      <Detalles {...operator} />
+      <Promociones {...operator} />
+      <Pagos {...operator} />
+      <Deportes {...operator} />
     </main>
 
     <!-- Footer -->
     <footer class="max-w-screen-lg px-4">
-      <Soporte {...info} />
+      <Soporte {...operator} />
     </footer>
   </>
 </Layout>

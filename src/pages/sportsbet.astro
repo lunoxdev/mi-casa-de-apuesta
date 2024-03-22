@@ -11,31 +11,28 @@ import Soporte from "../components/operators/sportsbet/Soporte.astro";
 const operator = operators.find(
   (operator) => operator.pageName === "sportsbet"
 )!;
-if (!operator) return Astro.redirect("/404");
 
-const { ...info } = operator;
-
-const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, las mejores cuotas en apuestas deportivas con criptomonedas. ¡Aprovecha las promociones y disfruta de retiros rápidos!`;
+const title = `Reseña de la casa de apuestas ${operator.name}`;
+const description = `${operator.name}, las mejores cuotas en apuestas deportivas con criptomonedas. ¡Aprovecha las promociones y disfruta de retiros rápidos!`;
 const canonicalUrl = "https://micasadeapuesta.com/sportsbet/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...info} client:load />
+    <HeaderReview {...operator} client:load />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
-      <Detalles {...info} />
-      <Promociones {...info} />
-      <Pagos {...info} />
-      <Deportes {...info} />
+      <Detalles {...operator} />
+      <Promociones {...operator} />
+      <Pagos {...operator} />
+      <Deportes {...operator} />
     </main>
 
     <!-- Footer -->
     <footer class="max-w-screen-lg px-4">
-      <Soporte {...info} />
+      <Soporte {...operator} />
     </footer>
   </>
 </Layout>

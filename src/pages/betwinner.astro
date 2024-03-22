@@ -11,31 +11,28 @@ import Soporte from "../components/operators/betwinner/Soporte.astro";
 const operator = operators.find(
   (operator) => operator.pageName === "betwinner"
 )!;
-if (!operator) return Astro.redirect("/404");
 
-const { ...info } = operator;
-
-const title = `Reseña de la casa de apuestas ${info.name}`;
-const description = `${info.name}, redefine la emoción deportiva con sus increíbles promociones y bonos excepcionales. ¡Vive el deporte como nunca antes!`;
+const title = `Reseña de la casa de apuestas ${operator.name}`;
+const description = `${operator.name}, redefine la emoción deportiva con sus increíbles promociones y bonos excepcionales. ¡Vive el deporte como nunca antes!`;
 const canonicalUrl = "https://micasadeapuesta.com/betwinner/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...info} client:load />
+    <HeaderReview {...operator} client:load />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
-      <Detalles {...info} />
-      <Promociones {...info} />
-      <Pagos {...info} />
-      <Deportes {...info} />
+      <Detalles {...operator} />
+      <Promociones {...operator} />
+      <Pagos {...operator} />
+      <Deportes {...operator} />
     </main>
 
     <!-- Footer -->
     <footer class="max-w-screen-lg px-4">
-      <Soporte {...info} />
+      <Soporte {...operator} />
     </footer>
   </>
 </Layout>
