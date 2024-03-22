@@ -2,6 +2,7 @@
 import StarRating from "../components/icons/StarRating.astro";
 import Check from "../components/icons/Check.astro";
 import PromoCode from "../components/buttons/PromoCode";
+import ReviewIcon from "../components/icons/ReviewIcon.astro";
 
 const { ...info } = Astro.props;
 ---
@@ -171,7 +172,7 @@ const { ...info } = Astro.props;
       href={info.urlregistro}
       target="_blank"
       rel="external noopener noreferrer nofollow"
-      class="relative inline-flex w-full h-16 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
+      class="relative inline-flex w-full h-16 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
     >
       <span
         class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
@@ -188,7 +189,7 @@ const { ...info } = Astro.props;
       href={info.urlbono}
       target="_blank"
       rel="external noopener noreferrer nofollow"
-      class="relative inline-flex w-full h-16 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
+      class="relative inline-flex w-full h-16 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
     >
       <span
         class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
@@ -202,14 +203,14 @@ const { ...info } = Astro.props;
     </a>
     <!-- Reseñas -->
     <div class="flex flex-col items-center w-full basis-0 sm:basis-1/3 grow">
-      <!-- <Drawer {...info} client:load /> -->
       <a href={`/${info.pageName}/`} rel="internal follow">
         <span
-          class="hover:underline hover:underline-offset-4 inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent hover:text-[#f0f3ff]"
-          aria-label=`Ver reseñas o detalles de la casa de apuestas ${info.name}`
+          class="relative flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+          aria-label=`Leer reseñas de la casa de apuestas ${info.name}`
           typeof="button"
         >
-          Leer la reseña
+          Leer Reseña
+          <ReviewIcon />
         </span>
       </a>
     </div>

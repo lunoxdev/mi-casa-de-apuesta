@@ -26,7 +26,7 @@ const HeaderReview = ({ ...info }) => {
           href={info.urlbono}
           target="_blank"
           rel="external noopener nofollow"
-          className="relative inline-flex w-1/2 sm:w-2/12 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
+          className="relative inline-flex w-1/2 sm:w-2/12 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
           <span
@@ -42,7 +42,7 @@ const HeaderReview = ({ ...info }) => {
           href={info.urlregistro}
           target="_blank"
           rel="external noopener nofollow"
-          className="relative inline-flex w-1/2 sm:w-2/12 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
+          className="relative inline-flex w-1/2 sm:w-2/12 h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
           <span
@@ -59,35 +59,35 @@ const HeaderReview = ({ ...info }) => {
         <a
           href="#detalle"
           onClick={() => handleTabClick("#detalle")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
+          className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
         >
           Detalles
         </a>
         <a
           href="#promociones"
           onClick={() => handleTabClick("#promociones")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
+          className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
         >
           Promociones
         </a>
         <a
           href="#pagos"
           onClick={() => handleTabClick("#bonos")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
+          className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
         >
           Pagos
         </a>
         <a
           href="#deportes"
           onClick={() => handleTabClick("#deportes")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold placeholder: mb-3 sm:mb-0"
+          className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
         >
           Deportes
         </a>
         <a
           href="#soporte"
           onClick={() => handleTabClick("#soporte")}
-          className="hover:underline-offset-8 hover:underline hover:font-semibold mb-3 sm:mb-0"
+          className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
         >
           Soporte
         </a>
