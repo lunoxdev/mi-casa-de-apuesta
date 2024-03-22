@@ -13,11 +13,17 @@ const { ...info } = Astro.props;
     id="detalle"
     class="my-20 flex flex-col w-full mx-auto space-y-12 text-[#f0f3ff] text-opacity-90"
   >
-    <h1
-      class="inline-flex mx-auto uppercase animate-background-shine bg-[linear-gradient(110deg,#939393,45%,#f0f3ff,65%,#939393)] bg-[length:250%_100%] bg-clip-text text-transparent text-4xl sm:text-6xl font-semibold"
-    >
-      {info.name}
-    </h1>
+
+    <picture class="flex flex-row item-center justify-center">
+      <img src="/operators/nobg/pinnacle.svg" 
+      width="130" 
+      height="50"
+      loading="eager" 
+      alt={`Logo de la casa de apuestas ${info.name}`}
+      title={`Logo de la casa de apuestas ${info.name}`}
+      class="rounded-lg w-72 md:w-96 h-auto my-10" />
+    </picture>
+
     <div
       class="flex flex-wrap sm:flex-nowrap w-full justify-center items-center sm:divide-x-2 h-auto space-y-5 sm:space-y-0 py-10 px-2 border gap-1 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 focus:outline-none focus:border-[#f0f3ff]"
     >
