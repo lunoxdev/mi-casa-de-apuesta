@@ -7,6 +7,7 @@ export default {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "background-shine": "background-shine 2s linear infinite",
+        "text-gradient": "text-gradient 1.5s linear infinite",
       },
       keyframes: {
         marquee: {
@@ -23,6 +24,11 @@ export default {
           },
           to: {
             backgroundPosition: "-200% 0",
+          },
+        },
+        "text-gradient": { 
+          to: {
+            backgroundPosition: "200% center",
           },
         },
       },
