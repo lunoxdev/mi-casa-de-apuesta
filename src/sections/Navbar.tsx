@@ -28,19 +28,19 @@ const Navbar: React.FC = () => {
           </a>
         </div>
         <nav className="hidden md:flex flex-grow basis-0 w-full space-x-5 md:justify-center">
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#operadores">
-            Lista de Operadores
+          <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#casas">
+            Lista de Casas
           </a>
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#consideraciones">
-            Consideraciones
+          <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#elegir">
+            ¿Cómo elegir?
           </a>
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#apostar">
+          <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#apostar">
             ¿Cómo Apostar?
           </a>
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#faq">
+          <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#faq">
             FAQ
           </a>
-          <a className="hover:underline-offset-8 hover:underline font-light" href="#footer">
+          <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#footer">
             Nosotros
           </a>
         </nav>
