@@ -1,6 +1,7 @@
 ---
 import RightsReserved from "../sections/RightsReserved.astro";
 import Layout from "../layout/layout.astro";
+import PeWorld from "../components/icons/PeWorld.astro";
 
 const title = "Términos y Condiciones";
 const description =
@@ -166,7 +167,27 @@ const canonicalUrl = "https://micasadeapuesta.com/terminos-y-condiciones/";
       </article>
     </div>
     <hr />
-    <div class="mt-5">
+    <div class="mt-5 space-y-5">
+      <div class="flex flex-col space-y-2 justify-center items-center">
+        <span class="text-center tracking-tight text-pretty"
+          >Visítanos también en:
+        </span>
+        <a
+          href="https://micasadeapuesta.pe/"
+          title="Mi casa de apuesta Perú"
+          target="_self"
+          rel="external noopener noreferrer follow"
+        >
+          <span
+            class="relative text-lg flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+            aria-label="Ir al sitio web: Mi casa de apuestas LATAM"
+            typeof="button"
+          >
+            Mi casa de apuesta Perú
+            <PeWorld />
+          </span>
+        </a>
+      </div>
       <RightsReserved />
     </div>
   </section>
