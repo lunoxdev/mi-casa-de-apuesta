@@ -24,6 +24,8 @@ const Navbar: React.FC = () => {
               className=" hover:scale-110"
               width="40"
               height="40"
+              decoding="async" 
+              loading="eager"
             />
           </a>
         </div>
