@@ -3,5 +3,5 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
-  Permissions-Policy: geolocation=(self "https://micasadeapuesta.pe/"), microphone=()
+  Permissions-Policy: geolocation=(self "https://micasadeapuesta.com/"), microphone=()
   Content-Security-Policy: default-src 'self'
