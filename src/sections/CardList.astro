@@ -1,20 +1,21 @@
 ---
 import Card from "./Card.astro";
 import { operators } from "../lib/data";
+import "../styles/card-blur/style.css";
 ---
 
-<section id="casas" class="flex flex-col mb-12 sm:mb-20 space-y-10 w-full p-4">
+<section id="casas" class="flex flex-col mb-12 sm:mb-20 space-y-8 w-full p-4">
   {
     operators.map((info, index) => (
       <article
         class={`${
           index < 3
             ? index === 0
-              ? "shadow-[#ffd900]/40 shadow-md bg-gradient-to-t from-[#ffd900]/15 to-transparent rounded-lg"
+              ? "shadow-[#ffd900]/40 card-blur shadow-md bg-gradient-to-t from-[#ffd900]/15 to-transparent rounded-lg"
               : index === 1
-                ? "shadow-[#C0C0C0]/40 shadow-md bg-gradient-to-t from-[#C0C0C0]/15 to-transparent rounded-lg"
-                : "shadow-[#cd8032dc]/40 shadow-md bg-gradient-to-t from-[#cd8032dc]/20 to-transparent rounded-lg"
-            : "shadow-gray-800 shadow-md bg-gradient-to-t from-gray-800/10 to-transparent rounded-lg"
+                ? "shadow-[#C0C0C0]/40 card-blur shadow-md bg-gradient-to-t from-[#C0C0C0]/15 to-transparent rounded-lg"
+                : "shadow-[#cd8032dc]/40 card-blur shadow-md bg-gradient-to-t from-[#cd8032dc]/20 to-transparent rounded-lg"
+            : "shadow-gray-800 shadow-md card-blur bg-gradient-to-t from-gray-800/10 to-transparent rounded-lg"
         }`}
       >
         <Card {...info} />
