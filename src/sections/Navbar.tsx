@@ -13,22 +13,18 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header id="header-nav" className="sticky z-50 top-0 w-full p-4 text-[#f0f3ff] text-opacity-90">
-      <div className="flex justify-between items-center">
-        <div>
-          <a href="https://micasadeapuesta.com/">
-            <img
-              src="/logo.svg"
-              alt="Mi casa de apuesta Logo"
-              title='Mi casa de apuesta Logo'
-              className=" hover:scale-110"
-              width="40"
-              height="40"
-              decoding="async" 
-              loading="eager"
-            />
-          </a>
-        </div>
+    <header id="header-nav" className="sticky z-50 top-0 flex justify-between items-center w-full p-4 text-[#f0f3ff] text-opacity-90">
+       <a href="/" className='hover:scale-110 hover:rounded-full hover:shadow-[#8678f9] hover:shadow-sm'>
+          <img
+            src="/logo.svg"
+            alt="Mi casa de apuesta Logo"
+            title='Mi casa de apuesta Logo'
+            width="40"
+            height="40"
+            decoding="async" 
+            loading="eager"
+          />
+        </a>
         <nav className="hidden md:flex flex-grow basis-0 w-full space-x-5 md:justify-center">
           <a className="font-light relative bg-[linear-gradient(#616161,#616161),linear-gradient(#8678f9,#8678f9)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]" href="#casas">
             Lista de Casas
@@ -77,7 +73,6 @@ const Navbar: React.FC = () => {
             Nosotros
           </a>
         </nav>
-      </div>
     </header>
   );
 };
