@@ -2,6 +2,7 @@
 import RightsReserved from "../sections/RightsReserved.astro";
 import Layout from "../layout/layout.astro";
 import PeWorld from "../components/icons/PeWorld.astro";
+import NavbarFooter from "../components/navbar/NavbarFooter.astro";
 
 const title = "Juego Responsable: Apostando de Forma Segura";
 const description =
@@ -10,10 +11,11 @@ const canonicalUrl = "https://micasadeapuesta.com/juego-responsable/";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <NavbarFooter />
   <section
-    class="max-w-screen-md justify-center items-center mx-auto p-4 text-[#f0f3ff] text-opacity-90"
+    class="max-w-screen-lg justify-center items-center mx-auto p-4 text-[#f0f3ff] text-opacity-90"
   >
-    <div class="my-8 sm:my-16 flex flex-col w-full mx-auto space-y-5">
+    <div class="my-5 sm:my-10 flex flex-col w-full mx-auto space-y-5">
       <h1
         class="text-center text-2xl text-balance tracking-tight sm:text-4xl font-bold"
       >
@@ -102,39 +104,36 @@ const canonicalUrl = "https://micasadeapuesta.com/juego-responsable/";
             class="list-disc list-inside tracking-tight text-pretty space-y-3"
           >
             <li>
-              <span class="font-semibold">Jugadores Anonimos:</span>
-              <br />
               <a
                 href="https://www.jugadoresanonimos.org/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web Jugadores Anonimos"
               >
-                https://www.jugadoresanonimos.org/
+                Jugadores Anonimos
               </a>
             </li>
             <li>
-              <span class="font-semibold">Fejar:</span>
-              <br />
               <a
                 href="https://fejar.org/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web Fejar"
               >
-                https://fejar.org/
+                Fejar
               </a>
             </li>
             <li>
-              <span class="font-semibold">Gambling Therarapy (Español):</span>
-              <br />
               <a
                 href="https://www.gamblingtherapy.org/es/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web Gambling Therarapy"
               >
-                https://www.gamblingtherapy.org/es/
+                Gambling Therarapy (Español)
               </a>
             </li>
           </ul>
@@ -151,51 +150,47 @@ const canonicalUrl = "https://micasadeapuesta.com/juego-responsable/";
             class="list-disc list-inside tracking-tight text-pretty space-y-3"
           >
             <li>
-              <span class="font-semibold">GamCare:</span>
-              <br />
               <a
                 href="https://www.gamcare.org.uk/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web GamCare"
               >
-                https://www.gamcare.org.uk/
+                GamCare
               </a>
             </li>
             <li>
-              <span class="font-semibold">BeGambleAware:</span>
-              <br />
               <a
                 href="https://www.begambleaware.org/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web BeGambleAware"
               >
-                https://www.begambleaware.org/
+                BeGambleAware
               </a>
             </li>
             <li>
-              <span class="font-semibold">MGA:</span>
-              <br />
               <a
                 href="https://www.mga.org.mt/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web MGA"
               >
-                https://www.mga.org.mt/
+                MGA
               </a>
             </li>
             <li>
-              <span class="font-semibold">Responsible Gaming Foundation:</span>
-              <br />
               <a
                 href="https://www.rgf.org.mt/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web Responsible Gaming Foundation"
               >
-                https://www.rgf.org.mt/
+                Responsible Gaming Foundation
               </a>
             </li>
           </ul>
@@ -212,17 +207,14 @@ const canonicalUrl = "https://micasadeapuesta.com/juego-responsable/";
             class="list-disc list-inside tracking-tight text-pretty space-y-3"
           >
             <li>
-              <span class="font-semibold">
-                Instituto Brasileiro de Jogo Responsável:
-              </span>
-              <br />
               <a
                 href="https://ibjr.org/"
                 target="_blank"
                 rel="noopener noreferrer external"
-                class="hover:text-gray-400 font-thin"
+                class="hover:underline"
+                aria-label="Página Web Instituto Brasileiro de Jogo Responsável"
               >
-                https://ibjr.org/
+                Instituto Brasileiro de Jogo Responsável
               </a>
             </li>
           </ul>
