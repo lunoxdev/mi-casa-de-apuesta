@@ -14,14 +14,12 @@ const PromoCode = ({ ...info }) => {
 
   return (
     <>
-      <button
-        className="inline-flex w-40 h-12 animate-background-shine items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium transition-colors hover:border-slate-600 hover:border-sm"
-        onClick={handleCopyClick}
-      >
-        <p className="hover:scale-110 tracking-wide font-semibold">
-          {copied ? "Copiado" : info.promocode}
-        </p>
-      </button>
+     <button
+      className="inline-flex w-40 h-10 mb-3 text-sm animate-background-shine items-center justify-center rounded-md border-2 border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors hover:border-slate-600 hover:border"
+      onClick={handleCopyClick}
+    >
+      {copied ? "COPIADO" : info.promocode}
+    </button>
     </>
   );
 };

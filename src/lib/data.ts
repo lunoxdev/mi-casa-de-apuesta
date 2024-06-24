@@ -24,7 +24,6 @@ checklist?: {
   check2?: string;
   check3?: string;
   check4?: string;
-  check5?: string;
 }[];
 }
 
@@ -56,7 +55,6 @@ export const operators: Operator[] = [
         check2: "Tasas de pago competitivas",
         check3: "Métodos de pago seguros y rápidos",
         check4: "Variedad de eventos deportivos",
-        check5: "Bonos y promociones atractivos",
       },
     ],
   },
@@ -72,7 +70,7 @@ export const operators: Operator[] = [
     urlpromo: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
     bonotxt: "Bono deportivo del 100% hasta 100 USD",
     license: "Licencia de Curazao",
-    payfront: "/payments/frontend/fezbet.svg",
+    payfront: "/payments/frontend/fezbet-front.svg",
     apps: [
       {
         webapp: "/devices/phone.svg",
@@ -85,7 +83,6 @@ export const operators: Operator[] = [
         check2: "Interfaz de usuario fácil de usar",
         check3: "Variedad de métodos de pagos",
         check4: "Atención al cliente 24/7",
-        check5: "Bonos y promociones atractivos",
       },
     ],
   },
@@ -101,7 +98,7 @@ export const operators: Operator[] = [
     urlpromo: "https://rbn.servclick1move.com/?mid=95157_718469",
     bonotxt: "Bono del 100% en tu primer depósito hasta 100 USD",
     license: "Licencia de Curazao",
-    payfront: "/payments/frontend/rabona-pay-front.svg",
+    payfront: "/payments/frontend/rabona-front.svg",
     apps: [
       {
         android: "/devices/android.svg",
@@ -118,7 +115,6 @@ export const operators: Operator[] = [
         check2: "Gran variedad de depósitos y retiros",
         check3: "Amplia gama de deportes",
         check4: "Casino en vivo",
-        check5: "Exclusivos beneficios para VIP",
       },
     ],
   },
@@ -134,7 +130,7 @@ export const operators: Operator[] = [
     urlpromo: "",
     bonotxt: "Cuotas más altas, valor real, más dinero",
     license: "Licencia de Curazao, Malta, Canadá, Italia y Suecia",
-    payfront: "/payments/frontend/pinnacle-pay-front.svg",
+    payfront: "/payments/frontend/pinnacle-front.svg",
     apps: [
       {
         android: "/devices/android.svg",
@@ -151,7 +147,6 @@ export const operators: Operator[] = [
         check2: "Pionera en apuestas de esports",
         check3: "Excelente diseño web",
         check4: "Depósito y retiro rápidos",
-        check5: "Apuestas en vivo",
       },
     ],
   },
@@ -184,7 +179,6 @@ export const operators: Operator[] = [
         check2: "Mejores cuotas en criptomonedas",
         check3: "Diseño moderno y fácil de usar",
         check4: "Variedad de promociones",
-        check5: "Retiros rápidos",
       },
     ],
   },
@@ -217,7 +211,6 @@ export const operators: Operator[] = [
         check2: "Ofrece bonos y promociones atractivas",
         check3: "Transmisión en vivo de eventos deportivos",
         check4: "Cash Out",
-        check5: "App móvil disponible para Android e iOS",
       },
     ],
   },
@@ -233,7 +226,7 @@ export const operators: Operator[] = [
     urlpromo: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/",
     bonotxt: "Bono del 100% hasta 100 USD en tu primer depósito",
     license: "Licencia de Curazao",
-    payfront: "/payments/frontend/1Xbet-pay-front.svg",
+    payfront: "/payments/frontend/1xbet-front.svg",
     apps: [
       {
         android: "/devices/android.svg",
@@ -250,7 +243,6 @@ export const operators: Operator[] = [
         check2: "Trasmisión en vivo",
         check3: "Constructor de apuestas",
         check4: "Buenas cuotas o momios",
-        check5: "TOTO-15 y TOTO",
       },
     ],
   },
@@ -283,7 +275,6 @@ export const operators: Operator[] = [
         check4: "Variedad de bonos y promociones",
         check3: "Constructor de Apuestas",
         check2: "Disponen de Cash Out",
-        check5: "Apuestas en directo y multidirecto",
       },
     ],
   },
@@ -299,7 +290,7 @@ export const operators: Operator[] = [
     urlpromo: "https://bc.game/i-lunoxvip-n/",
     bonotxt: "Bono de igualación de depósito de 4 recompensas",
     license: "Licencia de Curazao",
-    payfront: "/payments/frontend/bc-game.svg",
+    payfront: "/payments/frontend/bc-game-front.svg",
     apps: [
       {
         android: "/devices/android.svg",
@@ -316,7 +307,6 @@ export const operators: Operator[] = [
         check2: "Excelente interfaz de usuario y gráficos",
         check3: "Tiene una comunidad activa de jugadores",
         check4: "Retiros y depósitos instantáneos",
-        check5: "Amplia variedad de juegos deportivos",
       },
     ],
   },
@@ -345,7 +335,6 @@ export const operators: Operator[] = [
         check2: "Variedad de deportes y mercados",
         check3: "Diversidad de pagos con criptomonedas",
         check4: "Plataforma es fácil de usar y navegar",
-        check5: "Se puede compra criptomonedas con MoonPay",
       },
     ],
   },
