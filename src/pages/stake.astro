@@ -1,7 +1,7 @@
 ---
 import Layout from "../layout/layout.astro";
 import { operators } from "../lib/data";
-import HeaderReview from "../components/reviews/HeaderReview";
+import NavOperator from "../components/navbar/NavOperator.astro";
 import Detalles from "../components/operators/stake/Detalles.astro";
 import Promociones from "../components/operators/stake/Promociones.astro";
 import Pagos from "../components/operators/stake/Pagos.astro";
@@ -18,7 +18,7 @@ const canonicalUrl = "https://micasadeapuesta.com/stake/";
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <>
     <!-- Header Review -->
-    <HeaderReview {...operator} client:load />
+    <NavOperator {...operator} />
 
     <!-- Content -->
     <main class="max-w-screen-lg px-4">
