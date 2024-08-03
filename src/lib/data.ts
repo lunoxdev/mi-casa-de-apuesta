@@ -28,12 +28,41 @@ checklist?: {
 }
 
 export const operators: Operator[] = [
-{
+  {
     id: 1,
+    name: "FEZbet",
+    pageName: "fezbet",
+    img: "/operators/withbg/fezbet.svg",
+    rating: 4.9,
+    promocode: "NO DISPONIBLE",
+    urlregistro:
+      "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
+    urlbono: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=7426",
+    urlpromo: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
+    bonotxt: "Bono deportivo del 100% hasta 100 USD",
+    license: "Licencia de Curazao",
+    payfront: "/payments/frontend/fezbet-front.svg",
+    apps: [
+      {
+        webapp: "/devices/phone.svg",
+        nameweb: "Aplicación Web",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Momios competitivos",
+        check2: "Interfaz de usuario fácil de usar",
+        check3: "Variedad de métodos de pagos",
+        check4: "Atención al cliente 24/7",
+      },
+    ],
+  },
+  {
+    id: 2,
     name: "bet O bet",
     pageName: "betobet",
     img: "/operators/withbg/betobet.svg",
-    rating: 4.9,
+    rating: 4.8,
     promocode: "LUNOXVIP",
     urlregistro: "https://go.betobet.online/visit/?bta=37769&nci=6499",
     urlbono: "https://go.betobet.online/visit/?bta=37769&nci=5484",
@@ -55,34 +84,6 @@ export const operators: Operator[] = [
         check2: "Tasas de pago competitivas",
         check3: "Métodos de pago seguros y rápidos",
         check4: "Variedad de eventos deportivos",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "FEZbet",
-    pageName: "fezbet",
-    img: "/operators/withbg/fezbet.svg",
-    rating: 4.8,
-    promocode: "NO DISPONIBLE",
-    urlregistro: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
-    urlbono: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=7426",
-    urlpromo: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
-    bonotxt: "Bono deportivo del 100% hasta 100 USD",
-    license: "Licencia de Curazao",
-    payfront: "/payments/frontend/fezbet-front.svg",
-    apps: [
-      {
-        webapp: "/devices/phone.svg",
-        nameweb: "Aplicación Web",
-      },
-    ],
-    checklist: [
-      {
-        check1: "Momios competitivos",
-        check2: "Interfaz de usuario fácil de usar",
-        check3: "Variedad de métodos de pagos",
-        check4: "Atención al cliente 24/7",
       },
     ],
   },
@@ -125,8 +126,10 @@ export const operators: Operator[] = [
     img: "/operators/withbg/pinnacle.svg",
     rating: 4.6,
     promocode: "NO DISPONIBLE",
-    urlregistro: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18926c_&affid=25020&siteid=31512&adid=18926&c=",
-    urlbono: "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18851c_&affid=25020&siteid=31512&adid=18851&c=",
+    urlregistro:
+      "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18926c_&affid=25020&siteid=31512&adid=18926&c=",
+    urlbono:
+      "https://wlpinnacle.adsrv.eacdn.com/C.ashx?btag=a_31512b_18851c_&affid=25020&siteid=31512&adid=18851&c=",
     urlpromo: "",
     bonotxt: "Cuotas más altas, valor real, más dinero",
     license: "Licencia de Curazao, Malta, Canadá, Italia y Suecia",
@@ -189,9 +192,12 @@ export const operators: Operator[] = [
     img: "/operators/withbg/betway.svg",
     rating: 4.4,
     promocode: "NO DISPONIBLE",
-    urlregistro: "https://betway.com/bwp/latam?s=bw228596&a=AFF4142061113668931&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142061113668931",
-    urlbono: "https://betway.com/bwp/latam-sports?s=bw228596&a=AFF4142058410187934&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142058410187934",
-    urlpromo: "https://betway.com/bwp/latam-sports?s=bw228596&a=AFF4142068617564479&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142068617564479",
+    urlregistro:
+      "https://betway.com/bwp/latam?s=bw228596&a=AFF4142061113668931&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142061113668931",
+    urlbono:
+      "https://betway.com/bwp/latam-sports?s=bw228596&a=AFF4142058410187934&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142058410187934",
+    urlpromo:
+      "https://betway.com/bwp/latam-sports?s=bw228596&a=AFF4142068617564479&utm_source=228596&utm_medium=Affiliate&utm_campaign=AFF4142068617564479",
     bonotxt: "Duplica el primer depósito hasta 75 USD",
     license: "Licencia de Malta",
     payfront: "/payments/frontend/betway-front.svg",
@@ -221,9 +227,12 @@ export const operators: Operator[] = [
     img: "/operators/withbg/1xbet.svg",
     rating: 4.3,
     promocode: "1x_1484789",
-    urlregistro: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
-    urlbono: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
-    urlpromo: "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/",
+    urlregistro:
+      "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=registration",
+    urlbono:
+      "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/rules/1st",
+    urlpromo:
+      "https://affpa.top/L?tag=d_3090539m_97c_&site=3090539&ad=97&r=bonus/",
     bonotxt: "Bono del 100% hasta 100 USD en tu primer depósito",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/1xbet-front.svg",
