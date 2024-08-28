@@ -30,6 +30,37 @@ checklist?: {
 export const operators: Operator[] = [
   {
     id: 1,
+    name: "Leon",
+    pageName: "leon",
+    img: "/operators/withbg/leon.svg",
+    rating: 4.9,
+    promocode: "CASALEON",
+    urlregistro:
+      "https://c1li7tt5ck.com/?serial=43249&creative_id=489&anid=",
+    urlbono:
+      "https://c1li7tt5ck.com/?serial=43249&creative_id=489&anid=",
+    urlpromo:
+      "https://c1li7tt5ck.com/?serial=43249&creative_id=489&anid=",
+    bonotxt: "Bono primer depósito hasta S/1000",
+    license: "Licencia de Curazao",
+    payfront: "/payments/frontend/leon-front.svg",
+    apps: [
+      {
+        android: "/devices/android.svg",
+        nameandroid: "Android",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Amplia variedad de deportes y eventos",
+        check4: "Promociones regulares",
+        check3: "Variedad de métodos de pago",
+        check2: "Atención al cliente 24/7",
+      },
+    ],
+  },
+  {
+    id: 1,
     name: "FEZbet",
     pageName: "fezbet",
     img: "/operators/withbg/fezbet.svg",
@@ -84,6 +115,41 @@ export const operators: Operator[] = [
         check2: "Tasas de pago competitivas",
         check3: "Métodos de pago seguros y rápidos",
         check4: "Variedad de eventos deportivos",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Megapari",
+    pageName: "megapari",
+    img: "/operators/withbg/megapari.svg",
+    rating: 4.8,
+    promocode: "LUNOXVIP",
+    urlregistro:
+      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+    urlbono:
+      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+    urlpromo:
+      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+    bonotxt: "Bono del 100% hasta S/450 en tu primer depósito",
+    license: "Licencia de Curazao",
+    payfront: "/payments/frontend/megapari-front.svg",
+    apps: [
+      {
+        android: "/devices/android.svg",
+        nameandroid: "Android",
+        ios: "/devices/ios.svg",
+        nameios: "iPhone",
+        webapp: "/devices/phone.svg",
+        nameweb: "Aplicación Web",
+      },
+    ],
+    checklist: [
+      {
+        check1: "Retiros y depósitos rápidos",
+        check2: "Trasmisión en vivo",
+        check3: "Disponen de Cash Out",
+        check4: "Constructor de apuestas",
       },
     ],
   },
