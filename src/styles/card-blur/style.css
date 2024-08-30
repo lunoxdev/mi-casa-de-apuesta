@@ -1,4 +1,4 @@
-@keyframes appear {
+/* @keyframes appear {
 from {
     filter: blur(2px);
     scale: 0.90;
@@ -14,4 +14,4 @@ to {
     animation: appear  ease-in-out;
     animation-timeline: view();
     animation-range: entry cover 20%;
-}
+} */
