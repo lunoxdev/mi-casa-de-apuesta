@@ -52,10 +52,10 @@ export const operators: Operator[] = [
     ],
     checklist: [
       {
-        check4: "Promociones regulares",
-        check2: "Atención al cliente 24/7",
-        check3: "Variedad de métodos de pago",
-        check1: "Amplia variedad de deportes y eventos",
+        check4: "Transmisión en vivo en alta definición.",
+        check2: "Diversidad en métodos de pago.",
+        check3: "Promociones frecuentes y atractivas.",
+        check1: "Sitio web rápido e intuitivo",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const operators: Operator[] = [
       "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
     urlpromo:
       "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
-    bonotxt: "Bono del 100% hasta S/450 en tu primer depósito",
+    bonotxt: "Bono del 100% hasta 300 USD en tu primer depósito",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/megapari-front.svg",
     apps: [
@@ -122,10 +122,10 @@ export const operators: Operator[] = [
     ],
     checklist: [
       {
-        check2: "Trasmisión en vivo",
-        check3: "Disponen de Cash Out",
+        check2: "Programa de fidelidad y beneficios VIP",
+        check3: "Generoso sistema de bonos y promociones",
         check4: "Constructor de apuestas",
-        check1: "Retiros y depósitos rápidos",
+        check1: "Seguridad y fiabilidad",
       },
     ],
   },

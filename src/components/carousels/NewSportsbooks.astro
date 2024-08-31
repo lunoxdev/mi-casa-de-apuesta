@@ -47,71 +47,75 @@ const reviews = [
 ];
 ---
 
-<section
-  class="my-40 flex flex-col max-w-screen-md w-full mx-auto space-y-10 text-[#f0f3ff] text-opacity-90"
+<article
+  class="my-10 p-4 flex flex-col max-w-screen-md w-full mx-auto text-center space-y-5"
 >
   <h2
-    class="text-center text-xl text-pretty tracking-tight sm:text-3xl font-bold mb-3"
+    class="text-center text-xl sm:text-3xl font-bold animate-text-gradient bg-gradient-to-r from-[#c6c7ff] via-[#8678f9] to-[#eeefff] bg-[200%_auto] bg-clip-text text-transparent"
   >
-    <span
-      class="tracking-tight animate-text-gradient bg-gradient-to-r from-[#c6c7ff] via-[#8678f9] to-[#eeefff] bg-[200%_auto] bg-clip-text text-transparent"
-    >
-      NUEVAS CASAS DE APUESTAS
-    </span>
+    NUEVAS CASAS DE APUESTAS
   </h2>
-  <p class="text-pretty tracking-tight text-center">
+  <p>
     Sumérgete en el fascinante mundo de las apuestas en línea en Latinoamérica
     con las más recientes adiciones al mercado. Explora nuevas opciones
     emocionantes y frescas que están cambiando el panorama del juego en línea.
     Descubre tu próximo destino para las apuestas deportivas favoritas en el
     vibrante mercado latinoamericano.
   </p>
-  <div class="flex flex-col relative h-52 w-full overflow-hidden">
+  <section class="flex flex-col relative h-52 w-full overflow-hidden">
     <!-- First Carousel -->
-    <div class="flex w-full overflow-x-hidden [--gap:1rem] [--duration:15s]">
-      <div
-        class="flex w-max animate-marquee items-stretch gap-[--gap] [animation-direction:reverse] hover:[animation-play-state:paused]"
-      >
-        {
-          reviews.map((info) => (
-            <a
-              {...info}
-              href={info.url}
-              target="_blank"
-              rel="external noopener nofollow"
-              class="flex h-48 w-48 rounded-xl border-t-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 px-8 py-16 group focus:outline-none focus:border-[#f0f3ff]"
-            >
-              <div class="flex flex-col h-auto items-center justify-center gap-5 transition group-hover:scale-110">
-                <img
-                  src={info.img}
-                  width="120"
-                  height="90"
-                  loading="lazy"
-                  alt={`Logo de ${info.name}, casa de apuestas deportivas en línea`}
-                  title={`Logo de ${info.name}, casa de apuestas deportivas en línea`}
-                  class="w-full h-full"
-                />
-                <div class="flex flex-row justify-center w-full items-end">
-                  <StarRating w={"22"} h={"26"} />
-                  <p>{info.rating}</p>
-                </div>
-              </div>
-            </a>
-          ))
-        }
-      </div>
+    <div
+      class="flex flex-row overflow-x-hidden [--gap:1rem] [--duration:15s] mt-5 w-max animate-marquee items-stretch gap-[--gap] [animation-direction:reverse] hover:[animation-play-state:paused]"
+    >
+      {
+        reviews.map((info) => (
+          <a
+            href={info.url}
+            target="_blank"
+            rel="external noopener noreferrer sponsored"
+            class="flex flex-col justify-center items-center mx-auto h-44 w-48 space-y-4 rounded-xl border-2 border-slate-800 bg-gradient-to-t from-black/60 to-slate-950 px-8 py-16 group focus:outline-none"
+          >
+            <div class="w-full h-full">
+              <img
+                src={info.img}
+                loading="lazy"
+                decoding="async"
+                width="120"
+                height="40"
+                alt={`Logo de ${info.name}, casa de apuestas deportivas en línea`}
+                title={`Logo de ${info.name}, casa de apuestas deportivas en línea`}
+                class="object-contain w-32 h-16 transition hover:scale-110"
+              />
+            </div>
+
+            <div class="flex flex-row justify-center items-center w-full">
+              <img
+                src="/others/star-rating.svg"
+                alt="Icono star rating"
+                title="Icono star rating"
+                width="24"
+                height="20"
+                decoding="async"
+                loading="lazy"
+                class="w-6 h-5"
+              />
+              <span>{info.rating}</span>
+            </div>
+          </a>
+        ))
+      }
     </div>
 
     <!-- Left Gradient -->
-    <div
-      class="absolute inset-y-0 left-0 w-20 pointer-events-none from-[#020617] to-transparent bg-gradient-to-r"
+    <span
+      class="absolute inset-y-0 left-0 w-20 pointer-events-none from-slate-950 to-transparent bg-gradient-to-r"
     >
-    </div>
+    </span>
 
     <!-- Right Gradient -->
-    <div
-      class="absolute inset-y-0 right-0 w-20 pointer-events-none bg-gradient-to-l from-[#020617]"
+    <span
+      class="absolute inset-y-0 right-0 w-20 pointer-events-none bg-gradient-to-l from-slate-950"
     >
-    </div>
-  </div>
-</section>
+    </span>
+  </section>
+</article>

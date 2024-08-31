@@ -1,0 +1,27 @@
+---
+const { ...frontmatter } = Astro.props;
+---
+
+<div class="flex justify-center items-center mt-4 w-full space-x-4">
+  {
+    ["android", "ios", "mobile"].map((device) => {
+      if (frontmatter[device]) {
+        return (
+          <div class="flex flex-col justify-center items-center text-xs space-y-1">
+            <img
+              src={frontmatter[device]}
+              alt={`Icono ${device}`}
+              title={`Icono ${frontmatter[`name${device}`]}`}
+              width="20"
+              height="20"
+              decoding="async"
+              loading="eager"
+            />
+            <span>{`${frontmatter[`name${device}`]}`}</span>
+          </div>
+        );
+      }
+      return null;
+    })
+  }
+</div>

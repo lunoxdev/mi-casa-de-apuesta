@@ -1,0 +1,32 @@
+---
+const { promoCode } = Astro.props;
+---
+
+<div class="flex flex-row justify-center items-center w-full my-5">
+  <div
+    class="relative overflow-hidden w-full h-auto rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl"
+  >
+    <span
+      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+    ></span>
+    <div
+      class="inline-flex flex-col justify-center items-center rounded-xl bg-slate-950 p-5 backdrop-blur-3xl mx-auto space-y-3"
+    >
+      <h3
+        class="underline text-balance underline-offset-8 text-xl font-semibold"
+      >
+        Código Promocional
+      </h3>
+      <p class="text-center text-pretty">
+        Ingresa este código promocional para obtener un adicional en tu
+        depósito. No dejes pasar la oportunidad de mejorar tu experiencia de
+        juego y aumentar tus balances.
+      </p>
+      <span
+        class="inline-flex w-1/2 h-12 mx-auto text-lg animate-background-shine items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors"
+      >
+        {promoCode}
+      </span>
+    </div>
+  </div>
+</div>

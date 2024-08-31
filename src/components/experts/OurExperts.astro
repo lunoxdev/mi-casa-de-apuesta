@@ -1,0 +1,29 @@
+---
+import Date from "@components/Date.astro";
+
+const { ...frontmatter } = Astro.props;
+---
+
+<!-- Escrito y revisado por -->
+<div class="flex flex-col justify-center items-center space-y-1">
+  <cite class="flex flex-row justify-center text-xs items-center space-x-1">
+    <span>Escrito por:</span>
+    <a
+      href={frontmatter.linkedInWritten}
+      target="_blank"
+      rel="external noopener noreferrer nofollow"
+      class="relative bg-[linear-gradient(#616161,#616161),linear-gradient(#DE1921,#DE1921)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+      >{frontmatter.written}</a
+    >
+    <abbr title="Separador">|</abbr>
+    <span>Revisado por:</span>
+    <a
+      href={frontmatter.linkedInReviewed}
+      target="_blank"
+      rel="external noopener noreferrer nofollow"
+      class="relative bg-[linear-gradient(#616161,#616161),linear-gradient(#DE1921,#DE1921)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+      >{frontmatter.reviewed}</a
+    >
+  </cite>
+  <Date {...frontmatter} />
+</div>

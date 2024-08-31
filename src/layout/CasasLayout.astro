@@ -1,0 +1,106 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "@styles/global.css";
+import NavbarReview from "@components/navbar/NavbarReview.astro";
+import OurExperts from "@components/experts/OurExperts.astro";
+import Devices from "@components/Devices.astro";
+import RecomendedCarousel from "@components/carousels/RecomendedCarousel.astro";
+
+import { fade } from "astro:transitions";
+
+const meta = {
+  img: "https://micasadeapuesta.com/favicon.svg",
+  url: "https://micasadeapuesta.com/",
+  sitename: "Mi Casa De Apuesta LATAM",
+  creator: "Lunox | Moises Obando",
+};
+
+const { img, url, sitename, creator } = meta;
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{frontmatter.title}</title>
+    <meta name="description" content={frontmatter.description} />
+    <link rel="canonical" href={frontmatter.canonicalUrl} />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={img} />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:site_name" content={sitename} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={url} />
+    <meta property="twitter:domain" content={url} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={frontmatter.title} />
+    <meta name="twitter:description" content={frontmatter.description} />
+    <meta name="twitter:image" content={img} />
+    <meta name="twitter:creator" content={creator} />
+    <ViewTransitions />
+  </head>
+  <body class="flex flex-col min-h-screen max-w-screen-lg mx-auto bg-slate-950">
+    <div
+      class="absolute -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_3px,transparent_3px),linear-gradient(to_bottom,#4f4f4f2e_3px,transparent_3px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,#000_70%,transparent_100%)]"
+    >
+    </div>
+
+    <NavbarReview {...frontmatter} />
+
+    <div
+      class="max-w-screen-md w-full mx-auto px-4"
+      transition:animate={fade({ duration: "1.3s" })}
+    >
+      <!-- Hero Section -->
+      <div class="flex flex-col item-center justify-center w-full mb-5 mt-10">
+        <div class="flex relative justify-center w-full p-0.5">
+          <span>
+            <span
+              class="spark absolute -z-10 mask-gradient inset-0 h-[100%] w-[100%] rounded-lg animate-flip overflow-hidden [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]"
+            ></span>
+            <img
+              width={200}
+              height={200}
+              src={frontmatter.heroLogo}
+              alt={frontmatter.title}
+              loading="lazy"
+              class="rounded-lg absolute top-8 sm:top-12 left-1/3 w-1/3 animate-pulse"
+            />
+            <img
+              width={5760}
+              height={420}
+              src={frontmatter.heroImage}
+              alt={frontmatter.title}
+              loading="eager"
+              class="rounded-lg"
+            />
+          </span>
+        </div>
+        <Devices {...frontmatter} />
+        <h1 class="text-center font-bold mt-10 text-pretty">
+          {frontmatter.title}
+        </h1>
+        <OurExperts {...frontmatter} />
+      </div>
+
+      <main>
+        <slot />
+        <hr />
+      </main>
+
+      <footer>
+        <RecomendedCarousel />
+      </footer>
+    </div>
+  </body>
+</html>

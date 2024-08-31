@@ -8,6 +8,8 @@ export default {
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "background-shine": "background-shine 2s linear infinite",
         "text-gradient": "text-gradient 1.5s linear infinite",
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
       },
       keyframes: {
         marquee: {
@@ -26,9 +28,19 @@ export default {
             backgroundPosition: "-200% 0",
           },
         },
-        "text-gradient": { 
+        "text-gradient": {
           to: {
             backgroundPosition: "200% center",
+          },
+        },
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(90deg)",
           },
         },
       },
