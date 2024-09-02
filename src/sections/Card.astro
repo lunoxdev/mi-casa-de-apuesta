@@ -1,23 +1,39 @@
 ---
-import StarRating from "../components/icons/StarRating.astro";
-import Check from "../components/icons/Check.astro";
-import PromoCode from "../components/buttons/PromoCode";
-
 const { ...info } = Astro.props;
+
+import PromoCode from "@components/buttons/PromoCode";
 ---
 
-<div
-  class="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 mx-auto w-full h-full mt-5 px-4 py-4 rounded-md text-[#f0f3ff] text-opacity-90"
->
-  <!-- Image & Operator Name & Rating-->
-  <section class="relative overflow-hidden grow w-1/3 sm:w-52">
-    <div
-      class="overflow-hidden border border-black rounded-md shadow-black shadow-md"
+<div class="flex flex-col items-center grow w-1/3 sm:w-1/5 h-full">
+  <!-- Operator Image -->
+  <a
+    href={info.urlregistro}
+    target="_blank"
+    rel="external noopener nofollow"
+    class="overflow-hidden shadow-black shadow-md w-full h-auto"
+  >
+    <span
+      class="relative inline-flex w-full rounded-md overflow-hidden p-[3px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff]"
     >
-      <a
-        href={info.urlregistro}
-        target="_blank"
-        rel="external noopener nofollow"
+      {
+        (
+          <span
+            class={`${
+              info.id === 1
+                ? "absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffd900_0%,#000_50%,#ffd900_100%)]"
+                : info.id === 2
+                  ? "absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e3e4e5_0%,#000_50%,#e3e4e5_100%)]"
+                  : info.id === 3
+                    ? "absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#CD7F32_0%,#000_50%,#CD7F32_100%)]"
+                    : "absolute inset-[-1000%] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] opacity-40"
+            }`}
+          />
+        )
+      }
+
+      <span
+        class="inline-flex rounded-md h-full w-full cursor-pointer items-center justify-center bg-black/80 font-medium backdrop-blur-3xl"
+        aria-label="Registrarse y Appuesta"
       >
         <img
           src={info.img}
@@ -27,172 +43,133 @@ const { ...info } = Astro.props;
           height="150"
           decoding="async"
           loading={info.id < 3 ? "eager" : "lazy"}
-          class="rounded-md w-full h-full transition-transform transform bg-cover bg-center bg-no-repeat hover:opacity-90 bg-blend-luminosity duration-1000 ease-in-out hover:scale-110"
+          class="object-contain rounded-md w-full h-full hover:opacity-50 duration-300 ease-in-out"
         />
-      </a>
-    </div>
-
-    <!-- Rating & Devices -->
-    <div
-      class="flex flex-row justify-center items-center mx-auto space-x-2 my-4"
-    >
-      <div class="flex flex-row grow justify-start items-end mx-auto">
-        <StarRating w={"22"} h={"26"} />
-        {info.rating}
-      </div>
-      <div>
-        {
-          info.apps.map(
-            (app: {
-              android: string | null | undefined;
-              ios: string | null | undefined;
-              webapp: string | null | undefined;
-            }) => (
-              <div class="flex flex-row justify-center items-center mx-auto">
-                {app.android && (
-                  <img
-                    src={app.android}
-                    alt="Logo dispositivo Android"
-                    title="Logo dispositivo Android"
-                    width="16"
-                    height="16"
-                    decoding="async"
-                    loading={info.id < 3 ? "eager" : "lazy"}
-                  />
-                )}
-                {app.ios && (
-                  <img
-                    src={app.ios}
-                    alt="Logo dispositivo iOS"
-                    title="Logo dispositivo iOS"
-                    width="16"
-                    height="16"
-                    decoding="async"
-                    loading={info.id < 3 ? "eager" : "lazy"}
-                  />
-                )}
-                {app.webapp && (
-                  <img
-                    src={app.webapp}
-                    alt="Logo dispositivo WebApp"
-                    title="Logo dispositivo WebApp"
-                    width="16"
-                    height="16"
-                    decoding="async"
-                    loading={info.id < 3 ? "eager" : "lazy"}
-                  />
-                )}
-              </div>
-            )
-          )
-        }
-      </div>
-    </div>
-  </section>
-
-  <!-- Promotional Code & Payments Methods  -->
-  <section
-    class="flex flex-col items-center justify-start space-y-1 basis-1/2 sm:basis-1/3"
-  >
-    <!-- Promo Code -->
-    <div class="flex flex-col items-center w-full justify-center">
-      <span class="font-semibold tracking-tight text-balance mb-1">
-        Código Promocional
       </span>
-      <PromoCode {...info} client:load />
+    </span>
+  </a>
+
+  <!-- Rating & Devices -->
+  <div
+    class="flex flex-row justify-center items-center mx-auto w-full space-x-2 mt-5"
+  >
+    <!-- Rating -->
+    <div class="flex flex-row grow justify-start items-center">
+      <img
+        src="/others/star-rating.svg"
+        alt="Icono star rating"
+        title="Icono star rating"
+        width="24"
+        height="20"
+        decoding="async"
+        loading={info.id < 3 ? "eager" : "lazy"}
+      />
+      {info.rating}
     </div>
 
-    <!-- Payments -->
-    <img
-      src={info.payfront}
-      alt=`Principales metodos de pagos de ${info.name}`
-      title=`Principales metodos de pagos de ${info.name}`
-      width="100"
-      height="100"
-      decoding="async"
-      loading={info.id < 3 ? "eager" : "lazy"}
-      class="w-40 h-auto"
-    />
-    <a
-      href={`/${info.pageName}/`}
-      rel="internal follow"
-      aria-label=`Leer reseñas de la casa de apuestas ${info.name}`
-      class="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-[#DE1921] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-    >
-      y muchos más
-    </a>
-  </section>
-
-  <!-- Info -->
-  <section class="w-full sm:basis-1/2 mt-3 sm:mt-0 grow">
-    <div class="flex flex-col w-full space-y-4">
+    <!-- Devices -->
+    <>
       {
-        info.checklist?.map(
-          (check: {
-            check1: string | null | undefined;
-            check2: string | null | undefined;
-            check3: string | null | undefined;
-            check4: string | null | undefined;
-            check5: string | null | undefined;
-          }) => (
-            <ul class="space-y-1">
-              {check.check1 && (
-                <li class="flex flex-row gap-x-2">
-                  <Check />
-                  {check.check1}
-                </li>
-              )}
-              {check.check2 && (
-                <li class="flex flex-row gap-x-2">
-                  <Check />
-                  {check.check2}
-                </li>
-              )}
-              {check.check3 && (
-                <li class="flex flex-row gap-x-2">
-                  <Check />
-                  {check.check3}
-                </li>
-              )}
-              {check.check4 && (
-                <li class="flex flex-row gap-x-2">
-                  <Check />
-                  {check.check4}
-                </li>
-              )}
-              {check.check5 && (
-                <li class="flex flex-row gap-x-2">
-                  <Check />
-                  {check.check5}
-                </li>
-              )}
-            </ul>
-          )
-        )
+        info.apps.map((apps: any) => (
+          <div class="flex flex-row justify-end items-center mx-auto">
+            {Object.keys(apps).map(
+              (key: string) =>
+                key !== "nameandroid" &&
+                key !== "nameios" &&
+                key !== "nameweb" && (
+                  <img
+                    src={apps[key]}
+                    alt={`Icono ${key}`}
+                    title={`Icono ${key}`}
+                    width="16"
+                    height="16"
+                    decoding="async"
+                    loading={info.id < 3 ? "eager" : "lazy"}
+                  />
+                )
+            )}
+          </div>
+        ))
       }
+    </>
+  </div>
+</div>
 
-      <!-- Bono por deposito -->
-      <p class="text-pretty font-semibold">
-        {info.bonotxt}
-      </p>
-    </div>
-  </section>
+<!-- Promotional Code & Payments Methods  -->
+<div
+  class="flex flex-col items-center justify-start space-y-1 basis-1/2 sm:basis-1/3"
+>
+  <!-- Promo Code -->
+  <div class="flex flex-col items-center w-full justify-center">
+    <span class="font-semibold tracking-tight text-balance mb-1">
+      Código Promocional
+    </span>
+    <PromoCode {...info} client:load />
+  </div>
 
-  <!-- Buttons -->
-  <section
-    class="flex flex-col items-center my-5 sm:mt-0 w-full basis-0 sm:basis-1/3 space-y-5 grow sm:grow-0"
+  <!-- Payments -->
+  <img
+    src={info.payfront}
+    alt=`Principales metodos de pagos de ${info.name}`
+    title=`Principales metodos de pagos de ${info.name}`
+    width="100"
+    height="100"
+    decoding="async"
+    loading={info.id < 3 ? "eager" : "lazy"}
+    class="w-40 h-auto"
+  />
+  <a
+    href={`/${info.pageName}/`}
+    rel="internal follow"
+    aria-label=`Leer reseñas de la casa de apuestas ${info.name}`
+    class="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-[#DE1921] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
   >
-    <!-- Reseñas -->
-    <a
-      href={`/${info.pageName}/`}
-      rel="internal follow"
-      class="inline-flex cursor-pointer w-full h-14 items-center justify-center rounded-full border border-gray-700 bg-[#020617] px-3 py-1 font-medium text-gray-300 backdrop-blur-3xl hover:border-white hover:border"
-      aria-label=`Leer reseñas de la casa de apuestas ${info.name}`
-    >
-      <span class="text-white bg-clip-text text-transparent">
-        Leer Reseña
-      </span>
-      <!-- <img
+    y muchos más
+  </a>
+</div>
+
+<!-- Check List -->
+<div class="flex flex-col w-full grow sm:basis-1/2 mt-3 sm:mt-0">
+  {
+    info.checklist.map((check: any) => (
+      <ul class="flex flex-col">
+        {Object.keys(check).map((key: string) => (
+          <li class="flex gap-x-2 h-full w-full mb-2">
+            <img
+              src="/others/check.svg"
+              alt="Icono check"
+              title="Icono check"
+              width="16"
+              height="16"
+              decoding="async"
+              loading={info.id < 3 ? "eager" : "lazy"}
+            />
+            {check[key]}
+          </li>
+        ))}
+      </ul>
+    ))
+  }
+
+  <!-- Bono por deposito -->
+  <span class="font-semibold mt-4">
+    {info.bonotxt}
+  </span>
+</div>
+
+<!-- Buttons -->
+<div
+  class="flex flex-col items-center my-5 sm:mt-0 w-full basis-0 sm:basis-1/3 space-y-5 grow sm:grow-0"
+>
+  <!-- Reseñas -->
+  <a
+    href={`/${info.pageName}/`}
+    rel="internal follow"
+    class="inline-flex cursor-pointer w-full h-14 items-center justify-center rounded-full border border-gray-600 bg-transparent px-3 py-1 font-medium text-gray-300 backdrop-blur-3xl hover:border-white/60 hover:border shadow-black shadow-sm"
+    aria-label=`Leer reseñas de la casa de apuestas ${info.name}`
+  >
+    <span class="text-white bg-clip-text text-transparent"> Leer Reseña </span>
+    <!-- <img
       src="../../../assets/icons/icon-review.svg"
       alt="Icono de reseñas"
       title="Icono de reseñas"
@@ -201,42 +178,23 @@ const { ...info } = Astro.props;
       decoding="async"
       loading={info.id < 3 ? "eager" : "lazy"}
     /> -->
-    </a>
+  </a>
 
-    <!-- Jugar Ahora -->
-    <a
-      href={info.urlregistro}
-      target="_blank"
-      rel="external noopener noreferrer nofollow"
-      class="relative inline-flex w-full h-16 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
-    >
-      <span
-        class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
-      ></span>
-      <span
-        class="inline-flex h-full text-center w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 font-medium text-white backdrop-blur-3xl"
-        aria-label="Ir a registrarse y apostar"
-      >
-        Jugar Ahora
-      </span>
-    </a>
-
-    <!-- Reclamar Bono -->
-    <!-- <a
-    href={info.urlbono}
+  <!-- Jugar Ahora -->
+  <a
+    href={info.urlregistro}
     target="_blank"
     rel="external noopener noreferrer nofollow"
-    class="relative inline-flex w-full h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white hover:border"
+    class="relative inline-flex w-full h-14 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-[#f0f3ff] focus:ring-offset-2 focus:ring-offset-[#f0f3ff] hover:border-white/60 hover:border shadow-black shadow-md"
+    aria-label="Ir a registrarse y apostar"
   >
     <span
-      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#DE1921_0%,#FFFFFF_50%,#DE1921_100%)]"
+      class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
     ></span>
     <span
-      class="inline-flex h-full w-full text-center cursor-pointer items-center justify-center rounded-full bg-black px-3 py-1 font-medium text-white backdrop-blur-3xl"
-      aria-label="Ir a reclamar bono para Apostar"
+      class="inline-flex h-full text-center w-full cursor-pointer items-center justify-center rounded-full bg-black/80 px-3 py-1 font-medium text-white backdrop-blur-3xl"
     >
-      Reclamar Bono
+      Jugar Ahora
     </span>
-  </a> -->
-  </section>
+  </a>
 </div>

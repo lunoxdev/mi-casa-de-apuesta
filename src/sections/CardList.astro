@@ -1,58 +1,68 @@
 ---
-import Card from "./Card.astro";
-import { operators } from "../lib/data";
-// import "../styles/card-blur/style.css";
+import Card from "@sections/Card.astro";
+import { operators } from "@lib/data";
+// import "@styles/card-blur/style.css";
 ---
 
-<section id="casas" class="flex flex-col mb-12 sm:mb-20 space-y-8 w-full p-4">
-  <!-- <div class="flex flex-row mx-auto w-full">
+<section id="casas" class="flex flex-col gap-5 sm:gap-0 space-y-6 w-full p-4">
+  <div class="flex flex-row mx-auto w-full">
+    <!-- <div class="flex flex-row justify-start items-end w-full">
+      <a
+        href="/juegos-en-vivo"
+        class="relative flex justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#DE1921,#DE1921)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_1px,100%_1px]"
+        >Juegos en vivo <span class="text-3xl text-[#ff6a70] animate-pulse"
+          >•</span
+        ></a
+      >
+    </div>
+
     <div class="flex flex-col justify-end items-end w-full space-y-2">
       <span>Próximamente</span>
-      <div class="flex flex-row w-full justify-end gap-4">
+      <div class="flex flex-row w-44 justify-end gap-4">
         <a
-          href="https://c1li7tt5ck.com/?serial=43249&creative_id=489&anid="
+          href="https://media.hellpartners.com/redirect.aspx?pid=33537&bid=1485"
           target="_blank"
           rel="external noopener nofollow"
           class="flex hover:animate-pulse"
         >
           <img
-            src="/operators/nobg/leon.svg"
-            alt="Próximamente Leon"
-            width="70"
-            height="70"
+            src="/operators/nobg/ivibet.svg"
+            alt="Próximamente ivibet"
+            width="150"
+            height="10"
           />
         </a>
         <a
-          href="https://3646783.gloryjourney.in"
+          href="https://media.toxtren.com/redirect.aspx?pid=286175&bid=2132"
           target="_blank"
           rel="external noopener nofollow"
           class="flex hover:animate-pulse"
         >
           <img
-            src="/operators/nobg/megapari.svg"
-            alt="Próximamente Megapari"
+            src="/operators/nobg/20bet.svg"
+            alt="Próximamente 20 Bet"
             width="100"
-            height="150"
+            height="100"
           />
         </a>
       </div>
-    </div>
-  </div> -->
+    </div> -->
+  </div>
   {
     operators.map((info, index) => (
-      <article
+      <div
         class={`${
           index < 3
             ? index === 0
-              ? "shadow-[#ffd900]/40 card-blur shadow-md bg-gradient-to-t from-[#ffd900]/15 to-transparent rounded-lg"
+              ? "shadow-[#ffd900]/70 items shadow-md bg-gradient-to-t from-[#ffd900]/5 to-[#FFE863]/20 rounded-lg flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 mx-auto w-full p-3 sm:p-5"
               : index === 1
-                ? "shadow-[#C0C0C0]/40 card-blur shadow-md bg-gradient-to-t from-[#C0C0C0]/15 to-transparent rounded-lg"
-                : "shadow-[#cd8032dc]/40 card-blur shadow-md bg-gradient-to-t from-[#cd8032dc]/20 to-transparent rounded-lg"
-            : "shadow-gray-800 shadow-md card-blur bg-gradient-to-t from-gray-800/10 to-transparent rounded-lg"
+                ? "shadow-[#C0C0C0]/70 items shadow-md bg-gradient-to-t from-[#C0C0C0]/5 to-[#C0C0C0]/20 rounded-lg flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 mx-auto w-full p-3 sm:p-5"
+                : "shadow-[#cd8032dc]/70 items shadow-sm bg-gradient-to-t from-[#cd8032dc]/5 to-[#cd8032dc]/20 rounded-lg flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 mx-auto w-full p-3 sm:p-5"
+            : "shadow-gray-600 shadow-md items bg-gradient-to-t from-gray-800/10 to-red-950/20 rounded-lg flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 mx-auto w-full my-5 p-3 sm:p-5"
         }`}
       >
         <Card {...info} />
-      </article>
+      </div>
     ))
   }
 </section>
