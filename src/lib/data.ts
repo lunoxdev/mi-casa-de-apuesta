@@ -354,39 +354,10 @@ export const operators: Operator[] = [
   },
   {
     id: 11,
-    name: "FEZbet",
-    pageName: "fezbet",
-    img: "/operators/withbg/fezbet.svg",
-    rating: 4.3,
-    promocode: "NO DISPONIBLE",
-    urlregistro:
-      "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
-    urlbono: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=7426",
-    urlpromo: "https://awbba.zetcasino.com/redirect.aspx?pid=1374329&bid=6781",
-    bonotxt: "Bono deportivo del 100% hasta 100 USD",
-    license: "Licencia de Curazao",
-    payfront: "/payments/frontend/fezbet-front.svg",
-    apps: [
-      {
-        webapp: "/devices/phone.svg",
-        nameweb: "Aplicación Web",
-      },
-    ],
-    checklist: [
-      {
-        check1: "Momios competitivos",
-        check2: "Interfaz de usuario fácil de usar",
-        check3: "Variedad de métodos de pagos",
-        check4: "Atención al cliente 24/7",
-      },
-    ],
-  },
-  {
-    id: 12,
     name: "BC.GAME",
     pageName: "bcgame",
     img: "/operators/withbg/bc-game.svg",
-    rating: 4.2,
+    rating: 4.3,
     promocode: "lunoxvip",
     urlregistro: "https://bc.game/i-lunoxvip-n/",
     urlbono: "https://bc.game/i-lunoxvip-n/",

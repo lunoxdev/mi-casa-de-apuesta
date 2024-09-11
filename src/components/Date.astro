@@ -1,3 +1,9 @@
-<span class="text-pretty tracking-tight text-xs text-white/70">
-  Última actualización: <time datetime="2024-09-01">1 de Septiembre del 2024</time>
+---
+const { ...frontmatter } = Astro.props;
+---
+
+<span class="text-pretty tracking-tight text-xs">
+  Última actualización: <time datetime="2024-09-11"
+    >{frontmatter.pubDate || "11 de Septiembre del 2024"}</time
+  >
 </span>
