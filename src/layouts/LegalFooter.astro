@@ -1,0 +1,97 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "@styles/global.css";
+import PeWorld from "./../components/icons/PeWorld.astro";
+import ModernBar from "./../components/navbar/ModernBar.astro";
+import { fade } from "astro:transitions";
+
+const meta = {
+  img: "https://micasadeapuesta.com/favicon.svg",
+  url: "https://micasadeapuesta.com/",
+  sitename: "Mi Casa De Apuesta Latam",
+  creator: "Lunox | Moises Obando",
+};
+
+const { img, url, sitename, creator } = meta;
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{frontmatter.title}</title>
+    <meta name="description" content={frontmatter.description} />
+    <link rel="canonical" href={frontmatter.canonicalUrl} />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={img} />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:site_name" content={sitename} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={url} />
+    <meta property="twitter:domain" content={url} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={frontmatter.title} />
+    <meta name="twitter:description" content={frontmatter.description} />
+    <meta name="twitter:image" content={img} />
+    <meta name="twitter:creator" content={creator} />
+    <ViewTransitions />
+  </head>
+  <body
+    class="flex flex-col min-h-screen max-w-screen-lg mx-auto mb-20 bg-slate-950"
+  >
+    <div
+      class="absolute -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_3px,transparent_3px),linear-gradient(to_bottom,#4f4f4f2e_3px,transparent_3px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,#000_70%,transparent_100%)]"
+    >
+    </div>
+    <ModernBar />
+    <div
+      class="max-w-screen-md w-full mx-auto px-4"
+      transition:animate={fade({ duration: "1.3s" })}
+    >
+      <di class="flex flex-col justify-center items-center w-full mb-7">
+        <h1 class="text-center font-bold mt-10 text-balance">
+          {frontmatter.title}
+        </h1>
+        <span class="text-pretty tracking-tight text-xs">
+          Última actualización: <time datetime="2024-09-10"
+            >{frontmatter.pubDate}</time
+          >
+        </span>
+      </di>
+      <slot />
+      <hr />
+      <footer class="mt-5 space-y-5">
+        <div class="flex flex-col space-y-2 justify-center items-center">
+          <span class="text-center tracking-tight text-pretty"
+            >Visítanos también en:
+          </span>
+          <a
+            href="https://micasadeapuesta.pe/"
+            title="Mi casa de apuesta Perú"
+            target="_self"
+            rel="external noopener noreferrer follow"
+            class="relative text-lg flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#DE1921,#DE1921)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+          >
+            <span
+              aria-label="Ir al sitio web: Mi casa de apuestas LATAM"
+              typeof="button"
+            >
+              Mi casa de apuesta Perú
+            </span>
+            <PeWorld />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

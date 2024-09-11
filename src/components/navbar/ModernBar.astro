@@ -1,0 +1,32 @@
+<div
+  class="fixed z-10 bottom-0 left-1/2 transform -translate-x-1/2 mb-4 w-12 h-12 border border-gray-600 hover:border-[#8678f9] bg-slate-950 rounded-lg group"
+>
+  <a id="header-nav" href="/" class="tooltip-link">
+    <img
+      src="/logo.svg"
+      alt="Inicio - Mi casa de apuesta"
+      title="Inicio - Mi casa de apuesta"
+      width="40"
+      height="40"
+      decoding="async"
+      loading="eager"
+      class="tooltip-img"
+    />
+    <!-- Tooltip -->
+    <span class="tooltip-text"> Inicio </span>
+  </a>
+</div>
+
+<style>
+  .tooltip-link {
+    @apply inline-flex h-full w-full items-center justify-center transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 rounded-lg relative;
+  }
+
+  .tooltip-img {
+    @apply hover:scale-110;
+  }
+
+  .tooltip-text {
+    @apply absolute bottom-14 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#170303] text-white text-xs rounded-lg py-1 px-2.5 whitespace-nowrap;
+  }
+</style>
