@@ -102,11 +102,11 @@ export const operators: Operator[] = [
     rating: 4.8,
     promocode: "LUNOXVIP",
     urlregistro:
-      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+      "https://refpaiozdg.top/L?tag=d_3646791m_25437c_&site=3646791&ad=25437&r=es",
     urlbono:
-      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+      "https://refpaiozdg.top/L?tag=d_3646791m_25437c_&site=3646791&ad=25437&r=es",
     urlpromo:
-      "https://refpaiozdg.top/L?tag=d_3646783m_87264c_peru&site=3646783&ad=87264&r=registration",
+      "https://refpaiozdg.top/L?tag=d_3646791m_25437c_&site=3646791&ad=25437&r=es",
     bonotxt: "Bono del 100% hasta 300 USD en tu primer depósito",
     license: "Licencia de Curazao",
     payfront: "/payments/frontend/megapari-front.svg",
